@@ -6,11 +6,18 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #2B2B2B;
   font-size: 1.6rem;
   font-weight: 500;
   height: 100%;
+  padding: 0 30px;
   line-height: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 ul {
