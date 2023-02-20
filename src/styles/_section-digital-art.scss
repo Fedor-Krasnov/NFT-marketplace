@@ -1,0 +1,24 @@
+.digital-art {
+  $selector: &;
+
+  margin: auto;
+  max-width: 1046px;
+  gap: 30px;
+  display: flex;
+
+  &__details {
+    max-width: 500px;
+    width: 50%;
+    text-transform: capitalize;
+
+    button {
+      margin-top: 30px;
+    }
+
+    #{$selector}__description {
+      font-size: 22px;
+      line-height: 160%;
+      padding-top: 20px;
+    }
+  }
+}

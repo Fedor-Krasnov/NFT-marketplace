@@ -4,3 +4,47 @@
   font-family: 'Space Mono', sans-serif;
   align-items: center;
 }
+
+.nft-card {
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__details {
+    padding: 22px 20px;
+    background-color: #3B3B3B;
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__user {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    &-avatar {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+.statistics {
+  ul {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+
+    h2 {
+      font-family: 'Space Mono', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 140%;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 160%;
+    }
+  }
+}
