@@ -15,6 +15,14 @@
     display: grid;
     row-gap: 10px;
   }
+}
+
+.nft-details {
+  h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+  }
 
   &__user {
     display: flex;

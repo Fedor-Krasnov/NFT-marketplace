@@ -9,34 +9,35 @@
 }
 
 .trending-collection__title {
-
   p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    margin-top: 10px;
   }
 }
 
 .nft-offers {
   padding-top: 40px;
+
+  &__details {
+    margin-top: 15px;
+  }
+
+  &__secondary-nft {
+    gap: 15px;
+    padding-top: 15px;
+    display: flex;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+    }
+  }
 }
 
 .main_nft {
   border-radius: 20px;
   width: 330px;
   height: 330px;
-}
-
-.secondary-nft {
-  gap: 15px;
-  padding-top: 15px;
-  display: flex;
-
-  img {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-  }
 }
 
 .nft-counter__border {
@@ -51,28 +52,4 @@
   display: grid;
   justify-content: center;
   align-items: center;
-}
-
-.trending-collection__title {
-  padding-top: 15px;
-
-  h2 {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 31px;
-  }
-}
-
-.trending-collection__user-avatar {
-
-  img {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-.trending-collection__user-information {
-  padding-top: 10px;
-  display: flex;
-  gap: 12px;
 }
