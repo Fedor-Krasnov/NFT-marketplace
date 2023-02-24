@@ -1,4 +1,4 @@
-button {
+.button {
   display: flex;
   font-size: 16px;
   font-weight: 600;
@@ -17,20 +17,20 @@ button {
     max-width: 20px;
     max-height: 20px;
   }
-}
 
-.button_outline {
-  display: flex;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: 'Work Sans', sans-serif;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  gap: 12px;
-  height: 60px;
-  background-color: transparent;
-  border-radius: 20px;
-  color: white;
-  border: 2px solid #A259FF;
+  &_outline {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    gap: 12px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid #A259FF;
+  }
 }
