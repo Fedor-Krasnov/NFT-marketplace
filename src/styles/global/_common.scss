@@ -5,6 +5,20 @@
   align-items: center;
 }
 
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+
+  p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
 .nft-card {
   border-radius: 20px;
   overflow: hidden;

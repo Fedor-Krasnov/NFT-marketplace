@@ -1,0 +1,14 @@
+.top-creators {
+  margin: auto;
+  max-width: 1046px;
+}
+
+.top-creators__under-title {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    display: grid;
+    align-items: center;
+  }
+}
