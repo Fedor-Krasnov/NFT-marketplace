@@ -1,4 +1,12 @@
 .browse-categories {
   margin: auto;
   max-width: 1046px;
+
+  &__container {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    flex-wrap: wrap;
+  }
 }
