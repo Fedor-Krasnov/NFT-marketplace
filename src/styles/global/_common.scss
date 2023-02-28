@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: flex-end;
   gap: 20px;
+  padding-bottom: 60px;
 
   p {
     margin-top: 10px;
@@ -46,6 +47,33 @@
     &-avatar {
       height: 24px;
       width: 24px;
+    }
+
+    &-name {
+      span {
+        font-family: 'Space Mono', sans-serif;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Mono', sans-serif;
+    margin-top: 15px;
+
+    dl {
+      &:nth-child(2) {
+        text-align: right;
+      }
+    }
+
+    dt {
+      color: #858584;
+    }
+
+    dd {
+      margin-top: 8px;
     }
   }
 }

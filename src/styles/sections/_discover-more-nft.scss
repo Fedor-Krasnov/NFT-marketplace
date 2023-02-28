@@ -1,4 +1,12 @@
 .discover-more-nft {
   margin: auto;
   max-width: 1046px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
+
+
