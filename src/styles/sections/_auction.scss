@@ -9,7 +9,6 @@
     align-items: flex-end;
     background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
     display: flex;
-
     min-height: 640px;
     position: relative;
     width: 100%;
@@ -32,11 +31,12 @@
     justify-content: space-between;
     margin: 60px 115px;
     width: 100%;
+    align-items: flex-end;
   }
 
   .post-title {
     display: grid;
-    align-items: flex-end;
+    row-gap: 30px;
 
     .auction__after {
       display: flex;
