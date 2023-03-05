@@ -20,6 +20,38 @@
   }
 }
 
+.countdown {
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  font-family: 'Space Mono', sans-serif;
+  gap: 10px;
+  display: grid;
+
+  h4 {
+    font-weight: 400;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
 .nft-card {
   border-radius: 20px;
   overflow: hidden;

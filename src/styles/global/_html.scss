@@ -1,3 +1,5 @@
+@use 'src/styles/global/mixins';
+
 html {
   font-size: 62.5%;
   height: 100%;
@@ -34,7 +36,8 @@ a {
 }
 
 section {
-  padding: 80px 0;
+  @include mixins.container1046;
+  @include mixins.section;
 }
 
 ul {

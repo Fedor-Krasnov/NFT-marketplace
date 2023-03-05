@@ -1,0 +1,36 @@
+@use 'src/styles/global/mixins';
+
+.auction {
+  @include mixins.container1280;
+
+  padding-top: 0;
+
+  &__container {
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
+    display: flex;
+
+    min-height: 640px;
+    position: relative;
+    width: 100%;
+
+    &::before {
+      background: url("/src/media/background-fonts/magic-mashrooms.jpg") no-repeat, top center;
+      background-size: 100%;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 115px;
+    width: 100%;
+  }
+}

@@ -1,7 +1,4 @@
-.top-creators {
-  margin: auto;
-  max-width: 1046px;
-}
+@use 'src/styles/global/mixins';
 
 .creators {
   display: flex;
