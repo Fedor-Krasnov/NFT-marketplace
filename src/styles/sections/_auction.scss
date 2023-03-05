@@ -33,4 +33,25 @@
     margin: 60px 115px;
     width: 100%;
   }
+
+  .post-title {
+    display: grid;
+    align-items: flex-end;
+
+    .auction__after {
+      display: flex;
+      background-color: #3B3B3B;
+      width: 151px;
+      height: 44px;
+      border-radius: 20px;
+      align-items: center;
+      padding: 10px 20px;
+      gap: 12px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
 }
