@@ -1,0 +1,30 @@
+.how-it-works__container {
+  .explanatory-card {
+    gap: 20px;
+    width: 330px;
+    height: 439px;
+    background: #3B3B3B;
+    border-radius: 20px;
+    padding: 10px 30px 30px;
+  }
+
+  h3 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.how-it-works__container {
+  display: flex;
+  justify-content: space-between;
+}
