@@ -1,0 +1,53 @@
+.weekly-digest__container {
+  background-color: #3B3B3B;
+  padding: 60px;
+  gap: 80px;
+  display: flex;
+  width: 1050px;
+  height: 430px;
+  align-items: center;
+  border-radius: 20px;
+
+  img {
+    border-radius: 20px;
+  }
+
+  .weekly-digest__information {
+    max-width: 400px;
+
+    p {
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    label {
+      display: flex;
+      margin-top: 40px;
+    }
+
+    .input__email {
+      display: flex;
+      align-items: center;
+      padding: 16px 0 16px 20px;
+      gap: 12px;
+      width: 425px;
+      height: 60px;
+      background: white;
+      border-radius: 20px;
+      border: none;
+
+      placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    .button {
+      margin-right: 20px;
+      z-index: 1;
+    }
+  }
+}
