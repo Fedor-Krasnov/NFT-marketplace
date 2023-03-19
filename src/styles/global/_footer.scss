@@ -3,6 +3,7 @@
   max-width: 1046px;
   display: flex;
   padding: 50px 0;
+  justify-content: space-between;
 
   .footer__down__title {
     margin: 35px 0 20px;
@@ -17,6 +18,16 @@
     .contact__img {
       color: #CCCCCC;
       opacity: 0.3;
+    }
+  }
+
+  .explore__title {
+    h4 {
+      font-family: 'Space Mono', sans-serif;
+    }
+
+    .explore__enumeration {
+      margin-top: 20px;
     }
   }
 }
