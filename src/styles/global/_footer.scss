@@ -22,14 +22,52 @@
   }
 
   .explore__title {
-    h4 {
-      font-family: 'Space Mono', sans-serif;
-    }
-
     .explore__enumeration {
       margin-top: 20px;
     }
   }
+
+  .footer__weekly_digest {
+
+    label {
+      display: flex;
+      margin-top: 40px;
+    }
+
+    .input__email {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      padding: 16px 0 16px 20px;
+      gap: 12px;
+      height: 58px;
+      background: white;
+      border-radius: 20px 0 0 20px;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        color: black;
+      }
+
+      .button {
+        transform: translateX(-30px);
+        width: calc(100% + 30px);
+        flex: 1;
+      }
+    }
+
+    p {
+      padding: 20px 0;
+      max-width: 350px;
+    }
+  }
+}
+
+h4 {
+  font-family: 'Space Mono', sans-serif;
 }
 
 p {
