@@ -1,77 +1,70 @@
-.footer__container {
-  margin: 0 auto;
-  max-width: 1046px;
-  display: flex;
-  padding: 50px 0;
-  justify-content: space-between;
+.footer {
+  $selector: &;
 
-  .footer__down__title {
-    margin: 35px 0 20px;
-    max-width: 250px;
+  h4 {
+    font-family: 'Space Mono', sans-serif;
   }
 
-  .footer__contacts {
+  p {
+    color: #CCCCCC;
+    opacity: 0.7;
+    font-size: 18px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1046px;
     display: flex;
-    margin-top: 30px;
-    gap: 15px;
+    padding: 50px 0;
+    justify-content: space-between;
 
-    .contact__img {
-      color: #CCCCCC;
-      opacity: 0.3;
+    #{$selector}__down__title {
+      margin: 35px 0 20px;
+      max-width: 250px;
     }
-  }
 
-  .explore__title {
-    .explore__enumeration {
-      margin-top: 20px;
-    }
-  }
-
-  .footer__weekly_digest {
-
-    label {
+    #{$selector}__contacts {
       display: flex;
-      margin-top: 40px;
-    }
+      margin-top: 30px;
+      gap: 15px;
 
-    .input__email {
-      display: flex;
-      align-items: center;
-      flex: 1;
-      padding: 16px 0 16px 20px;
-      gap: 12px;
-      height: 58px;
-      background: white;
-      border-radius: 20px 0 0 20px;
-      border: none;
-      outline: none;
-
-      &::placeholder {
-        font-weight: 400;
-        font-size: 14px;
-        color: black;
-      }
-
-      .button {
-        transform: translateX(-30px);
-        width: calc(100% + 30px);
-        flex: 1;
+      .contact__img {
+        color: #CCCCCC;
+        opacity: 0.3;
       }
     }
 
-    p {
-      padding: 20px 0;
-      max-width: 350px;
+    .explore__title {
+      .explore__enumeration {
+        margin-top: 20px;
+      }
+    }
+
+    #{$selector}__weekly_digest {
+      p {
+        padding: 20px 0;
+        max-width: 350px;
+      }
     }
   }
-}
 
-h4 {
-  font-family: 'Space Mono', sans-serif;
-}
+  &__was_done {
+    background: #3B3B3B;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
 
-p {
-  color: #CCCCCC;
-  opacity: 0.7;
-  font-size: 18px;
+  &__was_done__border {
+    color: #858584;
+    border: 1px solid #858584;
+    width: 1050px;
+    height: 2px;
+  }
+
+  &__who_made {
+    margin: 20px 0;
+    color: #CCCCCC;
+    opacity: 0.7;
+  }
 }
