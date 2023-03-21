@@ -5,6 +5,7 @@
   justify-content: space-between;
   max-width: 1180px;
   margin: auto;
+  align-items: center;
 
   .navbar {
     display: flex;
@@ -22,6 +23,40 @@
           line-height: 22px;
         }
       }
+    }
+  }
+
+  .burger {
+    cursor: pointer;
+    display: none;
+
+    &__container {
+      gap: 5px;
+      display: grid;
+    }
+
+    span {
+      background: white;
+      display: block;
+      height: 2px;
+      width: 12px;
+      border-radius: 2px;
+
+      &:nth-child(2) {
+        width: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .header {
+    .navbar {
+      display: none;
+    }
+
+    .burger {
+      display: grid;
     }
   }
 }
