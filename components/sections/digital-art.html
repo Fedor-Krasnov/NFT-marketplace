@@ -2,6 +2,9 @@
   <div class="digital-art__details">
     <h1>Discover digital art &amp;&nbsp;Collect NFTs</h1>
     <p class="digital-art__description">NFT marketplace&nbsp;UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+    <div class="digital-art__img digital-art__img--mobile">
+      {{> units/digital-art_nft-card }}
+    </div>
     <a class="button">
       <img src="../../src/media/icons/rocket-launch.svg" alt="rocket">
       Get Started
@@ -23,20 +26,7 @@
       </ul>
     </div>
   </div>
-  <div class="digital-art__img">
-    <div class="nft-card">
-      <div class="nft-card__img">
-        <img src="./src/media/nft-cards/space-walking.jpg" alt="nft-card">
-      </div>
-      <div class="nft-card__details nft-details">
-        <h3>Space Walking</h3>
-        <div class="nft-details__user">
-          <div class="nft-details__user-avatar">
-            <img src="src/media/users/user-14.svg" alt="avatar">
-          </div>
-          <div class="nft-details__user-name">Animakid</div>
-        </div>
-      </div>
-    </div>
+  <div class="digital-art__img digital-art__img--desktop">
+    {{> units/digital-art_nft-card }}
   </div>
 </section>

@@ -22,6 +22,10 @@ h1 {
   font-weight: 600;
   font-size: 67px;
   line-height: 110%;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: clamp(28px, 6.6vw, 67px);
+  }
 }
 
 h2 {
