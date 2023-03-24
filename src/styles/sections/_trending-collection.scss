@@ -19,24 +19,24 @@
       border-radius: 20px;
     }
   }
-}
 
-.main_nft {
-  border-radius: 20px;
-  width: 330px;
-  height: 330px;
-}
+  .main_nft {
+    border-radius: 20px;
+    width: 330px;
+    height: 330px;
+  }
 
-.nft-counter__border {
-  background-color: #A259FF;
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
-  font-family: 'Space Mono', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 35px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  .nft-counter__border {
+    background-color: #A259FF;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
 }
