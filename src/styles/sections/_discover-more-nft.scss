@@ -5,60 +5,49 @@
     justify-content: center;
   }
 
+  li {
+    width: 33.33%;
+  }
+
   .button__adaptive-version {
     display: none;
   }
 
-  @media only screen and (max-width: 1120px) {
-    .nft-card__img {
-      width: 290px;
-      height: 260px;
-    }
-  }
-
-  @media only screen and (max-width: 1020px) {
-    .nft-card__img {
-      width: 260px;
-      height: 230px;
-    }
-  }
-
-  @media only screen and (max-width: 915px) {
+  @media only screen and (max-width: 768px) {
     ul {
       flex-wrap: wrap;
+      margin: 0 -10px;
+      column-gap: 0;
+      row-gap: 30px;
     }
 
-    .nft-card__img {
-      width: 330px;
-      height: 296px;
+    li {
+      width: 50%;
+      padding: 0 10px;
+    }
+
+    img {
+      width: 100%;
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 576px) {
+    li {
+      width: 100%;
+    }
+
     .button__adaptive-version {
       display: grid;
-      justify-content: center;
     }
 
     .button__av {
       display: flex;
-      width: 330px;
+      width: 100%;
       margin-top: 40px;
     }
 
     .button__desk {
       display: none;
-    }
-  }
-
-  @media only screen and (max-width: 400px) {
-    .nft-card__img {
-      width: 260px;
-      height: 230px;
-    }
-
-    .button__av {
-      width: 260px;
     }
   }
 }
