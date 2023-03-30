@@ -1,7 +1,14 @@
 .nft-offers {
+  width: 33.33%;
+  padding: 0 15px;
+
+  img {
+    width: 100%;
+  }
+
   &__container {
     display: flex;
-    gap: 30px;
+    margin: 0 -15px;
   }
 
   &__details {
@@ -14,22 +21,21 @@
     display: flex;
 
     img {
-      width: 100px;
-      height: 100px;
       border-radius: 20px;
+    }
+
+    & > div {
+      width: 33.33%;
     }
   }
 
   .main_nft {
     border-radius: 32px;
-    width: 330px;
-    height: 330px;
   }
 
   .nft-counter__border {
     background-color: #A259FF;
-    width: 100px;
-    height: 100px;
+    height: 100%;
     border-radius: 20px;
     font-family: 'Space Mono', sans-serif;
     font-weight: 700;
@@ -40,124 +46,17 @@
     align-items: center;
   }
 
-  @media only screen and (max-width: 1120px) {
-    &__container {
-      justify-content: center;
-    }
-
-    &__secondary-nft {
-      img {
-        width: 90px;
-        height: 90px;
-      }
-    }
-
-    .main_nft {
-      width: 300px;
-      height: 300px;
-    }
-
-    .nft-counter__border {
-      width: 90px;
-      height: 90px;
-    }
-  }
-
-  @media only screen and (max-width: 1045px) {
-    .main_nft {
-      width: 280px;
-      height: 280px;
-    }
-
-    .nft-counter__border {
-      width: 83px;
-      height: 83px;
-    }
-
-    &__secondary-nft {
-      img {
-        width: 83px;
-        height: 83px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 980px) {
-    .main_nft {
-      width: 260px;
-      height: 260px;
-    }
-
-    .nft-counter__border {
-      width: 77px;
-      height: 77px;
-    }
-
-    &__secondary-nft {
-      img {
-        width: 77px;
-        height: 77px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 920px) {
-    .main_nft {
-      width: 240px;
-      height: 240px;
-    }
-    .nft-counter__border {
-      width: 70px;
-      height: 70px;
-    }
+    width: 50%;
 
-    &__secondary-nft {
-      img {
-        width: 70px;
-        height: 70px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 855px) {
     &__container {
       flex-wrap: wrap;
       justify-content: center;
-    }
-
-    .main_nft {
-      width: 300px;
-      height: 300px;
-    }
-
-    .nft-counter__border {
-      width: 90px;
-      height: 90px;
-    }
-
-    &__secondary-nft {
-      img {
-        width: 90px;
-        height: 90px;
-      }
+      row-gap: 30px;
     }
   }
 
-  @media only screen and (max-width: 380px) {
-    .main_nft {
-      width: 240px;
-      height: 240px;
-    }
-    .nft-counter__border {
-      width: 70px;
-      height: 70px;
-    }
-
-    &__secondary-nft {
-      img {
-        width: 70px;
-        height: 70px;
-      }
-    }
+  @media only screen and (max-width: 576px) {
+    width: 100%;
   }
 }
