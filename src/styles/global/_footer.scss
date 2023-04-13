@@ -14,6 +14,10 @@
   &__container {
     margin: 0 auto;
     max-width: 1046px;
+    padding: 0 30px;
+  }
+
+  &__content {
     display: flex;
     padding: 50px 0;
     justify-content: space-between;
@@ -49,22 +53,12 @@
   }
 
   &__was_done {
-    background: #3B3B3B;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
+    border-top: 1px solid #858584;
+    padding: 20px 0;
 
-  &__was_done__border {
-    color: #858584;
-    border: 1px solid #858584;
-    width: 1050px;
-    height: 2px;
-  }
-
-  &__who_made {
-    margin: 20px 0;
-    color: #CCCCCC;
-    opacity: 0.7;
+    p {
+      color: #CCC;
+      opacity: 0.7;
+    }
   }
 }
