@@ -14,8 +14,8 @@
     width: 100%;
 
     &::before {
-      background: url("/src/media/background-fonts/magic-mashrooms.jpg") no-repeat, top center;
-      background-size: 100%;
+      background: url("/src/media/background-fonts/magic-mashrooms.jpg") no-repeat center;
+      background-size: cover;
       content: '';
       height: 100%;
       left: 0;
