@@ -31,14 +31,18 @@
   font-family: 'Space Mono', sans-serif;
   gap: 10px;
   display: grid;
+  width: fit-content;
 
   h4 {
     font-weight: 400;
+    font-size: 18px;
+    line-height: 13px;
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
   }
 
   &__value {
@@ -47,8 +51,16 @@
     line-height: 46px;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
+  }
+
+  @media only screen and (max-width: 375px) {
+    padding: 30px 20px;
+
+    &__content {
+      gap: 0;
+    }
   }
 }
 
