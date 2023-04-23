@@ -1,4 +1,6 @@
 .header {
+  $selector: &;
+
   padding: 20px 0;
   display: flex;
   gap: 20px;
@@ -45,6 +47,12 @@
       &:nth-child(2) {
         width: 20px;
       }
+    }
+  }
+
+  .create-account-page & {
+    #{$selector}__sign-up {
+      display: none;
     }
   }
 
