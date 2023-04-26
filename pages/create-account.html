@@ -10,7 +10,40 @@
   <body class="create-account-page">
     {{> header }}
     <main>
-
+      <div class="create-account-main">
+        <div class="create-account-img">
+          <img src="../src/media/pages/image-placeholder.png" alt="">
+        </div>
+        <div class="create-account-registration">
+          <h2>Create account</h2>
+          <p>Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+          <div class="registration">
+            <form>
+              <div class="registration__container">
+                <label class="registration__data-filling">
+                  <img src="../src/media/icons/user-gray.svg" alt="" class="data-filling__img">
+                  <input placeholder="Username" class="data-filling">
+                </label>
+                <label class="registration__data-filling">
+                  <img src="../src/media/icons/envelopesimple.svg" alt="" class="data-filling__img">
+                  <input placeholder="Email Address" class="data-filling">
+                </label>
+                <label class="registration__data-filling">
+                  <img src="../src/media/icons/lockkey.svg" alt="" class="data-filling__img">
+                  <input placeholder="Password" class="data-filling">
+                </label>
+                <label class="registration__data-filling">
+                  <img src="../src/media/icons/lockkey.svg" alt="" class="data-filling__img">
+                  <input placeholder="Confirm Password" class="data-filling">
+                </label>
+                <div>
+                  <button class="button" type="submit">Create account</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     {{> footer }}
   </body>
