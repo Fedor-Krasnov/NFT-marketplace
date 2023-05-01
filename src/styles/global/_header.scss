@@ -50,6 +50,12 @@
     }
   }
 
+  .connect-wallet-page & {
+    #{$selector}__connect-wallet {
+      display: none;
+    }
+  }
+
   .create-account-page & {
     #{$selector}__sign-up {
       display: none;
