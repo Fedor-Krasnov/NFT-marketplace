@@ -10,7 +10,35 @@
   <body class="connect-wallet-page">
     {{> header }}
     <main>
-
+      <div class="connect-wallet">
+        <div>
+          <div class="connect-wallet__img"></div>
+        </div>
+        <div class="connect-wallet__wallet-selection">
+          <h2>Connect wallet</h2>
+          <p>Choose a&nbsp;wallet you want to&nbsp;connect. There are several wallet providers.</p>
+          <div class="wallet-selection__container">
+            <div class="choice">
+              <div class="choice__img">
+                <img src="../src/media/pages/icon/metamask.png" alt="">
+              </div>
+              <p>Metamask</p>
+            </div>
+            <div class="choice">
+              <div class="choice__img">
+                <img src="../src/media/pages/icon/wallet-connect.png" alt="">
+              </div>
+              <p>Wallet Connect</p>
+            </div>
+            <div class="choice">
+              <div class="choice__img">
+                <img src="../src/media/pages/icon/coinbase.png" alt="">
+              </div>
+              <p>Coinbase</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     {{> footer }}
   </body>
