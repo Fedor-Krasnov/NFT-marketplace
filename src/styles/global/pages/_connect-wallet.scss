@@ -30,7 +30,7 @@
   }
 
   &__wallet-selection {
-    padding: mixins.clamp-auto(0px, 100px) 0;
+    padding: mixins.clamp-auto(0px, 140px) 0;
 
     .wallet-selection__container {
       margin-top: 40px;
@@ -38,7 +38,7 @@
 
       .choice {
         background-color: #3B3B3B;
-        width: 320px;
+        width: mixins.clamp-auto(290px, 320px);
         height: 72px;
         display: flex;
         border: 1px solid #A259FF;
@@ -53,6 +53,43 @@
           display: grid;
           align-items: center;
           margin: auto 0;
+        }
+
+        &__img {
+          width: mixins.clamp-auto(35px, 40px);
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      margin: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    & > div {
+      width: 100%;
+    }
+
+    &__img {
+      height: mixins.clamp-auto(232px, 1000px);
+      margin: 0 -30px;
+      width: calc(100% + 30px * 2);
+    }
+
+    .wallet-selection {
+      &__container {
+        .choice {
+          max-width: none;
+          width: 100%;
         }
       }
     }
