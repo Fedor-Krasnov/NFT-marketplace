@@ -50,6 +50,12 @@
     }
   }
 
+  .top-creators-page & {
+    #{$selector}__rankings {
+      display: none;
+    }
+  }
+
   .connect-wallet-page & {
     #{$selector}__connect-wallet {
       display: none;
