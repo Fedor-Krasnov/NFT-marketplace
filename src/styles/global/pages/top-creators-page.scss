@@ -39,7 +39,7 @@
       border-radius: 20px;
       border: 2px solid #3B3B3B;
       background-color: transparent;
-      margin-top: 30px;
+      margin: 30px 0 20px 0;
 
       p {
         color: #858584;
@@ -61,6 +61,55 @@
       #{$selector}__example-4 {
         width: 20%;
       }
+    }
+  }
+
+  &__creator {
+    align-items: center;
+    padding: 12px 20px;
+    display: flex;
+    gap: 10px;
+    width: 1050px;
+    height: 84px;
+    background: #3B3B3B;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    #{$selector}__serial-number-container {
+      padding: 0;
+      gap: 10px;
+      isolation: isolate;
+      width: 30px;
+      height: 30px;
+      background: #2B2B2B;
+      border-radius: 20px;
+      font-family: 'Space Mono', sans-serif;
+      color: #858584;
+      position: relative;
+
+      #{$selector}__serial-number {
+        left: calc(50% - 10px/2);
+        top: calc(50% - 22px/2);
+        position: absolute;
+      }
+    }
+
+    #{$selector}__name {
+      width: 31%;
+    }
+
+    #{$selector}__change {
+      font-family: 'Space Mono', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #00AC4F;
+      width: 23%;
+    }
+
+    #{$selector}__nft-sold {
+      font-family: 'Space Mono', sans-serif;
+      width: 15%;
     }
   }
 }
