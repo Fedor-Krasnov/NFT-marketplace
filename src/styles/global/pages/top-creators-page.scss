@@ -96,14 +96,26 @@
       text-align: center;
       align-items: center;
       display: grid;
+      min-width: 30px;
     }
 
     #{$selector}__artist-details {
       width: 40%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+
+      img {
+        width: 60px;
+        min-width: 60px;
+      }
     }
 
     #{$selector}__name {
-      width: 31%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     #{$selector}__change {
