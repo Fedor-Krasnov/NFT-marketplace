@@ -11,9 +11,9 @@
     display: flex;
     min-height: 640px;
     position: relative;
-    margin: 0 -30px;
-    width: calc(100% + 60px);
-    padding: 0 30px;
+    margin: 0 -18px;
+    width: calc(100% + 36px);
+    padding: 0 18px;
 
     &::before {
       background: url("/src/media/background-fonts/magic-mashrooms.jpg") no-repeat center;
