@@ -50,6 +50,12 @@
     }
   }
 
+  .browse-marketplace-page & {
+    #{$selector}__marketplace {
+      display: none;
+    }
+  }
+
   .top-creators-page & {
     #{$selector}__rankings {
       display: none;
