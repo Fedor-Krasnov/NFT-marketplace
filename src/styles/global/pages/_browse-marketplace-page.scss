@@ -82,4 +82,30 @@
       }
     }
   }
+
+  &__offers {
+    background: #3B3B3B;
+    margin: 0 -18px;
+    padding-bottom: 80px;
+
+    ul {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+    }
+
+    #{$selector}__offers-container {
+      margin: 0 auto;
+      //max-width: 1046px;
+      padding-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .nft-card__details {
+      background-color: #2B2B2B;
+    }
+  }
 }
