@@ -23,18 +23,27 @@
     margin: 30px auto 80px;
     display: flex;
     max-width: 1050px;
+    width: 100%;
+    position: relative;
+
+    label {
+      width: 100%;
+    }
 
     .search {
-      width: 1026px;
+      max-width: 1050px;
       height: 60px;
       border: 1px solid #3B3B3B;
       border-radius: 20px;
       background: #2B2B2B;
-      position: relative;
+      width: 100%;
+      color: white;
+      padding: 0 50px 0 20px;
+      font-size: 14px;
+      outline: none;
     }
 
     .search::placeholder {
-      padding-left: 20px;
       font-size: 16px;
       line-height: 22px;
     }
@@ -42,17 +51,18 @@
 
   &__search-img {
     .magnifying-glass {
-      transform: translateX(-50px);
       display: flex;
       align-items: center;
       position: absolute;
-      top: 319px;
+      right: 20px;
+      top: 19px;
     }
   }
 
   &__choice-point {
     #{$selector}__trait {
       border: 1px solid #3B3B3B;
+      margin: 0 -18px;
     }
 
     #{$selector}__buttons {
