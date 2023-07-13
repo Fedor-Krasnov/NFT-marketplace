@@ -91,78 +91,78 @@
     }
   }
 
-  &__offers {
-    position: relative;
-    padding-bottom: 80px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: calc(100% + 18px * 2);
-      height: 3px;
-      bottom: 0;
-      left: 0;
-      background-color: #2B2B2B;
-      margin: 0 -18px;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: calc(100% + 18px * 2);
-      background: #3B3B3B;
-      left: 0;
-      z-index: -1;
-      bottom: 0;
-      margin: 0 -18px;
-    }
-
-    ul {
-      display: flex;
-      justify-content: space-between;
-      row-gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    li {
-      width: 33.33%;
-      padding: 0 10px;
-    }
-
-    #{$selector}__offers-container {
-      margin: 0 auto;
-      padding-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 30px;
-      max-width: 1050px;
-    }
-
-    .nft-card__details {
-      background-color: #2B2B2B;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    &__offers {
-      li {
-        width: 50%;
-        flex-wrap: wrap;
-        display: flex;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 645px) {
-    &__offers {
-      li {
-        width: 100%;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-      }
-    }
-  }
+  //&__offers {
+  //  position: relative;
+  //  padding-bottom: 80px;
+  //
+  //  &::after {
+  //    content: '';
+  //    position: absolute;
+  //    width: calc(100% + 18px * 2);
+  //    height: 3px;
+  //    bottom: 0;
+  //    left: 0;
+  //    background-color: #2B2B2B;
+  //    margin: 0 -18px;
+  //  }
+  //
+  //  &::before {
+  //    content: '';
+  //    position: absolute;
+  //    height: 100%;
+  //    width: calc(100% + 18px * 2);
+  //    background: #3B3B3B;
+  //    left: 0;
+  //    z-index: -1;
+  //    bottom: 0;
+  //    margin: 0 -18px;
+  //  }
+  //
+  //  ul {
+  //    display: flex;
+  //    justify-content: space-between;
+  //    row-gap: 30px;
+  //    flex-wrap: wrap;
+  //  }
+  //
+  //  li {
+  //    width: 33.33%;
+  //    padding: 0 10px;
+  //  }
+  //
+  //  #{$selector}__offers-container {
+  //    margin: 0 auto;
+  //    padding-top: 60px;
+  //    display: flex;
+  //    justify-content: space-between;
+  //    flex-wrap: wrap;
+  //    gap: 30px;
+  //    max-width: 1050px;
+  //  }
+  //
+  //  .nft-card__details {
+  //    background-color: #2B2B2B;
+  //  }
+  //}
+  //
+  //@media only screen and (max-width: 768px) {
+  //  &__offers {
+  //    li {
+  //      width: 50%;
+  //      flex-wrap: wrap;
+  //      display: flex;
+  //    }
+  //  }
+  //}
+  //
+  //@media only screen and (max-width: 645px) {
+  //  &__offers {
+  //    li {
+  //      width: 100%;
+  //      flex-wrap: wrap;
+  //      display: flex;
+  //      justify-content: center;
+  //    }
+  //  }
+  //}
 }
