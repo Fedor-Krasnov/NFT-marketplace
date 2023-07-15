@@ -1,4 +1,4 @@
-@use 'src/styles/global/mixins';
+@use 'src-old/styles/global/mixins';
 
 .connect-wallet {
   margin: 0 auto;
@@ -24,7 +24,7 @@
   }
 
   &__img {
-    background: url("/src/media/pages/image-placeholder-connect-wallet.png") no-repeat center;
+    background: url("/src-old/media/pages/image-placeholder-connect-wallet.png") no-repeat center;
     height: 100%;
     background-size: cover;
   }

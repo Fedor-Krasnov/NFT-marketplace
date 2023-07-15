@@ -1,4 +1,4 @@
-@use 'src/styles/global/mixins';
+@use 'src-old/styles/global/mixins';
 
 .auction {
   @include mixins.container1280;
@@ -16,7 +16,7 @@
     padding: 0 18px;
 
     &::before {
-      background: url("/src/media/background-fonts/magic-mashrooms.jpg") no-repeat center;
+      background: url("/src-old/media/background-fonts/magic-mashrooms.jpg") no-repeat center;
       background-size: cover;
       content: '';
       height: 100%;
@@ -75,7 +75,7 @@
   @media only screen and (max-width: 910px) {
     &__container {
       &::before {
-        background: url("/src/media/background-fonts/magic-mashrooms-adaptive-1.png") no-repeat center;
+        background: url("/src-old/media/background-fonts/magic-mashrooms-adaptive-1.png") no-repeat center;
         background-size: cover;
       }
     }
@@ -111,7 +111,7 @@
   @media only screen and (max-width: 450px) {
     &__container {
       &::before {
-        background: url("/src/media/background-fonts/magic-mashrooms-adaptive-2.png") no-repeat center;
+        background: url("/src-old/media/background-fonts/magic-mashrooms-adaptive-2.png") no-repeat center;
         background-size: cover;
       }
     }
