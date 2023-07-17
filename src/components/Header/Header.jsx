@@ -1,6 +1,7 @@
 import React from 'react';
 import headerStyles from './Header.scss';
 import { Logo } from '../units/Logo';
+import { Button } from '../units/Button';
 
 const Header = () => (
   <header className="header">
@@ -20,10 +21,7 @@ const Header = () => (
         </ul>
       </nav>
       <div className="header__sign-up">
-        <a href="/pages/create-account.html" className="button">
-          <img src="../src-old/media/icons/user.svg" alt="man" />
-          Sign Up
-        </a>
+        <Button title="Sign Up" to="/pages/create-account.html" />
       </div>
     </div>
     <div className="burger">
