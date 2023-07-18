@@ -20,7 +20,7 @@
   "rules": {
     "array-bracket-spacing": ["error", "never"],
     "arrow-body-style": ["error", "as-needed"],
-    "arrow-parens": ["error", "as-needed"],
+    "arrow-parens": ["error", "always"],
     "arrow-spacing": ["error"],
     "block-spacing": ["error", "always"],
     "brace-style": [
@@ -48,6 +48,30 @@
       2,
       {
         "SwitchCase": 1
+      }
+    ],
+    "import/newline-after-import": ["error",
+      {
+        "count": 1
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
+        "groups": ["external", "builtin", "parent", ["sibling", "index"]],
+        "newlines-between": "never",
+        "pathGroups": [
+          {
+            "group": "external",
+            "pattern": "react",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
       }
     ],
     "key-spacing": [
@@ -107,6 +131,7 @@
     "no-trailing-spaces": ["error"],
     "no-unneeded-ternary": ["error"],
     "no-unreachable": ["error"],
+    "no-unused-vars": ["off"],
     "no-use-before-define": [
       "error",
       {
@@ -122,7 +147,7 @@
     "object-curly-spacing": ["error", "always"],
     "object-shorthand": ["error", "always"],
     "operator-assignment": ["error", "always"],
-    "operator-linebreak": ["error", "before"],
+    "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
     "prefer-arrow-callback": ["error"],
     "prefer-const": ["error"],
     "prefer-numeric-literals": ["error"],
@@ -162,5 +187,12 @@
     ],
     "spaced-comment": ["error", "always"],
     "template-curly-spacing": ["error", "never"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
   }
 }
