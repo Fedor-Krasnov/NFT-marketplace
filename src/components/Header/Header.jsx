@@ -1,7 +1,8 @@
 import React from 'react';
-import headerStyles from './Header.scss';
-import { Logo } from '../units/Logo';
 import { Button } from '../units/Button';
+import { IconCode } from '../units/Icon/index.js';
+import { Logo } from '../units/Logo';
+import './Header.scss';
 
 const Header = () => (
   <header className="header">
@@ -21,7 +22,7 @@ const Header = () => (
         </ul>
       </nav>
       <div className="header__sign-up">
-        <Button title="Sign Up" to="/pages/create-account.html" />
+        <Button icon={IconCode.user} title="Sign Up" to="/pages/create-account.html" />
       </div>
     </div>
     <div className="burger">
