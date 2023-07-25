@@ -13,19 +13,6 @@
     display: flex;
     gap: 30px;
     align-items: center;
-
-    nav {
-      ul {
-        display: flex;
-        gap: 50px;
-
-        a {
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 22px;
-        }
-      }
-    }
   }
 
   .burger {
