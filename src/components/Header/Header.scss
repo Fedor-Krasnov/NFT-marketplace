@@ -37,30 +37,6 @@
     }
   }
 
-  .browse-marketplace-page & {
-    #{$selector}__marketplace {
-      display: none;
-    }
-  }
-
-  .top-creators-page & {
-    #{$selector}__rankings {
-      display: none;
-    }
-  }
-
-  .connect-wallet-page & {
-    #{$selector}__connect-wallet {
-      display: none;
-    }
-  }
-
-  .create-account-page & {
-    #{$selector}__sign-up {
-      display: none;
-    }
-  }
-
   @media only screen and (max-width: 945px) {
     .navbar {
       display: none;
