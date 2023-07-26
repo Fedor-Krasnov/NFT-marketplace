@@ -1,0 +1,25 @@
+.burger {
+  cursor: pointer;
+  display: none;
+
+  &__container {
+    gap: 5px;
+    display: grid;
+  }
+
+  span {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 12px;
+    border-radius: 2px;
+
+    &:nth-child(2) {
+      width: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 945px) {
+    display: grid;
+  }
+}
