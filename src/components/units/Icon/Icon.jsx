@@ -4,11 +4,13 @@ import iconsSvgPath from '../../../assets/media/icons/icons.svg';
 import './Icon.scss';
 
 export const IconCode = {
+  close: 'close',
   logo: 'logo',
   user: 'user',
 };
 
 const iconCodeToSize = {
+  [IconCode.close]: [20, 20],
   [IconCode.logo]: [32, 32],
   [IconCode.user]: [20, 20],
 };

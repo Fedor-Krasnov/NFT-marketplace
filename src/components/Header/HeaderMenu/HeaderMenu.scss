@@ -9,4 +9,15 @@
       line-height: 22px;
     }
   }
+
+  &_modal {
+    ul {
+      flex-direction: column;
+
+      a {
+        font-size: 26px;
+        line-height: 26px;
+      }
+    }
+  }
 }
