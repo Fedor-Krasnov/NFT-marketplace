@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Burger.scss';
 import { Modal } from '../../Modal';
-import { Button, IconCode } from '../../units';
-import { HeaderMenu } from '../HeaderMenu';
+import { ModalHeaderMenu } from '../../Modal/ModalHeaderMenu';
 
 const Burger = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,8 +15,7 @@ const Burger = () => {
       </div>
       {isModalOpen && (
         <Modal setIsModalOpen={setIsModalOpen}>
-          <HeaderMenu isModal />
-          <Button icon={IconCode.user} title="Sign Up" to="/pages/create-account.html" width="fill" />
+          <ModalHeaderMenu />
         </Modal>
       )}
     </div>
