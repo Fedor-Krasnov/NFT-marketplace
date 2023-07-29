@@ -17,7 +17,7 @@ const Burger = () => {
       {isModalOpen && (
         <Modal setIsModalOpen={setIsModalOpen}>
           <HeaderMenu isModal />
-          <Button icon={IconCode.user} title="Sign Up" to="/pages/create-account.html" />
+          <Button icon={IconCode.user} title="Sign Up" to="/pages/create-account.html" width="fill" />
         </Modal>
       )}
     </div>
