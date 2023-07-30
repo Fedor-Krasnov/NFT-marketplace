@@ -26,7 +26,7 @@ const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
         exitDone: 'modal_exit',
       }}
       in={isModalOpen}
-      timeout={300}
+      timeout={1000}
       unmountOnExit
     >
       <div className="modal">
