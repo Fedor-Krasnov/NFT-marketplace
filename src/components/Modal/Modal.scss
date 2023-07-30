@@ -24,11 +24,18 @@
   &__close {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    margin-left: auto;
 
     span {
       cursor: pointer;
       display: inline-flex;
     }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
 }

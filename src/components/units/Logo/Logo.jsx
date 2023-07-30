@@ -4,13 +4,13 @@ import { mainPageCheck } from '../../../helpers';
 import { Icon, IconCode } from '../Icon';
 import './Logo.scss';
 
-const Logo = () => {
+const Logo = ({ withoutText }) => {
   const isMainPage = mainPageCheck();
 
   const logo = (
     <>
       <Icon className="logo__icon" code={IconCode.logo} />
-      <span>NFT Marketplace</span>
+      {!withoutText && <span>NFT Marketplace</span>}
     </>
   );
 

@@ -4,10 +4,12 @@ import './Modal.scss';
 import { Icon, IconCode } from '../units/Icon';
 import { useWindowDimensions } from '../../hooks/useWindowDimensions.js';
 import { CSSTransition } from 'react-transition-group';
+import { Logo } from '../units/index.js';
 
 const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
   const { windowWidth } = useWindowDimensions();
   const maxModalWidth = 945;
+  const logoDisplayWidth = 425;
 
   useEffect(() => {
     if (windowWidth > maxModalWidth) {
@@ -28,10 +30,13 @@ const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
       unmountOnExit
     >
       <div className="modal">
-        <div className="modal__close">
-          <span onClick={() => setIsModalOpen(false)}>
-            <Icon code={IconCode.close} />
-          </span>
+        <div className="modal__header">
+          {logoDisplayWidth >= windowWidth && <Logo withoutText />}
+          <div className="modal__close">
+            <span onClick={() => setIsModalOpen(false)}>
+              <Icon code={IconCode.close} />
+            </span>
+          </div>
         </div>
         {children}
       </div>
