@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import './Modal.scss';
 import { Icon, IconCode } from '../units/Icon';
-import { useWindowDimensions } from '../../hooks/useWindowDimensions.js';
+import { useWindowDimensions } from '../../hooks';
 import { CSSTransition } from 'react-transition-group';
 import { Logo } from '../units/index.js';
 
