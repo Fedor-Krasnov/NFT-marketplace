@@ -10,6 +10,16 @@
   width: 100%;
   background: colors.$black-liquorice;
   padding: 25px 18px;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+
+  &_enter {
+    transform: translateX(0);
+  }
+
+  &_exit {
+    transform: translateX(100%);
+  }
 
   &__close {
     display: flex;

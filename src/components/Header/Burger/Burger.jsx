@@ -13,11 +13,9 @@ const Burger = () => {
         <span></span>
         <span></span>
       </div>
-      {isModalOpen && (
-        <Modal setIsModalOpen={setIsModalOpen}>
-          <ModalHeaderMenu />
-        </Modal>
-      )}
+      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
+        <ModalHeaderMenu />
+      </Modal>
     </div>
   );
 };
