@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.scss';
-import { HeaderMenu } from '../Header/HeaderMenu/index.js';
+import { Menu } from '../Menu/index.js';
 import { Logo } from '../units';
 
 const Footer = () => (
@@ -28,7 +28,7 @@ const Footer = () => (
         </div>
         <div>
           <h4>Explore</h4>
-          <HeaderMenu className="footer__header-menu" isGridRows />
+          <Menu className="footer__header-menu" isGridRows />
         </div>
         <div className="footer__weekly_digest">
           <h4 className="weekly_digest__title">Join our weekly digest</h4>

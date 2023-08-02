@@ -1,4 +1,4 @@
-export const headerMenuData = [
+export const menuData = [
   {
     path: '/pages/browse-marketplace.html',
     title: 'Marketplace',

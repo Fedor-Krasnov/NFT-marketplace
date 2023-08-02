@@ -1,11 +1,11 @@
 import React from 'react';
-import { HeaderMenu } from '../../Header/HeaderMenu';
+import { Menu } from '../../Menu';
 import { Button, IconCode } from '../../units';
 import './ModalHeaderMenu.scss';
 
 const ModalHeaderMenu = () => (
   <div className="modal-header-menu">
-    <HeaderMenu isModal />
+    <Menu isModal />
     <Button
       className="modal-header-menu__button"
       icon={IconCode.user}

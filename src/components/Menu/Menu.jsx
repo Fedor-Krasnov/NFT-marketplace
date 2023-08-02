@@ -1,22 +1,22 @@
 import React from 'react';
-import './HeaderMenu.scss';
+import './Menu.scss';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { headerMenuData } from '../../../mocks/headerMenuData.js';
+import { menuData } from '../../mocks/menuData.js';
 
-const HeaderMenu = ({ className, isGridRows, isModal }) => (
+const Menu = ({ className, isGridRows, isModal }) => (
   <nav
     className={classNames(
-      'header-menu',
+      'menu',
       {
-        'header-menu_modal': isModal,
-        'header-menu_grid-rows': isGridRows,
+        menu_modal: isModal,
+        'menu_grid-rows': isGridRows,
       },
       className,
     )}
   >
     <ul>
-      {headerMenuData.map(({ path, title }) => (
+      {menuData.map(({ path, title }) => (
         <li key={path}>
           <Link dangerouslySetInnerHTML={{ __html: title }} to={path} />
         </li>
@@ -25,4 +25,4 @@ const HeaderMenu = ({ className, isGridRows, isModal }) => (
   </nav>
 );
 
-export { HeaderMenu };
+export { Menu };
