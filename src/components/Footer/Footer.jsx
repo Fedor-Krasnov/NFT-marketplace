@@ -8,8 +8,8 @@ const Footer = () => (
     <div className="footer__container">
       <div className="footer__content">
         <div className="footer__copyright">
-          <Logo />
-          <p className="footer__down__title">NFT marketplace&nbsp;UI created with Anima for Figma.</p>
+          <Logo className="footer__logo" />
+          <p>NFT marketplace&nbsp;UI created with Anima for Figma.</p>
           <p>Join our community</p>
           <div className="footer__contacts">
             <a href="https://discord.com/" className="contact">
