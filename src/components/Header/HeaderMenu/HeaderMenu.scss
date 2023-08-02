@@ -10,6 +10,13 @@
     }
   }
 
+  &_grid-rows {
+    ul {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
   &_modal {
     ul {
       flex-direction: column;

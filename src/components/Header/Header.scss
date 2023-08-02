@@ -1,3 +1,5 @@
+@use 'src/assets/styles/variables/globals';
+
 .header {
   $selector: &;
 
@@ -5,7 +7,7 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  max-width: 1180px;
+  max-width: globals.$max-width;
   margin: auto;
   align-items: center;
 
