@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.scss';
 import { Menu } from '../Menu/index.js';
 import { Logo } from '../units';
+import { Community } from './Community/index.js';
 
 const Footer = () => (
   <footer className="footer">
@@ -10,25 +11,11 @@ const Footer = () => (
         <div className="footer__copyright">
           <Logo className="footer__logo" />
           <p>NFT marketplace&nbsp;UI created with Anima for Figma.</p>
-          <p>Join our community</p>
-          <div className="footer__contacts">
-            <a href="https://discord.com/" className="contact">
-              <img src="../src-old/media/icons/footer/discordlogo.png" alt="discordlogo" className="contact__img" />
-            </a>
-            <a href="https://www.youtube.com/channel/UC3Q7g8MvNPqKMiVj5ltsYfQ">
-              <img src="../src-old/media/icons/footer/youtubelogo.png" alt="youtubelogo" className="contact__img" />
-            </a>
-            <a href="/src-old/media/icons/footer/twitter-ban.jfif">
-              <img src="../src-old/media/icons/footer/twitterlogo.png" alt="twitterlogo" className="contact__img" />
-            </a>
-            <a href="https://akket.com/wp-content/uploads/2022/03/Servis-nedostupen.-Instagram-navsegda-zablokirovali-v-Rossii-1.jpg">
-              <img src="../src-old/media/icons/footer/instagramlogo.png" alt="instagramlogo" className="contact__img" />
-            </a>
-          </div>
+          <Community className="footer__community" />
         </div>
         <div>
           <h4>Explore</h4>
-          <Menu className="footer__header-menu" isGridRows />
+          <Menu className="footer__menu" isGridRows />
         </div>
         <div className="footer__weekly_digest">
           <h4 className="weekly_digest__title">Join our weekly digest</h4>

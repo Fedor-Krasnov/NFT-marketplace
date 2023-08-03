@@ -5,14 +5,20 @@ import './Icon.scss';
 
 export const IconCode = {
   close: 'close',
+  discord: 'discord',
+  instagram: 'instagram',
   logo: 'logo',
   user: 'user',
+  youtube: 'youtube',
 };
 
 const iconCodeToSize = {
   [IconCode.close]: [20, 20],
+  [IconCode.discord]: [32, 32],
+  [IconCode.instagram]: [32, 32],
   [IconCode.logo]: [32, 32],
   [IconCode.user]: [20, 20],
+  [IconCode.youtube]: [32, 32],
 };
 
 const iconClassName = 'icon';
