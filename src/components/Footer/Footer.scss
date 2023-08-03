@@ -44,13 +44,6 @@
       margin-bottom: 35px;
       height: 35px;
     }
-
-    #{$selector}__weekly_digest {
-      p {
-        padding-bottom: 20px;
-        max-width: 350px;
-      }
-    }
   }
 
   &__was_done {
@@ -65,21 +58,6 @@
   @media only screen and (max-width: 930px) {
     &__content {
       display: grid;
-
-      .subscription {
-        display: flex;
-
-        .input__email {
-          border-radius: 20px 0 0 20px;
-          height: 60px;
-        }
-
-        .button {
-          transform: translateX(-30px);
-          width: calc(100% + 30px);
-          height: 60px;
-        }
-      }
     }
   }
 
@@ -89,30 +67,8 @@
     }
 
     &__content {
-      .subscription {
-        display: grid;
-        row-gap: 20px;
-
-        .input__email {
-          border-radius: 20px;
-          height: 40px;
-        }
-
-        .button {
-          width: 100%;
-          height: 40px;
-          transform: translateX(0);
-        }
-      }
-
       #{$selector}__down__title {
         font-size: 15px;
-      }
-
-      #{$selector}__weekly_digest {
-        p {
-          font-size: 15px;
-        }
       }
     }
 

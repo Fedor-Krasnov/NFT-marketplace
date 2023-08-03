@@ -1,8 +1,9 @@
 import React from 'react';
 import './Footer.scss';
-import { Menu } from '../Menu/index.js';
+import { Menu } from '../Menu';
+import { Subscription } from '../Subscription';
 import { Logo } from '../units';
-import { Community } from './Community/index.js';
+import { Community } from './Community';
 
 const Footer = () => (
   <footer className="footer">
@@ -17,16 +18,7 @@ const Footer = () => (
           <h4>Explore</h4>
           <Menu className="footer__menu" isGridRows />
         </div>
-        <div className="footer__weekly_digest">
-          <h4 className="weekly_digest__title">Join our weekly digest</h4>
-          <p>Get exclusive promotions &amp;&nbsp;updates straight to&nbsp;your inbox.</p>
-          <label className="subscription">
-            <input placeholder="Enter your email here" className="input__email" />
-            <div>
-              <a className="button">Subscribe</a>
-            </div>
-          </label>
-        </div>
+        <Subscription />
       </div>
       <div className="footer__was_done">
         <p>Ⓒ NFT Market. Use this template freely.</p>
