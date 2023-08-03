@@ -31,7 +31,7 @@
       }
     ],
     "camelcase": ["error"],
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": ["error", "only-multiline"],
     "comma-spacing": [
       "error",
       {
