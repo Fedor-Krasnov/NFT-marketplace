@@ -7,7 +7,7 @@ const Subscription = () => (
     <h4>Join our weekly digest</h4>
     <p>Get exclusive promotions &amp;&nbsp;updates straight to&nbsp;your inbox.</p>
     <label className="subscription__label">
-      <input placeholder="Enter your email here" className="input__email" />
+      <input className="input__email" placeholder="Enter your email here" />
       <div>
         <Button title="Subscribe" />
       </div>

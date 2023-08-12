@@ -115,7 +115,7 @@
         "allowParens": true
       }
     ],
-    "no-console": ["off"],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-constant-condition": [
       "error",
       {
@@ -154,6 +154,7 @@
     "prefer-rest-params": ["error"],
     "prefer-spread": ["error"],
     "quotes": ["error", "single"],
+    "react/jsx-sort-props": ["error", { "reservedFirst": ["key", "ref"] }],
     "react/prop-types": "off",
     "rest-spread-spacing": ["error", "never"],
     "semi": ["error", "always"],

@@ -1,10 +1,10 @@
 import React from 'react';
+import { Menu } from '../Menu';
 import { Button } from '../units/Button';
 import { IconCode } from '../units/Icon';
 import { Logo } from '../units/Logo';
 import './Header.scss';
 import { Burger } from './Burger';
-import { Menu } from '../Menu';
 
 const Header = () => (
   <header className="header">
