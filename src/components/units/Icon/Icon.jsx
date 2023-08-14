@@ -8,6 +8,7 @@ export const IconCode = {
   discord: 'discord',
   instagram: 'instagram',
   logo: 'logo',
+  rocket: 'rocket',
   user: 'user',
   youtube: 'youtube',
 };
@@ -17,6 +18,7 @@ const iconCodeToSize = {
   [IconCode.discord]: [32, 32],
   [IconCode.instagram]: [32, 32],
   [IconCode.logo]: [32, 32],
+  [IconCode.rocket]: [32, 32],
   [IconCode.user]: [20, 20],
   [IconCode.youtube]: [32, 32],
 };
