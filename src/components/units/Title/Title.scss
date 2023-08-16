@@ -1,0 +1,19 @@
+.title {
+  h1 {
+    & + p {
+      margin-top: 20px;
+    }
+  }
+
+  .h2 {
+    & + p {
+      margin-top: 10px;
+    }
+  }
+
+  .h4 {
+    & + p {
+      margin-top: 10px;
+    }
+  }
+}

@@ -27,10 +27,6 @@ h1,
   @media only screen and (max-width: 1024px) {
     font-size: clamp(28px, 6.6vw, 67px);
   }
-
-  & + p {
-    margin-top: 20px;
-  }
 }
 
 h2,
@@ -38,10 +34,6 @@ h2,
   font-weight: 600;
   font-size: 38px;
   line-height: 39px;
-
-  & + p {
-    margin-top: 10px;
-  }
 }
 
 h4,
@@ -49,10 +41,6 @@ h4,
   font-weight: 700;
   font-size: 22px;
   line-height: 35px;
-
-  & + p {
-    margin-top: 10px;
-  }
 }
 
 a {
