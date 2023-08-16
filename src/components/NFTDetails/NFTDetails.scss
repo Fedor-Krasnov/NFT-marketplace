@@ -1,0 +1,50 @@
+.nft-details {
+  padding: 22px 20px;
+  background-color: #3B3B3B;
+  display: grid;
+  row-gap: 10px;
+
+  h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  &__user {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    &-avatar {
+      height: 24px;
+      width: 24px;
+    }
+
+    &-name {
+      span {
+        font-family: 'Space Mono', sans-serif;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Mono', sans-serif;
+    margin-top: 15px;
+
+    dl {
+      &:nth-child(2) {
+        text-align: right;
+      }
+    }
+
+    dt {
+      color: #858584;
+    }
+
+    dd {
+      margin-top: 8px;
+    }
+  }
+}

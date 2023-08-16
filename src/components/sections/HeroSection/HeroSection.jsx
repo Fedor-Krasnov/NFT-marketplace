@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroSection.scss';
 import { heroSection } from '../../../mocks';
+import { NFTCard } from '../../NFTCard';
 import { Button, IconCode, Statistics } from '../../units';
 import { Title } from '../../units/Title';
 
@@ -15,7 +16,9 @@ const HeroSection = () => {
         <Button icon={IconCode.rocket} title="Get Started" />
         <Statistics className="hero-section__statistics" statistics={statistics} />
       </div>
-      <div className="digital-art__img digital-art__img--desktop">{/* {{ > units / digital - art_nft - card}}*/}</div>
+      <div className="digital-art__img digital-art__img--desktop">
+        <NFTCard />
+      </div>
     </section>
   );
 };
