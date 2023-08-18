@@ -9,14 +9,16 @@ const HeroSection = () => {
   const { title, description, statistics } = heroSection;
 
   return (
-    <section className="hero-section digital-art">
-      <div className="digital-art__details">
+    <section className="hero-section">
+      <div className="hero-section__details">
         <Title description={description} title={title} />
-        <div className="digital-art__img digital-art__img--mobile">{/* {{ > units / digital - art_nft - card}}*/}</div>
+        <div className="hero-section__img hero-section__img--mobile">
+          <NFTCard />
+        </div>
         <Button icon={IconCode.rocket} title="Get Started" />
         <Statistics className="hero-section__statistics" statistics={statistics} />
       </div>
-      <div className="digital-art__img digital-art__img--desktop">
+      <div className="hero-section__img hero-section__img--desktop">
         <NFTCard />
       </div>
     </section>
