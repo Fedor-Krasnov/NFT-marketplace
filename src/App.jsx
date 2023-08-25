@@ -4,15 +4,13 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { HeroSection, TrendingCollection } from './components/sections';
 
-function App() {
-  return (
-    <Router>
-      <Header />
-      <HeroSection />
-      <TrendingCollection />
-      <Footer />
-    </Router>
-  );
-}
+const App = () => (
+  <Router>
+    <Header />
+    <HeroSection />
+    <TrendingCollection />
+    <Footer />
+  </Router>
+);
 
-export default App;
+export { App };
