@@ -2,4 +2,9 @@
   border-radius: 20px;
   overflow: hidden;
   max-width: 510px;
+
+  &__details {
+    padding: 22px 20px;
+    background-color: #3B3B3B;
+  }
 }

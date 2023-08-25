@@ -7,7 +7,9 @@ const NFTCard = () => (
     <div className="nft-card__img">
       <img alt="nft-card" src="../../src-old/media/nft-cards/space-walking.jpg" />
     </div>
-    <NFTDetails />
+    <div className="nft-card__details">
+      <NFTDetails />
+    </div>
   </div>
 );
 

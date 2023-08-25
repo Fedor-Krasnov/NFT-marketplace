@@ -1,0 +1,50 @@
+.nft-collection {
+  max-width: 330px;
+
+  img {
+    width: 100%;
+  }
+
+  &__details {
+    margin-top: 15px;
+  }
+
+  &__secondary-nft {
+    gap: 15px;
+    padding-top: 15px;
+    display: flex;
+
+    img {
+      border-radius: 20px;
+    }
+
+    & > div {
+      width: 33.33%;
+    }
+  }
+
+  .main_nft {
+    border-radius: 32px;
+  }
+
+  .nft-counter__border {
+    background-color: #A259FF;
+    height: 100%;
+    border-radius: 20px;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 920px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
+}
