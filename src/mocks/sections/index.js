@@ -1,2 +1,2 @@
-export { heroSection } from './heroSection';
-export { trendingCollection } from './trendingCollection';
+export { heroSectionData } from './heroSectionData';
+export { trendingCollectionData } from './trendingCollectionData';

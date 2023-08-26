@@ -1,16 +1,18 @@
 import React from 'react';
 import './NFTDetails.scss';
 
-const NFTDetails = () => (
-  <div className="nft-details">
-    <h3>Space Walking</h3>
-    <div className="nft-details__user">
-      <div className="nft-details__user-avatar">
-        <img alt="avatar" src="../../src-old/media/users/user-14.svg" />
+const NFTDetails = ({ data }) => {
+  const { image, title, username } = data;
+
+  return (
+    <div className="nft-details">
+      <h3 dangerouslySetInnerHTML={{ __html: title }} />
+      <div className="nft-details__user">
+        <div className="nft-details__avatar">{image && <img alt="avatar" src={image.src} />}</div>
+        <div className="nft-details__username" dangerouslySetInnerHTML={{ __html: username }} />
       </div>
-      <div className="nft-details__user-name">Animakid</div>
     </div>
-  </div>
-);
+  );
+};
 
 export { NFTDetails };

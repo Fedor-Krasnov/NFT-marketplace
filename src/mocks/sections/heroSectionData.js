@@ -1,4 +1,4 @@
-export const heroSection = {
+export const heroSectionData = {
   title: 'Discover digital art &amp;&nbsp;Collect NFTs',
   description:
     'NFT marketplace&nbsp;UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.',
@@ -16,4 +16,13 @@ export const heroSection = {
       description: 'Artists',
     },
   ],
+  nftCard: {
+    nftDetails: {
+      title: 'Space Walking',
+      image: {
+        src: '../../src-old/media/users/user-14.svg',
+      },
+      username: 'Animakid',
+    },
+  },
 };

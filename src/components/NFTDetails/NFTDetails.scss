@@ -12,16 +12,16 @@
     display: flex;
     gap: 12px;
     align-items: center;
+  }
 
-    &-avatar {
-      height: 24px;
-      width: 24px;
-    }
+  &__avatar {
+    height: 24px;
+    width: 24px;
+  }
 
-    &-name {
-      span {
-        font-family: 'Space Mono', sans-serif;
-      }
+  &__username {
+    span {
+      font-family: 'Space Mono', sans-serif;
     }
   }
 
