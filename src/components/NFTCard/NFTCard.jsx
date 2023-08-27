@@ -7,7 +7,7 @@ const NFTCard = ({ data }) => {
 
   return (
     <div className="nft-card">
-      <div className="nft-card__img">
+      <div>
         <img alt={image.alt} src={image.src} />
       </div>
       <div className="nft-card__details">
