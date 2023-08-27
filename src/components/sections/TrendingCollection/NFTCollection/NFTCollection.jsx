@@ -1,13 +1,14 @@
 import React from 'react';
 import './NFTCollection.scss';
+import classNames from 'classnames';
 import { NFTDetails } from '../../../NFTDetails/index.js';
 
-const NFTCollection = ({ data }) => {
+const NFTCollection = ({ className, data }) => {
   const { nftCollections, nftDetails } = data;
   const { mainImage, images, counts } = nftCollections;
 
   return (
-    <div className="nft-collection">
+    <div className={classNames('nft-collection', className)}>
       <img alt={mainImage.alt} className="nft-collection__main-image" src={mainImage.src} />
       <div className="nft-collection__images">
         {images.map(({ image }) => (
