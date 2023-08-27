@@ -4,29 +4,32 @@ export const trendingCollectionData = {
   nftCollection: [
     {
       nftDetails: {
-        title: 'Space Walking',
+        title: 'DSGN Animals',
         image: {
-          src: '../../src-old/media/users/user-14.svg',
+          alt: 'MrFox',
+          src: 'src/assets/media/images/users/2.jpg',
         },
-        username: 'Animakid1',
+        username: 'MrFox',
       },
     },
     {
       nftDetails: {
-        title: 'Space Walking',
+        title: 'Magic Mushrooms',
         image: {
-          src: '../../src-old/media/users/user-14.svg',
+          alt: 'Shroomie',
+          src: 'src/assets/media/images/users/3.jpg',
         },
-        username: 'Animakid2',
+        username: 'Shroomie',
       },
     },
     {
       nftDetails: {
-        title: 'Space Walking',
+        title: 'Disco Machines',
         image: {
-          src: '../../src-old/media/users/user-14.svg',
+          alt: 'BeKind2Robots',
+          src: 'src/assets/media/images/users/4.jpg',
         },
-        username: 'Animakid3',
+        username: 'BeKind2Robots',
       },
     },
   ],

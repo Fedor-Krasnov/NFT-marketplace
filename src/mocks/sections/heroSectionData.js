@@ -24,7 +24,7 @@ export const heroSectionData = {
     nftDetails: {
       title: 'Space Walking',
       image: {
-        src: '../../src-old/media/users/user-14.svg',
+        src: 'src/assets/media/images/users/1.jpg',
       },
       username: 'Animakid',
     },
