@@ -17,6 +17,10 @@ export const heroSectionData = {
     },
   ],
   nftCard: {
+    image: {
+      alt: 'NFT Card',
+      src: 'src/assets/media/images/nft-cards/1.jpg',
+    },
     nftDetails: {
       title: 'Space Walking',
       image: {
