@@ -9,7 +9,7 @@
     margin-top: 15px;
   }
 
-  &__secondary-nft {
+  &__images {
     gap: 15px;
     padding-top: 15px;
     display: flex;
@@ -23,11 +23,11 @@
     }
   }
 
-  .main_nft {
+  &__main-image {
     border-radius: 32px;
   }
 
-  .nft-counter__border {
+  &__counts {
     background-color: #A259FF;
     height: 100%;
     border-radius: 20px;

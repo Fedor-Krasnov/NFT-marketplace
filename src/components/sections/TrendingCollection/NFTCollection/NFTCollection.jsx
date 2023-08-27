@@ -3,21 +3,21 @@ import './NFTCollection.scss';
 import { NFTDetails } from '../../../NFTDetails/index.js';
 
 const NFTCollection = ({ data }) => {
-  const { nftDetails } = data;
+  const { nftCollections, nftDetails } = data;
+  const { mainImage, images, counts } = nftCollections;
 
   return (
     <div className="nft-collection">
-      <img alt="nft" className="main_nft" src="../../src-old/media/nft-cards/dog-nft.svg" />
-      <div className="nft-collection__secondary-nft">
-        <div>
-          <img alt="nft" src="../../src-old/media/nft-cards/cat-nft.svg" />
-        </div>
-        <div>
-          <img alt="nft" src="../../src-old/media/nft-cards/bear-nft.svg" />
-        </div>
+      <img alt={mainImage.alt} className="nft-collection__main-image" src={mainImage.src} />
+      <div className="nft-collection__images">
+        {images.map(({ image }) => (
+          <div key={image.src}>
+            <img alt={image.alt} src={image.src} />
+          </div>
+        ))}
         <div>
           <a href="">
-            <div className="nft-counter__border">1488+</div>
+            <div className="nft-collection__counts">{counts}+</div>
           </a>
         </div>
       </div>
