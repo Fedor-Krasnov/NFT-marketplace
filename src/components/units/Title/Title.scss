@@ -1,4 +1,9 @@
 .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+
   h1 {
     & + p {
       margin-top: 20px;
@@ -14,6 +19,12 @@
   .h4 {
     & + p {
       margin-top: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__button {
+      display: none;
     }
   }
 }
