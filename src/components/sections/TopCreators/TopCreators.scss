@@ -1,0 +1,21 @@
+@use '../../../../src-old/styles/global/mixins';
+
+.top-creators {
+  display: grid;
+  row-gap: 60px;
+}
+
+@media only screen and (max-width: 615px) {
+  .section__top-creators {
+    .top-creators__title {
+      h2 {
+
+      }
+
+      p {
+        line-height: 25px;
+        font-size: clamp(14px, 3.5vw, 22px);
+      }
+    }
+  }
+}

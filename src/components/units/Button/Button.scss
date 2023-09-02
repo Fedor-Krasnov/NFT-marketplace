@@ -1,3 +1,5 @@
+@use 'src/assets/styles/variables/colors';
+
 .button {
   display: flex;
   font-size: 16px;
@@ -8,7 +10,7 @@
   padding: 0 30px;
   gap: 12px;
   height: 60px;
-  background: #A259FF;
+  background: colors.$purple;
   border-radius: 20px;
   color: white;
   border: none;
@@ -23,7 +25,11 @@
     font-size: 16px;
     background-color: transparent;
     border-radius: 20px;
-    border: 2px solid #A259FF;
+    border: 2px solid colors.$purple;
+
+    svg {
+      fill: colors.$purple;
+    }
   }
 
   &_secondary {

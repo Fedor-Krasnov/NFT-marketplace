@@ -10,7 +10,7 @@ const Title = ({ buttonIcon, buttonTitle, description, heading, title }) => (
     </div>
     {buttonTitle && (
       <div className="title__button">
-        <Button icon={buttonIcon} title={buttonTitle} />
+        <Button icon={buttonIcon} outline title={buttonTitle} />
       </div>
     )}
   </div>
