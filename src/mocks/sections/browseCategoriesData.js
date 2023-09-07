@@ -5,10 +5,10 @@ export const browseCategoriesData = {
       id: 1,
       image: {
         alt: 'Art',
-        src: 'src-old/media/nft-cards/nft-categories-1.svg',
+        src: 'src/assets/media/images/categories/art.jpg',
       },
       icon: {
-        src: 'src-old/media/icons/browse-categories/paint-brush.svg',
+        src: 'src/assets/media/images/categories/icons/art.svg',
       },
       category: 'Art',
     },
@@ -16,10 +16,10 @@ export const browseCategoriesData = {
       id: 2,
       image: {
         alt: 'Collectibles',
-        src: 'src-old/media/nft-cards/nft-categories-2.svg',
+        src: 'src/assets/media/images/categories/collectibles.jpg',
       },
       icon: {
-        src: 'src-old/media/icons/browse-categories/swatches.svg',
+        src: 'src/assets/media/images/categories/icons/collectibles.svg',
       },
       category: 'Collectibles',
     },
@@ -27,10 +27,10 @@ export const browseCategoriesData = {
       id: 3,
       image: {
         alt: 'Music',
-        src: 'src-old/media/nft-cards/nft-categories-3.svg',
+        src: 'src/assets/media/images/categories/music.jpg',
       },
       icon: {
-        src: 'src-old/media/icons/browse-categories/music-notes.svg',
+        src: 'src/assets/media/images/categories/icons/music.svg',
       },
       category: 'Music',
     },
@@ -38,10 +38,10 @@ export const browseCategoriesData = {
       id: 4,
       image: {
         alt: 'Photography',
-        src: 'src-old/media/nft-cards/nft-categories-4.svg',
+        src: 'src/assets/media/images/categories/photography.jpg',
       },
       icon: {
-        src: 'src-old/media/icons/browse-categories/camera.svg',
+        src: 'src/assets/media/images/categories/icons/photography.svg',
       },
       category: 'Photography',
     },
@@ -49,10 +49,10 @@ export const browseCategoriesData = {
       id: 5,
       image: {
         alt: 'Video',
-        src: 'src-old/media/nft-cards/nft-categories-5.svg',
+        src: 'src/assets/media/images/categories/video.jpg',
       },
       icon: {
-        src: 'src-old/media/icons/browse-categories/video-camera.svg',
+        src: 'src/assets/media/images/categories/icons/video.svg',
       },
       category: 'Video',
     },
@@ -60,10 +60,10 @@ export const browseCategoriesData = {
       id: 6,
       image: {
         alt: 'Utility',
-        src: 'src-old/media/nft-cards/nft-categories-6.svg',
+        src: 'src/assets/media/images/categories/utility.jpg',
       },
       icon: {
-        src: 'src-old/media/icons/browse-categories/magicwand.svg',
+        src: 'src/assets/media/images/categories/icons/utility.svg',
       },
       category: 'Utility',
     },
@@ -71,10 +71,10 @@ export const browseCategoriesData = {
       id: 7,
       image: {
         alt: 'Sport',
-        src: 'src-old/media/nft-cards/nft-categories-7.svg',
+        src: 'src/assets/media/images/categories/sport.jpg',
       },
       icon: {
-        src: 'src-old/media/icons/browse-categories/basketball.svg',
+        src: 'src/assets/media/images/categories/icons/sport.svg',
       },
       category: 'Sport',
     },
@@ -82,10 +82,10 @@ export const browseCategoriesData = {
       id: 8,
       image: {
         alt: 'Virtual Worlds',
-        src: 'src-old/media/nft-cards/nft-categories-8.svg',
+        src: 'src/assets/media/images/categories/virtual-worlds.jpg',
       },
       icon: {
-        src: 'src-old/media/icons/browse-categories/planet.svg',
+        src: 'src/assets/media/images/categories/icons/virtual-worlds.svg',
       },
       category: 'Virtual Worlds',
     },

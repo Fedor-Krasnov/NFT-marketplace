@@ -25,7 +25,7 @@ const CategorySelection = ({ data }) => {
       {/*      <div className="nft-card__img">*/}
       {/*        <img alt="Nft card" src="../../media/nft-cards/nft-categories-8.svg" />*/}
       {/*        <div className="nft-card__icon">*/}
-      {/*          <img alt="Nft card icon" src="../../media/icons/browse-categories/planet.svg" />*/}
+      {/*          <img alt="Nft card icon" src="../../media/icons/browse-categories/virtual-worlds.svg" />*/}
       {/*        </div>*/}
       {/*      </div>*/}
       {/*      <div className="nft-card__details nft-details">*/}
