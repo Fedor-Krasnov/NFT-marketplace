@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
-import { HeroSection, TopCreators, TrendingCollection } from './components/sections';
+import { BrowseCategories, HeroSection, TopCreators, TrendingCollection } from './components/sections';
 
 const App = () => (
   <Router>
@@ -10,6 +10,7 @@ const App = () => (
     <HeroSection />
     <TrendingCollection />
     <TopCreators />
+    <BrowseCategories />
     <Footer />
   </Router>
 );
