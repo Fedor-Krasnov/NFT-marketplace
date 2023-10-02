@@ -1,11 +1,17 @@
 import React from 'react';
 import './DiscoverMoreNFTs.scss';
-import { discoverMoreNfTsData } from '../../../mocks';
-import { Title } from '../../units/index.js';
+import { discoverMoreNfTsData, topCreatorsData } from '../../../mocks';
+import { IconCode, Title } from '../../units/index.js';
 
 const DiscoverMoreNfTs = () => (
   <section>
-    <Title />
+    <Title
+      buttonIcon={IconCode.eye}
+      buttonTitle={discoverMoreNfTsData.buttonTitle}
+      description={discoverMoreNfTsData.description}
+      heading="h2"
+      title={discoverMoreNfTsData.title}
+    />
   </section>
 );
 

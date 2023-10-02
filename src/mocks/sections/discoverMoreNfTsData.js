@@ -1,3 +1,5 @@
 export const discoverMoreNfTsData = {
-  title: '',
+  title: 'Discover More NFTs',
+  description: 'Explore new trending NFTs',
+  buttonTitle: 'See All',
 };
