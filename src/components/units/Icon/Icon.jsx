@@ -11,6 +11,7 @@ export const IconCode = {
   rocket: 'rocket',
   user: 'user',
   youtube: 'youtube',
+  eye: 'eye',
 };
 
 const iconCodeToSize = {
@@ -21,6 +22,7 @@ const iconCodeToSize = {
   [IconCode.rocket]: [32, 32],
   [IconCode.user]: [20, 20],
   [IconCode.youtube]: [32, 32],
+  [IconCode.eye]: [25, 20],
 };
 
 const iconClassName = 'icon';
