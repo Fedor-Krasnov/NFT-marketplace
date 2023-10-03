@@ -4,7 +4,7 @@ import { discoverMoreNfTsData, topCreatorsData } from '../../../mocks';
 import { IconCode, Title } from '../../units/index.js';
 
 const DiscoverMoreNfTs = () => (
-  <section>
+  <section className="discover-more-nfts">
     <Title
       buttonIcon={IconCode.eye}
       buttonTitle={discoverMoreNfTsData.buttonTitle}
