@@ -28,7 +28,7 @@ export const trendingCollectionData = {
         title: 'DSGN Animals',
         image: {
           alt: 'MrFox',
-          src: 'src/assets/media/images/users/user-6.jpg',
+          src: 'src/assets/media/images/users/user-6.png',
         },
         username: 'MrFox',
       },
@@ -59,7 +59,7 @@ export const trendingCollectionData = {
         title: 'Magic Mushrooms',
         image: {
           alt: 'Shroomie',
-          src: 'src/assets/media/images/users/user-7.jpg',
+          src: 'src/assets/media/images/users/user-7.png',
         },
         username: 'Shroomie',
       },
@@ -90,7 +90,7 @@ export const trendingCollectionData = {
         title: 'Disco Machines',
         image: {
           alt: 'BeKind2Robots',
-          src: 'src/assets/media/images/users/user-13.jpg',
+          src: 'src/assets/media/images/users/user-13.png',
         },
         username: 'BeKind2Robots',
       },

@@ -6,7 +6,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'Keepitreal',
-        src: 'src/assets/media/images/users/user-1.jpg',
+        src: 'src/assets/media/images/users/user-1.png',
       },
       userName: 'Keepitreal',
       totalSales: '34.53 ETH',
@@ -14,7 +14,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'DigiLab',
-        src: 'src/assets/media/images/users/user-2.jpg',
+        src: 'src/assets/media/images/users/user-2.png',
       },
       userName: 'DigiLab',
       totalSales: '78.56 ETH',
@@ -22,7 +22,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'GravityOne',
-        src: 'src/assets/media/images/users/user-3.jpg',
+        src: 'src/assets/media/images/users/user-3.png',
       },
       userName: 'GravityOne',
       totalSales: '44.58 ETH',
@@ -30,7 +30,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'Juanie',
-        src: 'src/assets/media/images/users/user-4.jpg',
+        src: 'src/assets/media/images/users/user-4.png',
       },
       userName: 'Juanie',
       totalSales: '56.89 ETH',
@@ -38,7 +38,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'BlueWhale',
-        src: 'src/assets/media/images/users/user-5.jpg',
+        src: 'src/assets/media/images/users/user-5.png',
       },
       userName: 'BlueWhale',
       totalSales: '74.68 ETH',
@@ -46,7 +46,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'mr fox',
-        src: 'src/assets/media/images/users/user-6.jpg',
+        src: 'src/assets/media/images/users/user-6.png',
       },
       userName: 'mr fox',
       totalSales: '45.63 ETH',
@@ -54,7 +54,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'Shroomie',
-        src: 'src/assets/media/images/users/user-7.jpg',
+        src: 'src/assets/media/images/users/user-7.png',
       },
       userName: 'Shroomie',
       totalSales: '69.13 ETH',
@@ -62,7 +62,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'robotica',
-        src: 'src/assets/media/images/users/user-8.jpg',
+        src: 'src/assets/media/images/users/user-8.png',
       },
       userName: 'robotica',
       totalSales: '89.61 ETH',
@@ -70,7 +70,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'RustyRobot',
-        src: 'src/assets/media/images/users/user-9.jpg',
+        src: 'src/assets/media/images/users/user-9.png',
       },
       userName: 'RustyRobot',
       totalSales: '28.75 ETH',
@@ -78,7 +78,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'animakid',
-        src: 'src/assets/media/images/users/user-10.jpg',
+        src: 'src/assets/media/images/users/user-10.png',
       },
       userName: 'animakid',
       totalSales: '82.61 ETH',
@@ -86,7 +86,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'Dotgu',
-        src: 'src/assets/media/images/users/user-11.jpg',
+        src: 'src/assets/media/images/users/user-11.png',
       },
       userName: 'Dotgu',
       totalSales: '98.26 ETH',
@@ -94,7 +94,7 @@ export const topCreatorsData = {
     {
       image: {
         alt: 'Ghiblier',
-        src: 'src/assets/media/images/users/user-12.jpg',
+        src: 'src/assets/media/images/users/user-12.png',
       },
       userName: 'Ghiblier',
       totalSales: '65.73 ETH',
