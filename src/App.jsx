@@ -9,6 +9,7 @@ import {
   TopCreators,
   TrendingCollection,
 } from './components/sections';
+import { HowItWorks } from './components/sections/HowItWorks/HowItWorks.jsx';
 
 const App = () => (
   <Router>
@@ -18,6 +19,7 @@ const App = () => (
     <TopCreators />
     <BrowseCategories />
     <DiscoverMoreNfTs />
+    <HowItWorks />
     <Footer />
   </Router>
 );
