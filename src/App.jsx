@@ -8,6 +8,7 @@ import {
   HeroSection,
   TopCreators,
   TrendingCollection,
+  WeeklyDigest,
 } from './components/sections';
 import { HowItWorks } from './components/sections/HowItWorks/HowItWorks.jsx';
 
@@ -20,6 +21,7 @@ const App = () => (
     <BrowseCategories />
     <DiscoverMoreNfTs />
     <HowItWorks />
+    <WeeklyDigest />
     <Footer />
   </Router>
 );
