@@ -7,13 +7,15 @@
 
   h4 {
     font-family: 'Space Mono', sans-serif;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 
   p,
   &__menu {
     color: colors.$gray;
     font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 390px;
 
     a {
       color: colors.$gray;
