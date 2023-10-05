@@ -1,9 +1,11 @@
 export const footerData = {
-  logo: {
-    description: {
-      text1: 'NFT marketplace\u00A0UI created with Anima for Figma.',
-      text2: 'Join our weekly digest',
-      text3: 'Get exclusive promotions &\u00A0updates straight to\u00A0your inbox.',
-    },
+  copyright: 'Ⓒ NFT Market. Use this template freely.',
+  descriptions: {
+    text1: 'NFT marketplace&nbsp;UI created with Anima for Figma.',
+    text2: 'Get exclusive promotions &&nbsp;updates straight to&nbsp;your inbox.',
+  },
+  titles: {
+    explore: 'Explore',
+    joinOur: 'Join our weekly digest',
   },
 };

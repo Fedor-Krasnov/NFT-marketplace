@@ -7,29 +7,29 @@ import { Logo } from '../units';
 import { Community } from './Community';
 
 const Footer = () => {
-  const { description, text, logo } = footerData;
+  const { copyright, descriptions, titles } = footerData;
 
   return (
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__content">
-          <div className="footer__copyright">
+          <div className="footer__logo-and-community">
             <Logo className="footer__logo" />
-            <p>{logo.description.text1}</p>
+            <p dangerouslySetInnerHTML={{ __html: descriptions.text1 }}></p>
             <Community className="footer__community" />
           </div>
           <div>
-            <h4>Explore</h4>
+            <h4 dangerouslySetInnerHTML={{ __html: titles.explore }} />
             <Menu className="footer__menu" isGridRows />
           </div>
-          <div className="Subscription">
-            <h4>{logo.description.text2}</h4>
-            <p>{logo.description.text3}</p>
+          <div>
+            <h4 dangerouslySetInnerHTML={{ __html: titles.joinOur }} />
+            <p dangerouslySetInnerHTML={{ __html: descriptions.text2 }} />
             <Subscription />
           </div>
         </div>
-        <div className="footer__was_done">
-          <p>Ⓒ NFT Market. Use this template freely.</p>
+        <div className="footer__copyright">
+          <p dangerouslySetInnerHTML={{ __html: copyright }} />
         </div>
       </div>
     </footer>

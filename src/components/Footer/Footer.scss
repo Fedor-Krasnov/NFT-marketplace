@@ -34,7 +34,7 @@
     justify-content: space-between;
     row-gap: 30px;
 
-    #{$selector}__copyright {
+    #{$selector}__logo-and-community {
       max-width: 265px;
 
       #{$selector}__community {
@@ -48,7 +48,7 @@
     }
   }
 
-  &__was_done {
+  &__copyright {
     border-top: 1px solid #858584;
     padding: 20px 0;
 
@@ -74,7 +74,7 @@
       }
     }
 
-    &__was_done {
+    &__copyright {
       p {
         font-size: 12px;
       }
