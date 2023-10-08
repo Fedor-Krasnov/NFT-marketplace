@@ -12,6 +12,7 @@ const TopCreators = () => (
       description={topCreatorsData.description}
       heading="h2"
       title={topCreatorsData.title}
+      to={topCreatorsData.buttonLink}
     />
     <UserCreators />
     <Button
@@ -19,6 +20,7 @@ const TopCreators = () => (
       icon={IconCode.rocket}
       outline
       title={topCreatorsData.buttonTitle}
+      to={topCreatorsData.buttonLink}
       width="fill"
     />
   </section>
