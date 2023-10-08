@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopCreators.scss';
 import { topCreatorsData } from '../../../mocks';
-import { IconCode, Title } from '../../units';
+import { Button, IconCode, Title } from '../../units';
 import { UserCreators } from './UserCreators';
 
 const TopCreators = () => (
@@ -14,6 +14,13 @@ const TopCreators = () => (
       title={topCreatorsData.title}
     />
     <UserCreators />
+    <Button
+      className="top-creators__button"
+      icon={IconCode.rocket}
+      outline
+      title={topCreatorsData.buttonTitle}
+      width="fill"
+    />
   </section>
 );
 

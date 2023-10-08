@@ -1,25 +1,21 @@
-@use '../../../../src-old/styles/global/mixins';
+@use 'src/assets/styles/mixins';
 
 .top-creators {
   display: grid;
-  row-gap: 60px;
+  row-gap: mixins.clamp-auto(40px, 60px);
 
   img {
     border-radius: 100%;
   }
-}
 
-@media only screen and (max-width: 615px) {
-  .section__top-creators {
-    .top-creators__title {
-      h2 {
+  &__button {
+    display: none;
+  }
 
-      }
 
-      p {
-        line-height: 25px;
-        font-size: clamp(14px, 3.5vw, 22px);
-      }
+  @media only screen and (max-width: 768px) {
+    &__button {
+      display: flex;
     }
   }
 }
