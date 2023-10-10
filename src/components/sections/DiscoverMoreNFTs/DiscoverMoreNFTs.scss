@@ -1,0 +1,13 @@
+@use 'src/assets/styles/mixins';
+
+.discover-more-nfts {
+  &__button {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__button {
+      display: flex;
+    }
+  }
+}
