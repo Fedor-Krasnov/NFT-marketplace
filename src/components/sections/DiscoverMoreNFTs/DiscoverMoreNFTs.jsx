@@ -11,6 +11,7 @@ const DiscoverMoreNfTs = () => (
       description={discoverMoreNfTsData.description}
       heading="h2"
       title={discoverMoreNfTsData.title}
+      to={discoverMoreNfTsData.buttonLink}
     />
   </section>
 );
