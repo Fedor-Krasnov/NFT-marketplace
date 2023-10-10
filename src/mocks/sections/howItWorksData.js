@@ -5,7 +5,7 @@ export const howItWorksData = {
     {
       image: {
         alt: 'Setup Your wallet',
-        src: '../src-old/media/nft-cards/how-it-works/explanatory-card-1.png',
+        src: 'src/assets/media/images/nft-cards/explanatory-card-1.png',
       },
       offer: 'Setup Your wallet',
       offerDescription:
@@ -15,7 +15,7 @@ export const howItWorksData = {
     {
       image: {
         alt: 'Create Collection',
-        src: '../src-old/media/nft-cards/how-it-works/explanatory-card-2.png',
+        src: 'src/assets/media/images/nft-cards/explanatory-card-2.png',
       },
       offer: 'Create Collection',
       offerDescription:
@@ -24,7 +24,7 @@ export const howItWorksData = {
     {
       image: {
         alt: 'Start Earning',
-        src: '../src-old/media/nft-cards/how-it-works/explanatory-card-3.png',
+        src: 'src/assets/media/images/nft-cards/explanatory-card-3.png',
       },
       offer: 'Start Earning',
       offerDescription:
