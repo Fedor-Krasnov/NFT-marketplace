@@ -10,6 +10,7 @@ import {
   TrendingCollection,
   WeeklyDigest,
 } from './components/sections';
+import { Auction } from './components/sections/Auction/index.js';
 import { HowItWorks } from './components/sections/HowItWorks/HowItWorks.jsx';
 
 const App = () => (
@@ -20,6 +21,7 @@ const App = () => (
     <TopCreators />
     <BrowseCategories />
     <DiscoverMoreNfTs />
+    <Auction />
     <HowItWorks />
     <WeeklyDigest />
     <Footer />
