@@ -14,7 +14,7 @@ const WeeklyDigest = () => {
           <img alt={image.alt} src={image.src} />
         </div>
         <div className="weekly-digest__information">
-          <Title description={description} title={title} />
+          <Title description={description} heading="h2" title={title} />
           <Subscription />
         </div>
       </div>
