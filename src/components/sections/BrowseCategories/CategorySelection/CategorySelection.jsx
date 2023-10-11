@@ -1,5 +1,4 @@
 import React from 'react';
-import './CategorySelection.scss';
 
 const CategorySelection = ({ data }) => {
   const { id, image, icon, category } = data;
