@@ -12,14 +12,14 @@
   height: 60px;
   background: colors.$purple;
   border-radius: 20px;
-  color: white;
+  color: colors.$white;
   border: none;
   width: max-content;
 
   svg {
     max-width: 20px;
     max-height: 20px;
-    fill: white;
+    fill: colors.$white;
   }
 
   &_outline {
@@ -34,8 +34,8 @@
   }
 
   &_secondary {
-    background: white;
-    color: black;
+    background: colors.$white;
+    color: colors.$black;
 
     svg {
       fill: colors.$purple;
