@@ -1,0 +1,50 @@
+.countdown {
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  font-family: 'Space Mono', sans-serif;
+  gap: 10px;
+  display: grid;
+  width: fit-content;
+
+  &__container {
+    grid-column-start: 2;
+    grid-row: 1/3;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 13px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 375px) {
+    padding: 30px 20px;
+
+    &__content {
+      gap: 0;
+    }
+  }
+}

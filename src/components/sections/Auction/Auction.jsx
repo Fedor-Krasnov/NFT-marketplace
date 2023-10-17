@@ -2,6 +2,7 @@ import React from 'react';
 import './Auction.scss';
 import { auctionData } from '../../../mocks/index.js';
 import { Button, IconCode } from '../../units/index.js';
+import { Countdown } from './Countdown/index.js';
 
 const Auction = () => {
   const { image, userName, nameNFT, title, countdownContent } = auctionData;
@@ -19,33 +20,7 @@ const Auction = () => {
           <div className="auction__content">
             <h2 dangerouslySetInnerHTML={{ __html: nameNFT }} />
             <Button icon={IconCode.eye} secondary title={auctionData.buttonTitle} />
-            <div className="countdown__container">
-              <div className="countdown">
-                <h4 dangerouslySetInnerHTML={{ __html: title }} />
-                <div className="countdown__content">
-                  <div>
-                    <div className="countdown__value">59</div>
-                    <div dangerouslySetInnerHTML={{ __html: countdownContent.hours }} />
-                  </div>
-                  <div>
-                    <div className="countdown__value">:</div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div className="countdown__value">59</div>
-                    <div dangerouslySetInnerHTML={{ __html: countdownContent.minutes }} />
-                  </div>
-                  <div>
-                    <div className="countdown__value">:</div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div className="countdown__value">59</div>
-                    <div dangerouslySetInnerHTML={{ __html: countdownContent.seconds }} />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Countdown />
           </div>
         </div>
       </div>
