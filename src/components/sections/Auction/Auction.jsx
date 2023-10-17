@@ -19,7 +19,7 @@ const Auction = () => {
           </div>
           <div className="auction__content">
             <h2 dangerouslySetInnerHTML={{ __html: nameNFT }} />
-            <Button icon={IconCode.eye} secondary title={auctionData.buttonTitle} />
+            <Button button icon={IconCode.eye} secondary title={auctionData.buttonTitle} to={auctionData.buttonLink} />
             <Countdown />
           </div>
         </div>
