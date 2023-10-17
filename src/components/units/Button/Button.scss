@@ -19,6 +19,7 @@
   svg {
     max-width: 20px;
     max-height: 20px;
+    fill: white;
   }
 
   &_outline {
@@ -35,6 +36,10 @@
   &_secondary {
     background: white;
     color: black;
+
+    svg {
+      fill: colors.$purple;
+    }
   }
 
   &_width-fill {
