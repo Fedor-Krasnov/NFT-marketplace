@@ -1,13 +1,29 @@
 @use 'src/assets/styles/mixins';
 
+.discover-more__card {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+
+  img {
+    border-radius: 25px 25px 0 0;
+  }
+}
+
 .discover-more-nfts {
   &__button {
     display: none;
   }
 
   @media only screen and (max-width: 768px) {
+    .discover-more__card {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     &__button {
       display: flex;
+      margin-top: 40px;
     }
   }
 }

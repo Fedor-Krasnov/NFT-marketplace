@@ -1,0 +1,21 @@
+.nft-details__price {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Space Mono', sans-serif;
+  padding: 22px 20px;
+  background-color: #3B3B3B;
+
+  dl {
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+
+  dt {
+    color: #858584;
+  }
+
+  dd {
+    margin-top: 8px;
+  }
+}
