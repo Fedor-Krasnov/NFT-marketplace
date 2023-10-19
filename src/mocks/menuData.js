@@ -1,6 +1,6 @@
 export const menuData = [
   {
-    path: '/pages/browse-marketplace.html',
+    path: '/browse-marketplace',
     title: 'Marketplace',
   },
   {

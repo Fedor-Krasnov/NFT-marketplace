@@ -1,31 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import {
-  Auction,
-  BrowseCategories,
-  DiscoverMoreNfTs,
-  HeroSection,
-  HowItWorks,
-  TopCreators,
-  TrendingCollection,
-  WeeklyDigest,
-} from './components/sections';
+import { Route, Routes } from 'react-router-dom';
+import { Page } from './components/Page';
+import { BrowseMarketplacePage } from './components/Page/BrowseMarketplacePage';
+import { HomePage } from './components/Page/HomePage';
 
 const App = () => (
-  <Router>
-    <Header />
-    <HeroSection />
-    <TrendingCollection />
-    <TopCreators />
-    <BrowseCategories />
-    <DiscoverMoreNfTs />
-    <Auction />
-    <HowItWorks />
-    <WeeklyDigest />
-    <Footer />
-  </Router>
+  <Page>
+    <Routes>
+      <Route element={<HomePage />} path="/" />
+      <Route element={<BrowseMarketplacePage />} path="/browse-marketplace" />
+    </Routes>
+  </Page>
 );
 
 export { App };
