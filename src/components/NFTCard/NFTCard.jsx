@@ -1,7 +1,7 @@
 import React from 'react';
 import './NFTCard.scss';
-import { NftDetailedInformation } from '../NFTDetailedInformation/index.js';
 import { NFTDetails } from '../NFTDetails';
+import { NftDetailedInformation } from './NFTDetailedInformation';
 
 const NFTCard = ({ data }) => {
   const { image, nftDetails, nftDetailedInformation } = data;

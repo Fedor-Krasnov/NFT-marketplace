@@ -5,7 +5,7 @@ const NftDetailedInformation = ({ data }) => {
   const { price, highestBid } = data;
 
   return (
-    <div className="nft-details__price">
+    <div className="nft-details-information">
       <dl>
         <dt>Price</dt>
         <dd dangerouslySetInnerHTML={{ __html: price }} />

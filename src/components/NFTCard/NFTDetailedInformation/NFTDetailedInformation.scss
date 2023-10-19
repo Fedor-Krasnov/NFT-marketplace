@@ -1,9 +1,11 @@
-.nft-details__price {
+@use 'src/assets/styles/variables/colors';
+
+.nft-details-information {
   display: flex;
   justify-content: space-between;
   font-family: 'Space Mono', sans-serif;
   padding: 22px 20px;
-  background-color: #3B3B3B;
+  background-color: colors.$black-liquorice;
 
   dl {
     &:nth-child(2) {
@@ -12,7 +14,7 @@
   }
 
   dt {
-    color: #858584;
+    color: colors.$dark-gray;
   }
 
   dd {
