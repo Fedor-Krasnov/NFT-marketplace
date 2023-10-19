@@ -3,15 +3,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import {
+  Auction,
   BrowseCategories,
   DiscoverMoreNfTs,
   HeroSection,
+  HowItWorks,
   TopCreators,
   TrendingCollection,
   WeeklyDigest,
 } from './components/sections';
-import { Auction } from './components/sections/Auction/index.js';
-import { HowItWorks } from './components/sections/HowItWorks/HowItWorks.jsx';
 
 const App = () => (
   <Router>
