@@ -1,0 +1,1 @@
+export { authorizationPage } from './authorizationPage';
