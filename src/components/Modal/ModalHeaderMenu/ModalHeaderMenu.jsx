@@ -10,7 +10,7 @@ const ModalHeaderMenu = () => (
       className="modal-header-menu__button"
       icon={IconCode.user}
       title="Sign Up"
-      to="/pages/create-account.html"
+      to="/authorization"
       width="fill"
     />
   </div>
