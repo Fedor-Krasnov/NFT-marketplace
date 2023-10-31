@@ -8,7 +8,7 @@ export const menuData = [
     title: 'Rankings',
   },
   {
-    path: '/pages/connect-wallet.html',
+    path: '/connectwallet',
     title: 'Connect a&nbsp;wallet',
   },
 ];
