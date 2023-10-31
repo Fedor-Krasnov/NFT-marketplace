@@ -1,30 +1,28 @@
 import React from 'react';
 import './AuthorizationPage.scss';
-import { authorizationPage } from '../../../mocks/Page/index.js';
+import { authorizationPageData } from '../../../mocks/Page/index.js';
+import { Button } from '../../units/index.js';
+import { Registration } from './Registration/index.js';
 
 const AuthorizationPage = () => {
-  const { description, entryField, title, image, input } = authorizationPage;
+  const { description, title, entryField, titleButton } = authorizationPageData;
 
   return (
-    <>
-      <div className="create-account-main">
-        <div>
-          <div className="create-account-main__img"></div>
-        </div>
-        <div className="create-account-main__registration">
-          <h2>Create account</h2>
-          <p>Welcome! enter your details and start creating, collecting and selling NFTs.</p>
-          <div className="registration">
-            <div className="registration__container">
-              <label className="registration__data-filling">
-                <img alt={image.alt} className="data-filling__img" src={image.src} />
-                <input className="data-filling" placeholder={input.placeholder} />
-              </label>
-            </div>
-          </div>
+    <div className="create-account-main">
+      <div>
+        <div className="create-account-main__img"></div>
+      </div>
+      <div className="create-account-main__registration">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <div className="create-account-main__entry-field">
+          {entryField.map((data) => (
+            <Registration key={data.id} data={data} />
+          ))}
+          <Button title={titleButton} width="fill" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

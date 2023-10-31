@@ -90,7 +90,7 @@
       width: 100%;
     }
 
-    &__img {
+    .create-account-main__img {
       height: mixins.clamp-auto(232px, 1000px);
       margin: 0 -30px;
       width: calc(100% + 30px * 2);

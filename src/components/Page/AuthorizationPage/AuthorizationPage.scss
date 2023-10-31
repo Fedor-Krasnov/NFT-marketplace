@@ -1,0 +1,118 @@
+@use 'src-old/styles/global/mixins';
+
+.create-account-main {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  gap: mixins.clamp-auto(20px, 60px);
+
+  & > div {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: mixins.clamp-auto(32px, 60px);
+    line-height: mixins.clamp-auto(32px, 56px);
+    margin-bottom: 10px;
+    margin-top: mixins.clamp-auto(30px, 100px);
+  }
+
+  p {
+    font-size: mixins.clamp-auto(16px, 22px);
+    line-height: mixins.clamp-auto(22px, 35px);
+    max-width: 410px;
+  }
+
+  &__img {
+    background: url("/src-old/media/pages/image-placeholder-create-account.png") no-repeat center;
+    height: 100%;
+    background-size: cover;
+  }
+  &__registration {
+    margin-bottom: 150px;
+  }
+
+  &__entry-field {
+    margin-top: 40px;
+    width: 330px;
+  }
+
+  .registration {
+    margin-bottom: 15px;
+
+    &__container {
+      display: grid;
+      gap: 15px;
+      max-width: 330px;
+
+      .button {
+        height: 46px;
+        margin-top: 15px;
+        width: 100%;
+      }
+
+      .data-filling {
+        border-radius: 20px;
+        width: 100%;
+        height: 46px;
+        outline: none;
+        flex-direction: row;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid #858584;
+      }
+
+      .registration__data-filling {
+        display: flex;
+        position: relative;
+
+        input {
+          padding: 16px 20px 16px 40px;
+        }
+
+        .data-filling__img {
+          transform: translateX(15px);
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    p {
+      margin: auto;
+      max-width: 300px;
+    }
+
+    & > div {
+      width: 100%;
+    }
+
+    &__entry-field {
+      width: 100%;
+    }
+
+    &__img {
+      height: mixins.clamp-auto(232px, 1000px);
+      margin: 0 -30px;
+      width: calc(100% + 30px * 2);
+    }
+
+    &__registration {
+      text-align: center;
+    }
+
+    .registration {
+      &__container {
+        max-width: none;
+      }
+    }
+  }
+}

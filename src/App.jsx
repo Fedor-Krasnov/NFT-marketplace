@@ -8,7 +8,7 @@ const App = () => (
   <Page>
     <Routes>
       <Route element={<HomePage />} path="/" />
-      <Route element={<AuthorizationPage />} path="/browse-marketplace" />
+      <Route element={<AuthorizationPage />} path="/authorization" />
     </Routes>
   </Page>
 );
