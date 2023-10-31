@@ -1,5 +1,4 @@
 import React from 'react';
-import './SelectionOfWallets.scss';
 
 const SelectionOfWallets = ({ item }) => {
   const { image, titleChoice } = item;

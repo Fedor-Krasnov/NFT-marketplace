@@ -1,9 +1,8 @@
 import React from 'react';
 import './Registration.scss';
-import { Button } from '../../../units/index.js';
 
 const Registration = ({ data }) => {
-  const { image, input, titleButton } = data;
+  const { image, input } = data;
 
   return (
     <div className="registration">
