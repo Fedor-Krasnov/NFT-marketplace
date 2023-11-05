@@ -1,13 +1,15 @@
 import React from 'react';
+import { pageCheck } from '../../helpers/index.js';
+import { headerData } from '../../mocks/components/headerData.js';
 import { Menu } from '../Menu';
 import { Button } from '../units/Button';
 import { IconCode } from '../units/Icon';
 import { Logo } from '../units/Logo';
 import './Header.scss';
 import { Burger } from './Burger';
-import { headerData } from '../../mocks/components/headerData.js';
 
 const Header = () => {
+  const { isAuthPage } = pageCheck();
   const { title, to } = headerData;
 
   return (
@@ -15,7 +17,7 @@ const Header = () => {
       <Logo />
       <div className="header__navbar">
         <Menu />
-        <Button icon={IconCode.user} title={title} to={to} />
+        {!isAuthPage && <Button icon={IconCode.user} title={title} to={to} />}
       </div>
       <Burger />
     </header>

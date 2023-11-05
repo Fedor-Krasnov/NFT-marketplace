@@ -1,1 +1,1 @@
-export * from './mainPageCheck';
+export * from './pageCheck.js';
