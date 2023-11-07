@@ -23,10 +23,18 @@
     max-width: 410px;
   }
 
+  &__img-container {
+    margin: 0 -18px;
+  }
+
   &__img {
     background: url("/src-old/media/pages/image-placeholder-connect-wallet.png") no-repeat center;
     height: 100%;
     background-size: cover;
+  }
+
+  &__title {
+    margin-bottom: 40px;
   }
 
   &__wallet-selection {
@@ -79,10 +87,19 @@
       width: 100%;
     }
 
+    &__img-container {
+      margin: -12px;
+    }
+
     &__img {
       height: mixins.clamp-auto(232px, 1000px);
       margin: 0 -30px;
       width: calc(100% + 30px * 2);
+    }
+
+    &__title {
+      display: grid;
+      justify-content: center;
     }
 
     .wallet-selection {
