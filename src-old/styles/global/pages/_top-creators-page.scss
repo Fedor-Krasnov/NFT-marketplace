@@ -6,10 +6,6 @@
   margin: 0 auto;
   max-width: 1050px;
 
-  p {
-    font-size: mixins.clamp-auto(16px, 22px);
-  }
-
   &__title-page {
     margin: 80px 0;
 
