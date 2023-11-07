@@ -1,15 +1,16 @@
 import React from 'react';
 import './TopCreatorsPage.scss';
 import { topCreatorsPageData } from '../../../mocks/Page/index.js';
+import { Title } from '../../units/index.js';
+import { UserTop } from './UserTop/index.js';
 
 const TopCreatorsPage = () => {
-  const {} = topCreatorsPageData;
+  const { title, description } = topCreatorsPageData;
 
   return (
     <div className="top-creators">
       <div className="top-creators__title-page">
-        <h1>Top Creators</h1>
-        <p>Check out top ranking NFT artists on&nbsp;the NFT Marketplace.</p>
+        <Title description={description} title={title} />
       </div>
       <div className="top-creators__control-panel-desktop">
         <a href="">
@@ -49,6 +50,7 @@ const TopCreatorsPage = () => {
         </div>
         <div></div>
       </div>
+      <UserTop />
     </div>
   );
 };
