@@ -5,7 +5,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Jaydon Ekstrom Bothman',
-        src: '../src-old/media/users/user-1.svg',
+        src: '../src/assets/media/images/users/user-1.png',
       },
       userName: 'Jaydon Ekstrom Bothman',
       change: '+1.41%',
@@ -15,7 +15,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Ruben Carder',
-        src: '../src-old/media/users/user-2.svg',
+        src: './src/assets/media/images/users/user-2.png',
       },
       userName: 'Ruben Carder',
       change: '+3.56%',
@@ -25,7 +25,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Alfredo Septimus',
-        src: '../src-old/media/users/user-3.svg',
+        src: './src/assets/media/images/users/user-3.png',
       },
       userName: 'Alfredo Septimus',
       change: '+5.89%',
@@ -35,7 +35,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Davis Franci',
-        src: '../src-old/media/users/user-4.svg',
+        src: './src/assets/media/images/users/user-4.png',
       },
       userName: 'Davis Franci',
       change: '+8.17%',
@@ -45,7 +45,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Livia Rosser',
-        src: '../src-old/media/users/user-5.svg',
+        src: './src/assets/media/images/users/user-5.png',
       },
       userName: 'Livia Rosser',
       change: '+8.4%',
@@ -55,7 +55,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Kianna Donin',
-        src: '../src-old/media/users/user-6.svg',
+        src: './src/assets/media/images/users/user-6.png',
       },
       userName: 'Kianna Donin',
       change: '+17.614%',
@@ -65,7 +65,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Phillip Lipshutz',
-        src: '../src-old/media/users/user-7.svg',
+        src: './src/assets/media/images/users/user-7.png',
       },
       userName: 'Phillip Lipshutz',
       change: '+61.28%',
@@ -75,7 +75,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Maria Rosser',
-        src: '../src-old/media/users/user-8.svg',
+        src: './src/assets/media/images/users/user-8.png',
       },
       userName: 'Maria Rosser',
       change: '+71.482%',
@@ -85,7 +85,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Kianna Stanton',
-        src: '../src-old/media/users/user-9.svg',
+        src: './src/assets/media/images/users/user-9.png',
       },
       userName: 'Kianna Stanton',
       change: '+91.48%',
@@ -95,7 +95,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Angel Lubin',
-        src: '../src-old/media/users/user-10.svg',
+        src: './src/assets/media/images/users/user-10.png',
       },
       userName: 'Angel Lubin',
       change: '+92.47%',
@@ -105,7 +105,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Allison Torff',
-        src: '../src-old/media/users/user-11.svg',
+        src: './src/assets/media/images/users/user-11.png',
       },
       userName: 'Allison Torff',
       change: '+92.71%',
@@ -115,7 +115,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Davis Workman',
-        src: '../src-old/media/users/user-12.svg',
+        src: './src/assets/media/images/users/user-12.png',
       },
       userName: 'Davis Workman',
       change: '+11.81%',
@@ -125,7 +125,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Randy Carder',
-        src: '../src-old/media/users/user-13.svg',
+        src: './src/assets/media/images/users/user-13.png',
       },
       userName: 'Randy Carder',
       change: '+19.482%',
@@ -135,7 +135,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Lydia Culhane',
-        src: '../src-old/media/users/user-15.svg',
+        src: './src/assets/media/images/users/user-14.png',
       },
       userName: 'Lydia Culhane',
       change: '+29.454%',
@@ -145,7 +145,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Rayna Bator',
-        src: '../src-old/media/users/user-18.svg',
+        src: './src/assets/media/images/users/user-15.png',
       },
       userName: 'Rayna Bator',
       change: '+29.421%',
@@ -155,7 +155,7 @@ export const topCreatorsPageData = {
     {
       image: {
         alt: 'Jocelyn Westervelt',
-        src: '../src-old/media/users/user-16.svg',
+        src: './src/assets/media/images/users/user-9.png',
       },
       userName: 'Jocelyn Westervelt',
       change: '+29.71%',
