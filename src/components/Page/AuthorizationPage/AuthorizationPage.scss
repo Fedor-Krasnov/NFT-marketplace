@@ -1,6 +1,8 @@
 @use 'src-old/styles/global/mixins';
 
 .create-account-main {
+  $selector: &;
+
   margin: 0 auto;
   max-width: 1280px;
   display: flex;
@@ -14,8 +16,6 @@
   h2 {
     font-size: mixins.clamp-auto(32px, 60px);
     line-height: mixins.clamp-auto(32px, 56px);
-    margin-bottom: 10px;
-    margin-top: mixins.clamp-auto(30px, 100px);
   }
 
   p {
@@ -24,13 +24,18 @@
     max-width: 410px;
   }
 
+  &__img-container {
+    margin: 0 -18px;
+  }
+
   &__img {
     background: url("/src-old/media/pages/image-placeholder-create-account.png") no-repeat center;
     height: 100%;
     background-size: cover;
   }
+
   &__registration {
-    margin-bottom: 150px;
+    margin: 100px 0 150px 0;
   }
 
   &__entry-field {
@@ -105,8 +110,17 @@
       width: calc(100% + 30px * 2);
     }
 
+    &__img-container {
+      margin: -12px;
+    }
+
     &__registration {
       text-align: center;
+    }
+
+    &__title {
+      display: grid;
+      justify-content: center;
     }
 
     .registration {
