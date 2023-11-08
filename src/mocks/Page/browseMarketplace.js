@@ -9,4 +9,23 @@ export const browseMarketplace = {
   categoryTwo: 'Collections',
   categoryOneSpan: '302',
   categoryTwoSpan: '67',
+  workLayout: [
+    {
+      image: {
+        alt: 'nft-card',
+        src: '',
+      },
+      nftDetails: {
+        title: 'Magic Mushroom 0325',
+        image: {
+          src: '',
+        },
+        username: 'Shroomie',
+      },
+      nftDetailedInformation: {
+        price: '1.63 ETH',
+        highestBid: '0.33 wETH',
+      },
+    },
+  ],
 };

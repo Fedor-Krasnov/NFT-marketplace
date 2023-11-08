@@ -1,0 +1,34 @@
+@use 'src/assets/styles/variables/colors';
+
+.nft-card {
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 510px;
+
+  &__details {
+    padding: 22px 20px;
+    background-color: #3B3B3B;
+  }
+}
+
+.nft-details-information {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Space Mono', sans-serif;
+  padding: 22px 20px;
+  background-color: colors.$black-liquorice;
+
+  dl {
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+
+  dt {
+    color: colors.$dark-gray;
+  }
+
+  dd {
+    margin-top: 8px;
+  }
+}
