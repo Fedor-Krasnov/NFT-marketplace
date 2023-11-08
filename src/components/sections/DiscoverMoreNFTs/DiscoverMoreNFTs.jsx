@@ -1,8 +1,7 @@
 import React from 'react';
 import './DiscoverMoreNFTs.scss';
-import { discoverMoreNfTsData, topCreatorsData } from '../../../mocks';
+import { discoverMoreNfTsData } from '../../../mocks';
 import { NFTCard } from '../../NFTCard/index.js';
-import { NftDetailedInformation } from '../../NFTCard/NFTDetailedInformation/index.js';
 import { Button, IconCode, Title } from '../../units/index.js';
 
 const DiscoverMoreNfTs = () => {
