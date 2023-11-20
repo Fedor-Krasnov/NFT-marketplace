@@ -35,8 +35,9 @@ const BrowseMarketplace = () => {
           </a>
         </div>
       </div>
-      <div className="work-layout__card"></div>
-      <WorkLayout />
+      <div className="browse-marketplace__offers-with-сards">
+        <WorkLayout />
+      </div>
     </div>
   );
 };
