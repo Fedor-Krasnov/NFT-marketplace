@@ -14,6 +14,13 @@
     align-items: center;
   }
 
+  &__user-avatar {
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
   &__avatar {
     border-radius: 100%;
     height: 24px;

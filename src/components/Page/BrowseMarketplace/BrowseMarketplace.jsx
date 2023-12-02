@@ -1,11 +1,12 @@
 import React from 'react';
 import './BrowseMarketplace.scss';
-import { browseMarketplace } from '../../../mocks/Page/browseMarketplace.js';
+import { browseMarketplacePageData } from '../../../mocks/Page/browseMarketplacePageData.js';
 import { Title } from '../../units/index.js';
 import { WorkLayout } from './WorkLayout/index.js';
 
 const BrowseMarketplace = () => {
-  const { title, description, image, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } = browseMarketplace;
+  const { title, description, image, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } =
+    browseMarketplacePageData;
 
   return (
     <div className="browse-marketplace">
