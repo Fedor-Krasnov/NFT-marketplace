@@ -13,4 +13,12 @@
       border-radius: 25px 25px 0 0;
     }
   }
+
+  @media only screen and (max-width: 1110px) {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+      display: flex;
+    }
+  }
 }

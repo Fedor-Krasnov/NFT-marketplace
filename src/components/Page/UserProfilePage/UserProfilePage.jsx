@@ -5,11 +5,7 @@ import { userProfilePageData } from '../../../mocks/Page/index.js';
 const UserProfilePage = () => {
   const {} = userProfilePageData;
 
-  return (
-    <div>
-      <div></div>
-    </div>
-  );
+  return <div className=""></div>;
 };
 
 export { UserProfilePage };
