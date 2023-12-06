@@ -2,7 +2,7 @@ import React from 'react';
 import './TopCreatorsPage.scss';
 import { topCreatorsPageData } from '../../../mocks/Page/index.js';
 import { Title } from '../../units/index.js';
-import { UserTop } from './UserTop/index.js';
+import { UserTopPage } from './UserTopPage/index.js';
 
 const TopCreatorsPage = () => {
   const { title, description } = topCreatorsPageData;
@@ -50,7 +50,7 @@ const TopCreatorsPage = () => {
         </div>
         <div></div>
       </div>
-      <UserTop />
+      <UserTopPage />
     </div>
   );
 };

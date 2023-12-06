@@ -2,7 +2,7 @@ import React from 'react';
 import './ConnectWalletPage.scss';
 import { connectWalletPageData } from '../../../mocks/Page/index.js';
 import { Title } from '../../units/index.js';
-import { SelectionOfWallets } from './SelectionOfWallets/index.js';
+import { SelectionOfWalletsPage } from './SelectionOfWalletsPage/index.js';
 
 const ConnectWalletPage = () => {
   const { title, description, choice } = connectWalletPageData;
@@ -17,7 +17,7 @@ const ConnectWalletPage = () => {
           <Title description={description} title={title} />
         </div>
         {choice.map((item) => (
-          <SelectionOfWallets key={item.id} item={item} />
+          <SelectionOfWalletsPage key={item.id} item={item} />
         ))}
       </div>
     </div>

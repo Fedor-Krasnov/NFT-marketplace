@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SelectionOfWallets = ({ item }) => {
+const SelectionOfWalletsPage = ({ item }) => {
   const { image, titleChoice } = item;
 
   return (
@@ -15,4 +15,4 @@ const SelectionOfWallets = ({ item }) => {
   );
 };
 
-export { SelectionOfWallets };
+export { SelectionOfWalletsPage };

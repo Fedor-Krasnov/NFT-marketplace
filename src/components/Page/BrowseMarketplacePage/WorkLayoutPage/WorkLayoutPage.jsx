@@ -1,9 +1,9 @@
 import React from 'react';
-import './WorkLayout.scss';
+import './WorkLayoutPage.scss';
 import { browseMarketplacePageData } from '../../../../mocks/Page/browseMarketplacePageData.js';
 import { NFTCard } from '../../../NFTCard/index.js';
 
-const WorkLayout = () => {
+const WorkLayoutPage = () => {
   const { workLayout } = browseMarketplacePageData;
 
   return (
@@ -17,4 +17,4 @@ const WorkLayout = () => {
   );
 };
 
-export { WorkLayout };
+export { WorkLayoutPage };

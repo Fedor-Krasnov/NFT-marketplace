@@ -1,8 +1,8 @@
 import React from 'react';
-import './UserTop.scss';
+import './UserTopPage.scss';
 import { topCreatorsPageData } from '../../../../mocks/Page/index.js';
 
-const UserTop = () => (
+const UserTopPage = () => (
   <div>
     {topCreatorsPageData.userTop.map(({ image, userName, change, nftSold, volume }, userTopIndex) => (
       <div key={userName} className="top-creators__creator">
@@ -21,4 +21,4 @@ const UserTop = () => (
   </div>
 );
 
-export { UserTop };
+export { UserTopPage };

@@ -1,7 +1,7 @@
 import React from 'react';
-import './Registration.scss';
+import './RegistrationPage.scss';
 
-const Registration = ({ data }) => {
+const RegistrationPage = ({ data }) => {
   const { image, input } = data;
 
   return (
@@ -16,4 +16,4 @@ const Registration = ({ data }) => {
   );
 };
 
-export { Registration };
+export { RegistrationPage };

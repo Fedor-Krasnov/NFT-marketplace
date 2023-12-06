@@ -1,10 +1,10 @@
 import React from 'react';
-import './BrowseMarketplace.scss';
+import './BrowseMarketplacePage.scss';
 import { browseMarketplacePageData } from '../../../mocks/Page/browseMarketplacePageData.js';
 import { Title } from '../../units/index.js';
-import { WorkLayout } from './WorkLayout/index.js';
+import { WorkLayoutPage } from './WorkLayoutPage/index.js';
 
-const BrowseMarketplace = () => {
+const BrowseMarketplacePage = () => {
   const { title, description, image, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } =
     browseMarketplacePageData;
 
@@ -37,10 +37,10 @@ const BrowseMarketplace = () => {
         </div>
       </div>
       <div className="browse-marketplace__offers-with-сards">
-        <WorkLayout />
+        <WorkLayoutPage />
       </div>
     </div>
   );
 };
 
-export { BrowseMarketplace };
+export { BrowseMarketplacePage };

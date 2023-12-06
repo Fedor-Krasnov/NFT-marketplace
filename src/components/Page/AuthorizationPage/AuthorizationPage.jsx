@@ -2,7 +2,7 @@ import React from 'react';
 import './AuthorizationPage.scss';
 import { authorizationPageData } from '../../../mocks/Page/index.js';
 import { Button, Title } from '../../units/index.js';
-import { Registration } from './Registration/index.js';
+import { RegistrationPage } from './RegistrationPage/index.js';
 
 const AuthorizationPage = () => {
   const { description, title, entryField, titleButton } = authorizationPageData;
@@ -18,7 +18,7 @@ const AuthorizationPage = () => {
         </div>
         <div className="create-account-main__entry-field">
           {entryField.map((data) => (
-            <Registration key={data.id} data={data} />
+            <RegistrationPage key={data.id} data={data} />
           ))}
           <Button title={titleButton} width="fill" />
         </div>
