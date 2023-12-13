@@ -39,6 +39,22 @@ const UserProfilePage = () => {
               </div>
             </div>
           </div>
+          <div>
+            <div className="user-profile__choice-point">
+              <div className="user-profile__trait"></div>
+              <div className="user-profile__buttons">
+                <a href="">
+                  Created<span>302</span>
+                </a>
+                <a href="">
+                  owned<span>67</span>
+                </a>
+                <a href="">
+                  Collection<span>4</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
