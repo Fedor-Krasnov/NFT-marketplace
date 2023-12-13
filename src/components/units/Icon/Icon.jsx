@@ -12,6 +12,8 @@ export const IconCode = {
   user: 'user',
   youtube: 'youtube',
   eye: 'eye',
+  copy: 'copy',
+  plus: 'plus',
 };
 
 const iconCodeToSize = {
@@ -23,6 +25,8 @@ const iconCodeToSize = {
   [IconCode.user]: [20, 20],
   [IconCode.youtube]: [32, 32],
   [IconCode.eye]: [25, 20],
+  [IconCode.copy]: [32, 32],
+  [IconCode.plus]: [20, 20],
 };
 
 const iconClassName = 'icon';

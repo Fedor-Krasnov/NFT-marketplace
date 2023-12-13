@@ -6,6 +6,7 @@ import { BrowseMarketplacePage } from './components/Page/BrowseMarketplacePage/i
 import { ConnectWalletPage } from './components/Page/ConnectWalletPage/index.js';
 import { HomePage } from './components/Page/HomePage';
 import { TopCreatorsPage } from './components/Page/TopCreatorsPage/index.js';
+import { UserProfilePage } from './components/Page/UserProfilePage/index.js';
 
 const App = () => (
   <Page>
@@ -15,6 +16,7 @@ const App = () => (
       <Route element={<ConnectWalletPage />} path="/connectwallet" />
       <Route element={<TopCreatorsPage />} path="/topcreators" />
       <Route element={<BrowseMarketplacePage />} path="/browsemarketplace" />
+      <Route element={<UserProfilePage />} path="/user-profile" />
     </Routes>
   </Page>
 );
