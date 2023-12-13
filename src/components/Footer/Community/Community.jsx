@@ -7,7 +7,6 @@ import { Icon, IconCode } from '../../units';
 
 const Community = ({ className }) => (
   <div className={classNames('community', className)}>
-    <p>Join our community</p>
     <ul className="community__contacts">
       {communityData.map(({ link, network }) => (
         <li key={network}>

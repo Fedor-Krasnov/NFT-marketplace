@@ -15,7 +15,8 @@ const Footer = () => {
         <div className="footer__content">
           <div className="footer__logo-and-community">
             <Logo className="footer__logo" />
-            <p dangerouslySetInnerHTML={{ __html: descriptions.text1 }}></p>
+            <p dangerouslySetInnerHTML={{ __html: descriptions.text1 }} />
+            <p dangerouslySetInnerHTML={{ __html: descriptions.text2 }} />
             <Community className="footer__community" />
           </div>
           <div>
@@ -24,7 +25,7 @@ const Footer = () => {
           </div>
           <div>
             <h4 dangerouslySetInnerHTML={{ __html: titles.joinOur }} />
-            <p dangerouslySetInnerHTML={{ __html: descriptions.text2 }} />
+            <p dangerouslySetInnerHTML={{ __html: descriptions.text3 }} />
             <Subscription />
           </div>
         </div>
