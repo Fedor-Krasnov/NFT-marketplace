@@ -1,0 +1,32 @@
+@use 'src/assets/styles/variables/colors';
+
+.user-profile-section {
+  $selector: &;
+
+  padding: 0;
+  max-width: 1280px;
+
+  &__background {
+    background: url('../src/assets/media/images/banners/user-banner-1.jpg') no-repeat center;
+    height: 320px;
+    background-size: cover;
+    margin: 0 -18px;
+  }
+
+  &__avatar-container {
+    max-width: 1050px;
+    margin: -60px auto 0;
+
+    #{$selector}__avatar {
+      border: 4px solid colors.$shoe-wax;
+      width: fit-content;
+      border-radius: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    &__avatar {
+      margin: 0 auto;
+    }
+  }
+}
