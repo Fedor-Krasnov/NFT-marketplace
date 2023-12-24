@@ -1,0 +1,92 @@
+@use 'src/assets/styles/mixins';
+@use 'src/assets/styles/variables/colors';
+
+.detailed-user-profile-section {
+  $selector: &;
+
+  &__main-information {
+    #{$selector}__banner {
+      display: flex;
+      justify-content: center;
+      margin: -18px;
+      position: relative;
+      margin-top: -10px;
+
+      #{$selector}__avatar {
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+      }
+    }
+
+    #{$selector}__user-information {
+      max-width: 1050px;
+      margin: 40px auto;
+
+      #{$selector}__user-main-information {
+        display: flex;
+        justify-content: space-between;
+
+        #{$selector}__button {
+          display: flex;
+          gap: 20px;
+        }
+      }
+
+      #{$selector}__user-description {
+        display: grid;
+        row-gap: 30px;
+
+        #{$selector}__bio {
+          font-family: 'Space Mono', sans-serif;
+          color: colors.$dark-gray;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 35px;
+          text-transform: capitalize;
+        }
+
+        #{$selector}__user-links {
+          font-family: 'Space Mono', sans-serif;
+          color: colors.$dark-gray;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 35px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  &__choice-point {
+    #{$selector}__trait {
+      border: 1px solid #3B3B3B;
+      margin: 0 -18px;
+    }
+
+    #{$selector}__buttons {
+      padding: 25px 0 15px 0;
+      margin: 0 auto;
+      max-width: 830px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+
+      a {
+        font-weight: 600;
+        font-size: mixins.clamp-auto(17px, 22px);
+        line-height: mixins.clamp-auto(20px, 31px);
+
+        span {
+          font-family: "Space Mono", sans-serif;
+          font-size: mixins.clamp-auto(13px, 16px);
+          line-height: mixins.clamp-auto(15px, 22px);
+          background: #858584;
+          border-radius: 20px;
+          padding: 5px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
