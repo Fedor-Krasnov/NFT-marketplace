@@ -4,7 +4,7 @@ export const auctionData = {
   title: 'Auction ends&nbsp;in:',
   image: {
     alt: 'avatar',
-    src: '../../src-old/media/users/user-7.svg',
+    src: 'src/assets/media/images/users/user-7.png',
   },
   userName: 'Shroomie',
   nameNFT: 'Magic Mashrooms',
