@@ -49,14 +49,13 @@
     }
   }
 
-  &__search-img {
-    .magnifying-glass {
-      display: flex;
-      align-items: center;
-      position: absolute;
-      right: 20px;
-      top: 19px;
-    }
+  &__search-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    cursor: pointer;
   }
 
   &__offers-with-сards {

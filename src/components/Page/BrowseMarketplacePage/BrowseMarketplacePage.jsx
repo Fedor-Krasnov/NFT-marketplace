@@ -1,12 +1,11 @@
 import React from 'react';
 import './BrowseMarketplacePage.scss';
-import { browseMarketplacePageData } from '../../../mocks/Page/browseMarketplacePageData.js';
-import { Title } from '../../units/index.js';
-import { WorkLayoutPage } from './WorkLayoutPage/index.js';
+import { browseMarketplacePageData } from '../../../mocks/Page';
+import { Icon, IconCode, Title } from '../../units';
+import { WorkLayoutPage } from './WorkLayoutPage';
 
 const BrowseMarketplacePage = () => {
-  const { title, description, image, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } =
-    browseMarketplacePageData;
+  const { title, description, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } = browseMarketplacePageData;
 
   return (
     <div className="browse-marketplace">
@@ -17,10 +16,8 @@ const BrowseMarketplacePage = () => {
         <label>
           <input className="search" placeholder="Search your favourite NFTs" type="text" />
         </label>
-        <div className="browse-marketplace__search-img">
-          <a href="">
-            <img alt={image.alt} className="magnifying-glass" src={image.src} />
-          </a>
+        <div className="browse-marketplace__search-icon">
+          <Icon code={IconCode.magnifyingGlass} />
         </div>
       </div>
       <div className="browse-marketplace__choice-point">
