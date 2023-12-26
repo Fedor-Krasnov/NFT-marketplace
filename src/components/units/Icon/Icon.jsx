@@ -14,6 +14,10 @@ export const IconCode = {
   eye: 'eye',
   copy: 'copy',
   plus: 'plus',
+  email: 'email',
+  lock: 'lock',
+  globe: 'globe',
+  magnifyingGlass: 'magnifying-glass',
 };
 
 const iconCodeToSize = {
@@ -27,6 +31,10 @@ const iconCodeToSize = {
   [IconCode.eye]: [25, 20],
   [IconCode.copy]: [32, 32],
   [IconCode.plus]: [20, 20],
+  [IconCode.email]: [20, 20],
+  [IconCode.lock]: [20, 20],
+  [IconCode.globe]: [20, 20],
+  [IconCode.magnifyingGlass]: [20, 20],
 };
 
 const iconClassName = 'icon';

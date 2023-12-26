@@ -6,7 +6,7 @@ export const authorizationPageData = {
     {
       image: {
         alt: 'User',
-        src: '../src-old/media/icons/user-gray.svg',
+        src: 'src/assets/media/icon/user.svg',
       },
       input: {
         placeholder: 'Username',
