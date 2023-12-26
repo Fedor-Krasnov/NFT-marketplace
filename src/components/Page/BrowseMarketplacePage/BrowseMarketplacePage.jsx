@@ -1,8 +1,8 @@
 import React from 'react';
 import './BrowseMarketplacePage.scss';
 import { browseMarketplacePageData } from '../../../mocks/Page';
+import { WorkLayoutSection } from '../../sections/WorkLayoutSection';
 import { Icon, IconCode, Title } from '../../units';
-import { WorkLayoutPage } from './WorkLayoutPage';
 
 const BrowseMarketplacePage = () => {
   const { title, description, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } = browseMarketplacePageData;
@@ -33,9 +33,7 @@ const BrowseMarketplacePage = () => {
           </a>
         </div>
       </div>
-      <div className="browse-marketplace__offers-with-сards">
-        <WorkLayoutPage />
-      </div>
+      <WorkLayoutSection />
     </div>
   );
 };
