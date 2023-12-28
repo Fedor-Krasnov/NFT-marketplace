@@ -1,11 +1,11 @@
 import React from 'react';
 import './Auction.scss';
-import { auctionData } from '../../../mocks/index.js';
-import { Button, IconCode } from '../../units/index.js';
-import { Countdown } from './Countdown/index.js';
+import { auctionData } from '../../../mocks';
+import { Button, IconCode } from '../../units';
+import { Countdown } from './Countdown';
 
 const Auction = () => {
-  const { image, userName, nameNFT, title, countdownContent } = auctionData;
+  const { image, userName, nameNFT } = auctionData;
 
   return (
     <section className="auction">

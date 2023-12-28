@@ -1,6 +1,6 @@
 import React from 'react';
 import './Countdown.scss';
-import { auctionData } from '../../../../mocks/index.js';
+import { auctionData } from '../../../../mocks';
 
 const Countdown = () => {
   const { title, countdownContent } = auctionData;

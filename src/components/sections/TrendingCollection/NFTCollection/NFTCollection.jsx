@@ -1,7 +1,7 @@
 import React from 'react';
 import './NFTCollection.scss';
 import classNames from 'classnames';
-import { NFTDetails } from '../../../NFTDetails/index.js';
+import { NFTDetails } from '../../../NFTDetails';
 
 const NFTCollection = ({ className, data }) => {
   const { nftCollections, nftDetails } = data;

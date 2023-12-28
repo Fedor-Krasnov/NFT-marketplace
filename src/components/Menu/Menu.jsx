@@ -2,7 +2,7 @@ import React from 'react';
 import './Menu.scss';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { menuData } from '../../mocks/menuData.js';
+import { menuData } from '../../mocks';
 
 const Menu = ({ className, isGridRows, isModal }) => (
   <nav

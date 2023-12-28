@@ -1,8 +1,8 @@
 import React from 'react';
 import './HowItWorks.scss';
 import { howItWorksData } from '../../../mocks';
-import { Title } from '../../units/index.js';
-import { ExplanatoryCard } from './ExplanatoryCard/index.js';
+import { Title } from '../../units';
+import { ExplanatoryCard } from './ExplanatoryCard';
 
 const HowItWorks = () => {
   const { offerCards, image } = howItWorksData;

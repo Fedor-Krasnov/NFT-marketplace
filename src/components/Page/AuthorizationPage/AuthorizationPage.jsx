@@ -1,8 +1,8 @@
 import React from 'react';
 import './AuthorizationPage.scss';
-import { authorizationPageData } from '../../../mocks/Page/index.js';
-import { Button, Title } from '../../units/index.js';
-import { RegistrationPage } from './RegistrationPage/index.js';
+import { authorizationPageData } from '../../../mocks/Page';
+import { Button, Title } from '../../units';
+import { RegistrationPage } from './RegistrationPage';
 
 const AuthorizationPage = () => {
   const { description, title, entryField, titleButton } = authorizationPageData;

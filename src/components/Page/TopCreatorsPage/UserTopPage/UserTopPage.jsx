@@ -1,6 +1,6 @@
 import React from 'react';
 import './UserTopPage.scss';
-import { topCreatorsPageData } from '../../../../mocks/Page/index.js';
+import { topCreatorsPageData } from '../../../../mocks/Page';
 
 const UserTopPage = () => (
   <div>

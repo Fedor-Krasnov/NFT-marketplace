@@ -1,8 +1,8 @@
 import React from 'react';
 import './DiscoverMoreNFTs.scss';
 import { discoverMoreNfTsData } from '../../../mocks';
-import { NFTCard } from '../../NFTCard/index.js';
-import { Button, IconCode, Title } from '../../units/index.js';
+import { NFTCard } from '../../NFTCard';
+import { Button, IconCode, Title } from '../../units';
 
 const DiscoverMoreNfTs = () => {
   const { nftCards, buttonLink, buttonTitle, description, title } = discoverMoreNfTsData;

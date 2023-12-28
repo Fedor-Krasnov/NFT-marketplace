@@ -1,8 +1,8 @@
 import React from 'react';
 import './TopCreatorsPage.scss';
-import { topCreatorsPageData } from '../../../mocks/Page/index.js';
-import { Title } from '../../units/index.js';
-import { UserTopPage } from './UserTopPage/index.js';
+import { topCreatorsPageData } from '../../../mocks/Page';
+import { Title } from '../../units';
+import { UserTopPage } from './UserTopPage';
 
 const TopCreatorsPage = () => {
   const { title, description } = topCreatorsPageData;

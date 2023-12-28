@@ -1,8 +1,8 @@
 import React from 'react';
 import './ConnectWalletPage.scss';
-import { connectWalletPageData } from '../../../mocks/Page/index.js';
-import { Title } from '../../units/index.js';
-import { SelectionOfWalletsPage } from './SelectionOfWalletsPage/index.js';
+import { connectWalletPageData } from '../../../mocks/Page';
+import { Title } from '../../units';
+import { SelectionOfWalletsPage } from './SelectionOfWalletsPage';
 
 const ConnectWalletPage = () => {
   const { title, description, choice } = connectWalletPageData;

@@ -4,7 +4,7 @@ import './Modal.scss';
 import { Icon, IconCode } from '../units/Icon';
 import { useWindowDimensions } from '../../hooks';
 import { CSSTransition } from 'react-transition-group';
-import { Logo } from '../units/index.js';
+import { Logo } from '../units';
 
 const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
   const { windowWidth } = useWindowDimensions();

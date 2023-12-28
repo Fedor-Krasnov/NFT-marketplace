@@ -1,5 +1,5 @@
 import React from 'react';
-import { pageCheck } from '../../helpers/index.js';
+import { pageCheck } from '../../helpers';
 import { headerData } from '../../mocks/components/headerData.js';
 import { Menu } from '../Menu';
 import { Button } from '../units/Button';

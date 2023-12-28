@@ -1,11 +1,11 @@
 import React from 'react';
 import './WeeklyDigest.scss';
 import { weeklyDigestData } from '../../../mocks';
-import { Subscription } from '../../Subscription/index.js';
-import { Title } from '../../units/index.js';
+import { Subscription } from '../../Subscription';
+import { Title } from '../../units';
 
 const WeeklyDigest = () => {
-  const { title, description, alt, src, image } = weeklyDigestData;
+  const { title, description, image } = weeklyDigestData;
 
   return (
     <section className="weekly-digest">
