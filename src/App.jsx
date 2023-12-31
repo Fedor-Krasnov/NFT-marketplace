@@ -2,11 +2,11 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Page } from './components/Page';
 import { AuthorizationPage } from './components/Page/AuthorizationPage';
-import { BrowseMarketplacePage } from './components/Page/BrowseMarketplacePage/index.js';
-import { ConnectWalletPage } from './components/Page/ConnectWalletPage/index.js';
+import { BrowseMarketplacePage } from './components/Page/BrowseMarketplacePage';
+import { ConnectWalletPage } from './components/Page/ConnectWalletPage';
 import { HomePage } from './components/Page/HomePage';
-import { TopCreatorsPage } from './components/Page/TopCreatorsPage/index.js';
-import { UserProfilePage } from './components/Page/UserProfilePage/index.js';
+import { TopCreatorsPage } from './components/Page/TopCreatorsPage';
+import { UserProfilePage } from './components/Page/UserProfilePage';
 
 const App = () => (
   <Page>
