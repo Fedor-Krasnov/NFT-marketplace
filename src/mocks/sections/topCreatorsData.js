@@ -2,7 +2,7 @@ export const topCreatorsData = {
   title: 'Top creators',
   description: 'Checkout Top Rated Creators on the NFT Marketplace',
   buttonTitle: 'View Rankings',
-  buttonLink: '/topcreators',
+  buttonLink: '/top-creators',
   userCreators: [
     {
       image: {

@@ -1,14 +1,14 @@
 export const menuData = [
   {
-    path: '/browsemarketplace',
+    path: '/browse-marketplace',
     title: 'Marketplace',
   },
   {
-    path: '/topcreators',
+    path: '/top-creators',
     title: 'Rankings',
   },
   {
-    path: '/connectwallet',
+    path: '/connect-wallet',
     title: 'Connect a&nbsp;wallet',
   },
 ];
