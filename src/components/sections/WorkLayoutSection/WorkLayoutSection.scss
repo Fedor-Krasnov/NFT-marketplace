@@ -16,6 +16,8 @@
 
   &::after {
     border-bottom: 2px solid colors.$shoe-wax;
+    position: relative;
+    display: block;
   }
 
   &::before {
