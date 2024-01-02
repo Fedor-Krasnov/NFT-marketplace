@@ -1,7 +1,8 @@
 @use 'src/assets/styles/variables/colors';
 
-.work-layout {
+.work-layout-section {
   position: relative;
+  max-width: none;
 
   &::after,
   &::before {
