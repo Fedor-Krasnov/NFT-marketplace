@@ -10,7 +10,7 @@ const WorkLayoutSection = () => {
     <div className="work-layout">
       <div className="work-layout__container">
         {workLayout.map((data, indexNFTCard) => (
-          <NFTCard key={indexNFTCard} data={data} />
+          <NFTCard key={indexNFTCard} data={data} isDarkBackground />
         ))}
       </div>
     </div>

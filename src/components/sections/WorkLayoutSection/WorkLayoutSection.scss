@@ -11,6 +11,7 @@
     left: -18px;
     height: 100%;
     width: calc(100% + 18px * 2);
+    z-index: -1;
   }
 
   &::after {
@@ -18,7 +19,6 @@
   }
 
   &::before {
-    z-index: -1;
     background: colors.$black-liquorice;
   }
 
