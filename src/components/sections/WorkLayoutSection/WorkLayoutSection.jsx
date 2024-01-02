@@ -5,13 +5,17 @@ import { NFTCard } from '../../NFTCard';
 
 const workLayoutSectionClassName = 'work-layout-section';
 
-const WorkLayoutSection = () => {
+const WorkLayoutSection = ({ userName }) => {
   const { nftCards } = browseMarketplacePageData;
+  let nftCardsResult = nftCards;
+  if (userName) {
+    nftCardsResult = nftCards.filter((card) => card.nftDetails.username === userName);
+  }
 
   return (
     <section className={workLayoutSectionClassName}>
       <div className={`${workLayoutSectionClassName}__container`}>
-        {nftCards.map((data, indexNFTCard) => (
+        {nftCardsResult.map((data, indexNFTCard) => (
           <NFTCard key={indexNFTCard} data={data} isDarkBackground />
         ))}
       </div>

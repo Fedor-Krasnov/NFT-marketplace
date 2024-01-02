@@ -16,7 +16,7 @@ const App = () => (
       <Route element={<ConnectWalletPage />} path="/connect-wallet" />
       <Route element={<TopCreatorsPage />} path="/top-creators" />
       <Route element={<BrowseMarketplacePage />} path="/browse-marketplace" />
-      <Route element={<UserProfilePage />} path="/user-profile" />
+      <Route element={<UserProfilePage />} path="/user-profile/:userName" />
     </Routes>
   </Page>
 );
