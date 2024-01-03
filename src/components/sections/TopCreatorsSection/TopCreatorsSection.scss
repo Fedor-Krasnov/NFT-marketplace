@@ -45,14 +45,29 @@
   }
 
   &__creator {
-    align-items: center;
-    padding: mixins.clamp-auto(12px, 20px);
-    display: flex;
-    gap: mixins.clamp-auto(8px, 20px);
-    width: 100%;
-    background: #3B3B3B;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    position: relative;
+
+    a {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    #{$selector}__creator-container {
+      align-items: center;
+      padding: mixins.clamp-auto(12px, 20px);
+      display: flex;
+      gap: mixins.clamp-auto(8px, 20px);
+      width: 100%;
+      background: #3B3B3B;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
 
     #{$selector}__serial-number {
       width: 30px;
