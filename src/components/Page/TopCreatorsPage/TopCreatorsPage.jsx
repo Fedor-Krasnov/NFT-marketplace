@@ -1,8 +1,8 @@
 import React from 'react';
 import './TopCreatorsPage.scss';
 import { topCreatorsPageData } from '../../../mocks/Page';
+import { TopCreatorsSection } from '../../sections';
 import { Title } from '../../units';
-import { UserTopPage } from './UserTopPage';
 
 const TopCreatorsPage = () => {
   const { title, description } = topCreatorsPageData;
@@ -40,17 +40,7 @@ const TopCreatorsPage = () => {
           <p>All Time</p>
         </a>
       </div>
-      <div className="top-creators__list">
-        <div className="top-creators__list-header">
-          <p className="top-creators__example-1">#</p>
-          <p className="top-creators__example-2">Artist</p>
-          <p className="top-creators__example-3">Change</p>
-          <p className="top-creators__example-4">NFTs Sold</p>
-          <p className="top-creators__example-5">Volume</p>
-        </div>
-        <div></div>
-      </div>
-      <UserTopPage />
+      <TopCreatorsSection />
     </div>
   );
 };

@@ -8,3 +8,4 @@ export { DiscoverMoreNfTs } from './DiscoverMoreNFTs';
 export { WeeklyDigest } from './WeeklyDigest';
 export { UserProfileSection } from './UserProfileSection';
 export { DetailedUserProfileSection } from './DetailedUserProfileSection';
+export { TopCreatorsSection } from './TopCreatorsSection';

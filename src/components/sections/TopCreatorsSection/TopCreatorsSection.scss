@@ -1,0 +1,160 @@
+@use 'src/assets/styles/mixins';
+
+.top-creators-section {
+  $selector: &;
+
+  width: 100%;
+
+  &__list-header {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    gap: mixins.clamp-auto(8px, 20px);
+    height: 42px;
+    border-radius: 20px;
+    border: 2px solid #3B3B3B;
+    background-color: transparent;
+    margin: 30px 0 20px 0;
+
+    p {
+      color: #858584;
+      font-family: 'Space Mono', sans-serif;
+      font-size: mixins.clamp-auto(14px, 22px);
+      line-height: 12px;
+    }
+
+    #{$selector}__example-1 {
+      width: 30px;
+    }
+
+    #{$selector}__example-2 {
+      width: 55%;
+    }
+
+    #{$selector}__example-3 {
+      width: 15%;
+    }
+
+    #{$selector}__example-4 {
+      width: 15%;
+    }
+
+    #{$selector}__example-5 {
+      width: 15%;
+    }
+  }
+
+  &__creator {
+    align-items: center;
+    padding: mixins.clamp-auto(12px, 20px);
+    display: flex;
+    gap: mixins.clamp-auto(8px, 20px);
+    width: 100%;
+    background: #3B3B3B;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    #{$selector}__serial-number {
+      width: 30px;
+      height: 30px;
+      background: #2B2B2B;
+      border-radius: 20px;
+      font-family: 'Space Mono', sans-serif;
+      color: #858584;
+      text-align: center;
+      align-items: center;
+      display: grid;
+      min-width: 30px;
+    }
+
+    #{$selector}__artist-details {
+      width: 55%;
+      display: flex;
+      align-items: center;
+      gap: mixins.clamp-auto(8px, 20px);
+      white-space: nowrap;
+      overflow: hidden;
+
+      img {
+        width: mixins.clamp-auto(24px, 60px);
+        min-width: mixins.clamp-auto(24px, 60px);
+      }
+    }
+
+    #{$selector}__name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    #{$selector}__change {
+      font-family: 'Space Mono', sans-serif;
+      font-weight: 400;
+      font-size: mixins.clamp-auto(12px, 16px);
+      line-height: 22px;
+      color: #00AC4F;
+      width: 15%;
+    }
+
+    #{$selector}__nft-sold {
+      font-family: 'Space Mono', sans-serif;
+      width: 15%;
+    }
+
+    #{$selector}__volume {
+      width: 15%;
+      font-size: mixins.clamp-auto(12px, 16px);
+      line-height: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__example-4,
+    &__nft-sold {
+      display: none;
+    }
+
+    &__list-header {
+      #{$selector}__example-2 {
+        width: 70%;
+      }
+    }
+
+    &__creator {
+      #{$selector}__artist-details {
+        width: 70%;
+      }
+
+      #{$selector}__serial-number {
+        background: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    &__example-3,
+    &__change {
+      display: none;
+    }
+
+    &__list-header {
+      #{$selector}__example-2 {
+        width: 80%;
+      }
+
+      #{$selector}__example-5 {
+        width: 20%;
+      }
+    }
+
+    &__creator {
+      #{$selector}__artist-details {
+        width: 80%;
+      }
+
+      #{$selector}__volume {
+        width: 20%;
+      }
+    }
+  }
+}
+
