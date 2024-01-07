@@ -4,10 +4,10 @@ export const pageCheck = () => {
   const { pathname } = useLocation();
 
   const isMainPage = !pathname.slice(1).length;
-  const isAuthPage = pathname === '/authorization';
+  const isAuthorizationPage = pathname === '/authorization';
 
   return {
-    isAuthPage,
+    isAuthorizationPage,
     isMainPage,
   };
 };

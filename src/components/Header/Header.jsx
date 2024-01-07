@@ -9,7 +9,7 @@ import './Header.scss';
 import { Burger } from './Burger';
 
 const Header = () => {
-  const { isAuthPage } = pageCheck();
+  const { isAuthorizationPage } = pageCheck();
   const { title, to } = headerData;
 
   return (
@@ -17,7 +17,7 @@ const Header = () => {
       <Logo />
       <div className="header__navbar">
         <Menu />
-        {!isAuthPage && <Button icon={IconCode.user} title={title} to={to} />}
+        {!isAuthorizationPage && <Button icon={IconCode.user} title={title} to={to} />}
       </div>
       <Burger />
     </header>
