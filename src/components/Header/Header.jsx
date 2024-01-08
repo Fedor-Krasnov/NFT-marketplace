@@ -8,14 +8,16 @@ import { Logo } from '../units/Logo';
 import './Header.scss';
 import { Burger } from './Burger';
 
+const headerClassName = 'header';
+
 const Header = () => {
   const { isAuthorizationPage } = pageCheck();
   const { title, to } = headerData;
 
   return (
-    <header className="header">
+    <header className={headerClassName}>
       <Logo />
-      <div className="header__navbar">
+      <div className={`${headerClassName}__navbar`}>
         <Menu />
         {!isAuthorizationPage && <Button icon={IconCode.user} title={title} to={to} />}
       </div>
