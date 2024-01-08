@@ -4,6 +4,8 @@ import classNames from 'classnames';
 import { NFTDetails } from '../NFTDetails';
 import { NftDetailedInformation } from './NFTDetailedInformation';
 
+const nftCardClassName = 'nft-card';
+
 const NFTCard = ({ data, isDarkBackground }) => {
   const { image, nftDetails, nftDetailedInformation } = data;
 
@@ -12,7 +14,7 @@ const NFTCard = ({ data, isDarkBackground }) => {
       <div>
         <img alt={image.alt} src={image.src} />
       </div>
-      <div className="nft-card__details">
+      <div className={`${nftCardClassName}__details`}>
         <NFTDetails data={nftDetails} />
       </div>
       {nftDetailedInformation && <NftDetailedInformation data={nftDetailedInformation} />}

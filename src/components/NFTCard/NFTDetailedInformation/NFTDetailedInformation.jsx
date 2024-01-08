@@ -1,11 +1,13 @@
 import React from 'react';
 import './NFTDetailedInformation.scss';
 
+const nftDetailedInformationClassName = 'nft-details-information';
+
 const NftDetailedInformation = ({ data }) => {
   const { price, highestBid } = data;
 
   return (
-    <div className="nft-details-information">
+    <div className={nftDetailedInformationClassName}>
       <dl>
         <dt>Price</dt>
         <dd dangerouslySetInnerHTML={{ __html: price }} />
