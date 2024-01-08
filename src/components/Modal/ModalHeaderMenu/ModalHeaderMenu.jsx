@@ -3,11 +3,13 @@ import { Menu } from '../../Menu';
 import { Button, IconCode } from '../../units';
 import './ModalHeaderMenu.scss';
 
+const modalHeaderMenuClassName = 'modal-header-menu';
+
 const ModalHeaderMenu = () => (
-  <div className="modal-header-menu">
+  <div className={modalHeaderMenuClassName}>
     <Menu isModal />
     <Button
-      className="modal-header-menu__button"
+      className={`${modalHeaderMenuClassName}__button`}
       icon={IconCode.user}
       title="Sign Up"
       to="/authorization"

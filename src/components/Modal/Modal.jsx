@@ -6,6 +6,8 @@ import { useWindowDimensions } from '../../hooks';
 import { CSSTransition } from 'react-transition-group';
 import { Logo } from '../units';
 
+const modalClassName = 'modal';
+
 const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
   const { windowWidth } = useWindowDimensions();
   const maxModalWidth = 945;
@@ -29,10 +31,10 @@ const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
       timeout={1000}
       unmountOnExit
     >
-      <div className="modal">
-        <div className="modal__header">
+      <div className={modalClassName}>
+        <div className={`${modalClassName}__header`}>
           {logoDisplayWidth >= windowWidth && <Logo withoutText />}
-          <div className="modal__close">
+          <div className={`${modalClassName}__close`}>
             <span onClick={() => setIsModalOpen(false)}>
               <Icon code={IconCode.close} />
             </span>
