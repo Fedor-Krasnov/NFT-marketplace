@@ -4,19 +4,21 @@ import { authorizationPageData } from '../../../mocks/Page';
 import { Button, Title } from '../../units';
 import { RegistrationPage } from './RegistrationPage';
 
+const authorizationPageClassName = 'create-account-main';
+
 const AuthorizationPage = () => {
   const { description, title, entryField, titleButton } = authorizationPageData;
 
   return (
-    <div className="create-account-main">
-      <div className="create-account-main__img-container">
-        <div className="create-account-main__img"></div>
+    <div className={authorizationPageClassName}>
+      <div className={`${authorizationPageClassName}__img-container`}>
+        <div className={`${authorizationPageClassName}__img`}></div>
       </div>
-      <div className="create-account-main__registration">
-        <div className="create-account-main__title">
+      <div className={`${authorizationPageClassName}__registration`}>
+        <div className={`${authorizationPageClassName}__title`}>
           <Title description={description} title={title} />
         </div>
-        <div className="create-account-main__entry-field">
+        <div className={`${authorizationPageClassName}__entry-field`}>
           {entryField.map((data) => (
             <RegistrationPage key={data.id} data={data} />
           ))}
