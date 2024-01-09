@@ -4,16 +4,18 @@ import { connectWalletPageData } from '../../../mocks/Page';
 import { Title } from '../../units';
 import { SelectionOfWalletsPage } from './SelectionOfWalletsPage';
 
+const connectWalletPageClassName = 'connect-wallet';
+
 const ConnectWalletPage = () => {
   const { title, description, choice } = connectWalletPageData;
 
   return (
-    <div className="connect-wallet">
-      <div className="connect-wallet__img-container">
-        <div className="connect-wallet__img"></div>
+    <div className={connectWalletPageClassName}>
+      <div className={`${connectWalletPageClassName}__img-container`}>
+        <div className={`${connectWalletPageClassName}__img`}></div>
       </div>
-      <div className="connect-wallet__wallet-selection">
-        <div className="connect-wallet__title">
+      <div className={`${connectWalletPageClassName}__wallet-selection`}>
+        <div className={`${connectWalletPageClassName}__title`}>
           <Title description={description} title={title} />
         </div>
         {choice.map((item) => (
