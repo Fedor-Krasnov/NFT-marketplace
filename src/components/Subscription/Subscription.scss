@@ -13,7 +13,7 @@
       flex: 1;
     }
 
-    .input__email {
+    .subscription__input-email {
       display: flex;
       align-items: center;
       flex: 1;
@@ -41,7 +41,7 @@
         transform: translateX(0);
       }
 
-      .input__email {
+      .subscription__input-email {
         border-radius: 20px;
         height: 40px;
       }
@@ -52,7 +52,7 @@
     &__label {
       display: flex;
 
-      .input__email {
+      .subscription__input-email {
         border-radius: 20px 0 0 20px;
         height: 60px;
       }
@@ -74,7 +74,7 @@
       display: grid;
       row-gap: 20px;
 
-      .input__email {
+      .subscription__input-email {
         border-radius: 20px;
         height: 40px;
       }

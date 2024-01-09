@@ -2,10 +2,12 @@ import React from 'react';
 import './Subscription.scss';
 import { Button } from '../units';
 
+const subscriptionClassName = 'subscription';
+
 const Subscription = () => (
-  <div className="subscription">
-    <label className="subscription__label">
-      <input className="input__email" placeholder="Enter your email here" />
+  <div className={subscriptionClassName}>
+    <label className={`${subscriptionClassName}__label`}>
+      <input className={`${subscriptionClassName}__input-email`} placeholder="Enter your email here" />
       <div>
         <Button title="Subscribe" />
       </div>
