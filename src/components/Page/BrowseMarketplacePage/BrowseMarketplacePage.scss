@@ -30,7 +30,7 @@
       width: 100%;
     }
 
-    .search {
+    #{$selector}__search {
       max-width: 1050px;
       height: 60px;
       border: 1px solid #3B3B3B;
@@ -43,7 +43,7 @@
       outline: none;
     }
 
-    .search::placeholder {
+    #{$selector}__search::placeholder {
       font-size: mixins.clamp-auto(12px, 16px);
       line-height: mixins.clamp-auto(14px, 22px);
     }

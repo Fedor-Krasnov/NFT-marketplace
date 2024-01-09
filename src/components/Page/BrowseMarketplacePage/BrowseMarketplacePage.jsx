@@ -4,25 +4,31 @@ import { browseMarketplacePageData } from '../../../mocks/Page';
 import { WorkLayoutSection } from '../../sections/WorkLayoutSection';
 import { Icon, IconCode, Title } from '../../units';
 
+const browseMarketplacePageClassName = 'browse-marketplace';
+
 const BrowseMarketplacePage = () => {
   const { title, description, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } = browseMarketplacePageData;
 
   return (
-    <div className="browse-marketplace">
-      <div className="browse-marketplace__title">
+    <div className={browseMarketplacePageClassName}>
+      <div className={`${browseMarketplacePageClassName}__title`}>
         <Title description={description} title={title} />
       </div>
-      <div className="browse-marketplace__search-string">
+      <div className={`${browseMarketplacePageClassName}__search-string`}>
         <label>
-          <input className="search" placeholder="Search your favourite NFTs" type="text" />
+          <input
+            className={`${browseMarketplacePageClassName}__search`}
+            placeholder="Search your favourite NFTs"
+            type="text"
+          />
         </label>
-        <div className="browse-marketplace__search-icon">
+        <div className={`${browseMarketplacePageClassName}__search-icon`}>
           <Icon code={IconCode.magnifyingGlass} />
         </div>
       </div>
-      <div className="browse-marketplace__choice-point">
-        <div className="browse-marketplace__trait"></div>
-        <div className="browse-marketplace__buttons">
+      <div className={`${browseMarketplacePageClassName}__choice-point`}>
+        <div className={`${browseMarketplacePageClassName}__trait`}></div>
+        <div className={`${browseMarketplacePageClassName}__buttons`}>
           <a href="">
             {categoryOne}
             <span>{categoryOneSpan}</span>
