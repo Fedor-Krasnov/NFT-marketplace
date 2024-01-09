@@ -4,15 +4,17 @@ import { topCreatorsPageData } from '../../../mocks/Page';
 import { TopCreatorsSection } from '../../sections';
 import { Title } from '../../units';
 
+const topCreatorsPageClassName = 'top-creators';
+
 const TopCreatorsPage = () => {
   const { title, description } = topCreatorsPageData;
 
   return (
-    <div className="top-creators">
-      <div className="top-creators__title-page">
+    <div className={topCreatorsPageClassName}>
+      <div className={`${topCreatorsPageClassName}__title-page`}>
         <Title description={description} title={title} />
       </div>
-      <div className="top-creators__control-panel-desktop">
+      <div className={`${topCreatorsPageClassName}__control-panel-desktop`}>
         <a href="">
           <p>Today</p>
         </a>
@@ -26,7 +28,7 @@ const TopCreatorsPage = () => {
           <p>All Time</p>
         </a>
       </div>
-      <div className="top-creators__control-panel-adaptive">
+      <div className={`${topCreatorsPageClassName}__control-panel-adaptive`}>
         <a href="">
           <p>1d</p>
         </a>
