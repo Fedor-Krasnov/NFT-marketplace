@@ -4,20 +4,22 @@ import { auctionData } from '../../../mocks';
 import { Button, IconCode } from '../../units';
 import { Countdown } from './Countdown';
 
+const auctionClassName = 'auction';
+
 const Auction = () => {
   const { image, userName, nameNFT } = auctionData;
 
   return (
-    <section className="auction">
-      <div className="auction__container">
-        <div className="auction__wrapper">
-          <div className="auction__author">
-            <div className="auction__avatar">
+    <section className={auctionClassName}>
+      <div className={`${auctionClassName}__container`}>
+        <div className={`${auctionClassName}__wrapper`}>
+          <div className={`${auctionClassName}__author`}>
+            <div className={`${auctionClassName}__avatar`}>
               <img alt={image.alt} src={image.src} />
             </div>
-            <div className="auction__user-name" dangerouslySetInnerHTML={{ __html: userName }} />
+            <div className={`${auctionClassName}__user-name`} dangerouslySetInnerHTML={{ __html: userName }} />
           </div>
-          <div className="auction__content">
+          <div className={`${auctionClassName}__content`}>
             <h2 dangerouslySetInnerHTML={{ __html: nameNFT }} />
             <Button button icon={IconCode.eye} secondary title={auctionData.buttonTitle} to={auctionData.buttonLink} />
             <Countdown />

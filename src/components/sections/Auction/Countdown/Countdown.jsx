@@ -2,32 +2,34 @@ import React from 'react';
 import './Countdown.scss';
 import { auctionData } from '../../../../mocks';
 
+const countdownClassName = 'countdown';
+
 const Countdown = () => {
   const { title, countdownContent } = auctionData;
 
   return (
-    <div className="countdown__container">
-      <div className="countdown">
+    <div className={`${countdownClassName}__container`}>
+      <div className={countdownClassName}>
         <h4 dangerouslySetInnerHTML={{ __html: title }} />
-        <div className="countdown__content">
+        <div className={`${countdownClassName}__content`}>
           <div>
-            <div className="countdown__value">59</div>
+            <div className={`${countdownClassName}__value`}>59</div>
             <div dangerouslySetInnerHTML={{ __html: countdownContent.hours }} />
           </div>
           <div>
-            <div className="countdown__value">:</div>
+            <div className={`${countdownClassName}__value`}>:</div>
             <div></div>
           </div>
           <div>
-            <div className="countdown__value">59</div>
+            <div className={`${countdownClassName}__value`}>59</div>
             <div dangerouslySetInnerHTML={{ __html: countdownContent.minutes }} />
           </div>
           <div>
-            <div className="countdown__value">:</div>
+            <div className={`${countdownClassName}__value`}>:</div>
             <div></div>
           </div>
           <div>
-            <div className="countdown__value">59</div>
+            <div className={`${countdownClassName}__value`}>59</div>
             <div dangerouslySetInnerHTML={{ __html: countdownContent.seconds }} />
           </div>
         </div>
