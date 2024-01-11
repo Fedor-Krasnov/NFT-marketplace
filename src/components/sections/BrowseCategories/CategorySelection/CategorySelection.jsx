@@ -1,18 +1,21 @@
 import React from 'react';
+import classNames from 'classnames';
+
+const categorySelectionClassName = 'nft-card';
 
 const CategorySelection = ({ data }) => {
-  const { id, image, icon, category } = data;
+  const { image, icon, category } = data;
 
   return (
     <li>
-      <div className="nft-card">
-        <div className="nft-card__img">
+      <div className={categorySelectionClassName}>
+        <div className={`${categorySelectionClassName}__img`}>
           <img alt={image.alt} src={image.src} />
-          <div className="nft-card__icon">
+          <div className={`${categorySelectionClassName}__icon`}>
             <img alt="Nft card icon" src={icon.src} />
           </div>
         </div>
-        <div className="nft-card__details nft-details">
+        <div className={classNames(`${categorySelectionClassName}__details`, 'nft-details')}>
           <h3>{category}</h3>
         </div>
       </div>
