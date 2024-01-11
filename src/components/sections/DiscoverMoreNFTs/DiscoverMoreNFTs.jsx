@@ -4,11 +4,13 @@ import { discoverMoreNfTsData } from '../../../mocks';
 import { NFTCard } from '../../NFTCard';
 import { Button, IconCode, Title } from '../../units';
 
+const discoverMoreNfTsClassName = 'discover-more-nfts';
+
 const DiscoverMoreNfTs = () => {
   const { nftCards, buttonLink, buttonTitle, description, title } = discoverMoreNfTsData;
 
   return (
-    <section className="discover-more-nfts">
+    <section className={discoverMoreNfTsClassName}>
       <Title
         buttonIcon={IconCode.eye}
         buttonTitle={buttonTitle}
@@ -17,13 +19,13 @@ const DiscoverMoreNfTs = () => {
         title={title}
         to={buttonLink}
       />
-      <div className="discover-more__card">
+      <div className={`${discoverMoreNfTsClassName}__card`}>
         {nftCards.map((data, dataId) => (
           <NFTCard key={dataId} data={data} />
         ))}
       </div>
       <Button
-        className="discover-more-nfts__button"
+        className={`${discoverMoreNfTsClassName}__button`}
         icon={IconCode.eye}
         outline
         title={buttonTitle}
