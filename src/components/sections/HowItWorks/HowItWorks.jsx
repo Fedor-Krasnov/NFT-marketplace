@@ -4,13 +4,15 @@ import { howItWorksData } from '../../../mocks';
 import { Title } from '../../units';
 import { ExplanatoryCard } from './ExplanatoryCard';
 
+const howItWorksClassName = 'how-it-works';
+
 const HowItWorks = () => {
-  const { offerCards, image } = howItWorksData;
+  const { offerCards } = howItWorksData;
 
   return (
-    <section className="how-it-works">
+    <section className={howItWorksClassName}>
       <Title description={howItWorksData.description} heading="h2" title={howItWorksData.title} />
-      <div className="how-it-works__container">
+      <div className={`${howItWorksClassName}__container`}>
         {offerCards.map((data, dataId) => (
           <ExplanatoryCard key={dataId} data={data} />
         ))}
