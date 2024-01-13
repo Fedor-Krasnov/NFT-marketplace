@@ -4,8 +4,10 @@ import { topCreatorsData } from '../../../mocks';
 import { Button, IconCode, Title } from '../../units';
 import { UserCreators } from './UserCreators';
 
+const topCreatorsClassName = 'top-creators';
+
 const TopCreators = () => (
-  <section className="top-creators">
+  <section className={topCreatorsClassName}>
     <Title
       buttonIcon={IconCode.rocket}
       buttonTitle={topCreatorsData.buttonTitle}
@@ -16,7 +18,7 @@ const TopCreators = () => (
     />
     <UserCreators />
     <Button
-      className="top-creators__button"
+      className={`${topCreatorsClassName}__button`}
       icon={IconCode.rocket}
       outline
       title={topCreatorsData.buttonTitle}

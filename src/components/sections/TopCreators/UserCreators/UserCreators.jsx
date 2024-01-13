@@ -2,15 +2,17 @@ import React from 'react';
 import './UserCreators.scss';
 import { topCreatorsData } from '../../../../mocks';
 
+const userCreatorsClassName = 'creators';
+
 const UserCreators = () => (
-  <div className="creators">
+  <div className={userCreatorsClassName}>
     {topCreatorsData.userCreators.map(({ image, userName, totalSales }, userCreatorIndex) => (
-      <div key={userName} className="creators__user">
-        <span className="creators__number">{userCreatorIndex + 1}</span>
-        <div className="creators__avatar">
+      <div key={userName} className={`${userCreatorsClassName}__user`}>
+        <span className={`${userCreatorsClassName}__number`}>{userCreatorIndex + 1}</span>
+        <div className={`${userCreatorsClassName}__avatar`}>
           <img alt={image.alt} src={image.src} />
         </div>
-        <div className="creators__details">
+        <div className={`${userCreatorsClassName}__details`}>
           <h3>{userName}</h3>
           <p>
             <span>Total Sales:</span> {totalSales}
