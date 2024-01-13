@@ -4,15 +4,21 @@ import { trendingCollectionData } from '../../../mocks';
 import { Title } from '../../units/Title';
 import { NFTCollection } from './NFTCollection';
 
+const trendingCollectionClassName = 'trending-collection';
+
 const TrendingCollection = () => {
   const { description, nftCollection, title } = trendingCollectionData;
 
   return (
-    <section className="trending-collection">
+    <section className={trendingCollectionClassName}>
       <Title description={description} heading="h2" title={title} />
-      <div className="trending-collection__content">
+      <div className={`${trendingCollectionClassName}__content`}>
         {nftCollection.map((data) => (
-          <NFTCollection key={data.nftDetails.username} className="trending-collection__nft-collection" data={data} />
+          <NFTCollection
+            key={data.nftDetails.username}
+            className={`${trendingCollectionClassName}__nft-collection`}
+            data={data}
+          />
         ))}
       </div>
     </section>
