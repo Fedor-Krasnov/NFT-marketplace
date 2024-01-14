@@ -1,19 +1,17 @@
 import React from 'react';
 import './UserProfileSection.scss';
 
-const UserProfileSection = () => {
-  console.log();
+const userProfileSectionClassName = 'user-profile-section';
 
-  return (
-    <section className="user-profile-section">
-      <div className="user-profile-section__background" />
-      <div className="user-profile-section__avatar-container">
-        <div className="user-profile-section__avatar">
-          <img alt="" src="../src/assets/media/images/users/square/user-10.png" />
-        </div>
+const UserProfileSection = () => (
+  <section className={userProfileSectionClassName}>
+    <div className={`${userProfileSectionClassName}__background`} />
+    <div className={`${userProfileSectionClassName}__avatar-container`}>
+      <div className={`${userProfileSectionClassName}__avatar`}>
+        <img alt="" src="../src/assets/media/images/users/square/user-10.png" />
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export { UserProfileSection };
