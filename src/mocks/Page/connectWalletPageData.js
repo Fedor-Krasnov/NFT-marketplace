@@ -4,24 +4,15 @@ export const connectWalletPageData = {
   choice: [
     {
       titleChoice: 'Metamask',
-      image: {
-        alt: 'Metamask',
-        src: '../src-old/media/pages/icon/metamask.png',
-      },
+      icon: 'metamask',
     },
     {
       titleChoice: 'Wallet Connect',
-      image: {
-        alt: 'Wallet Connect',
-        src: '../src-old/media/pages/icon/wallet-connect.png',
-      },
+      icon: 'walletConnect',
     },
     {
       titleChoice: 'Coinbase',
-      image: {
-        alt: 'Coinbase',
-        src: '../src-old/media/pages/icon/coinbase.png',
-      },
+      icon: 'coinbase',
     },
   ],
 };

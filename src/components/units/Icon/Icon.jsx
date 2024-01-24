@@ -19,9 +19,9 @@ export const IconCode = {
   globe: 'globe',
   magnifyingGlass: 'magnifying-glass',
   metamask: 'metamask',
-  walletConnect: 'wallet-connect',
   coinbase: 'coinbase',
   password: 'password',
+  walletConnect: 'walletConnect',
 };
 
 const iconCodeToSize = {
@@ -40,9 +40,9 @@ const iconCodeToSize = {
   [IconCode.globe]: [32, 32],
   [IconCode.magnifyingGlass]: [24, 24],
   [IconCode.metamask]: [40, 40],
-  [IconCode.walletConnect]: [40, 40],
   [IconCode.coinbase]: [40, 40],
   [IconCode.password]: [20, 20],
+  [IconCode.walletConnect]: [40, 40],
 };
 
 const iconClassName = 'icon';
