@@ -21,6 +21,7 @@ export const IconCode = {
   metamask: 'metamask',
   walletConnect: 'wallet-connect',
   coinbase: 'coinbase',
+  password: 'password',
 };
 
 const iconCodeToSize = {
@@ -41,6 +42,7 @@ const iconCodeToSize = {
   [IconCode.metamask]: [40, 40],
   [IconCode.walletConnect]: [40, 40],
   [IconCode.coinbase]: [40, 40],
+  [IconCode.password]: [20, 20],
 };
 
 const iconClassName = 'icon';

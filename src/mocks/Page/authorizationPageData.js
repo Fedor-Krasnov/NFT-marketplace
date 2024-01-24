@@ -4,6 +4,7 @@ export const authorizationPageData = {
   titleButton: 'Create account',
   entryField: [
     {
+      icon: 'user',
       image: {
         alt: 'User',
         src: 'src/assets/media/icon/user.svg',
@@ -13,6 +14,7 @@ export const authorizationPageData = {
       },
     },
     {
+      icon: 'email',
       image: {
         alt: 'Email',
         src: '../src-old/media/icons/envelopesimple.svg',
@@ -22,6 +24,7 @@ export const authorizationPageData = {
       },
     },
     {
+      icon: 'password',
       image: {
         alt: 'Password',
         src: '../src-old/media/icons/lockkey.svg',
@@ -31,6 +34,7 @@ export const authorizationPageData = {
       },
     },
     {
+      icon: 'password',
       image: {
         alt: 'Confirm Password',
         src: '../src-old/media/icons/lockkey.svg',
