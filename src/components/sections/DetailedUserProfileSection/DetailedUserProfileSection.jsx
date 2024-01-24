@@ -7,7 +7,7 @@ import { Button, IconCode, Statistics } from '../../units';
 const detailedUserProfileSectionClassName = 'detailed-user-profile-section';
 
 const DetailedUserProfileSection = () => {
-  const { banner, statistics, userAvatar, userName, userBio } = userProfilePageData;
+  const { statistics, userName, userBio } = userProfilePageData;
 
   return (
     <div className={detailedUserProfileSectionClassName}>
