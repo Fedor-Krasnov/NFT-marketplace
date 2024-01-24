@@ -2,7 +2,7 @@ import React from 'react';
 import './AuthorizationPage.scss';
 import { authorizationPageData } from '../../../mocks/Page';
 import { Button, Title } from '../../units';
-import { RegistrationPage } from './RegistrationPage';
+import { Input } from '../../units/Input';
 
 const authorizationPageClassName = 'create-account-main';
 
@@ -20,7 +20,7 @@ const AuthorizationPage = () => {
         </div>
         <div className={`${authorizationPageClassName}__entry-field`}>
           {entryField.map((data) => (
-            <RegistrationPage key={data.id} data={data} />
+            <Input key={data.id} data={data} />
           ))}
           <Button title={titleButton} width="fill" />
         </div>

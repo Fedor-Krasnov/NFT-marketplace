@@ -1,10 +1,10 @@
 import React from 'react';
-import { Icon } from '../../../units/index.js';
-import './RegistrationPage.scss';
+import { Icon } from '../index.js';
+import './Input.scss';
 
 const registrationPageClassName = 'registration';
 
-const RegistrationPage = ({ data }) => {
+const Input = ({ data }) => {
   const { input, icon } = data;
 
   return (
@@ -19,4 +19,4 @@ const RegistrationPage = ({ data }) => {
   );
 };
 
-export { RegistrationPage };
+export { Input };
