@@ -110,13 +110,13 @@
     &__main-information {
       #{$selector}__user-information {
         #{$selector}__user-main-information {
-          display: grid;
+          justify-content: normal;
 
           #{$selector}__button {
             display: grid;
             gap: 20px;
             margin-top: 30px;
-            width: 284px;
+            width: 100%;
 
             .button {
               width: auto;
