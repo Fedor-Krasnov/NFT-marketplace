@@ -8,7 +8,7 @@ const userCreatorsClassName = 'creators';
 const UserCreators = () => (
   <div className={userCreatorsClassName}>
     {topCreatorsData.userCreators.map(({ image, userName, totalSales }, userCreatorIndex) => (
-      <Link to="tmp">
+      <Link to={`/user-profile/${userName}`}>
         <div key={userName} className={`${userCreatorsClassName}__user`}>
           <span className={`${userCreatorsClassName}__number`}>{userCreatorIndex + 1}</span>
           <div className={`${userCreatorsClassName}__avatar`}>

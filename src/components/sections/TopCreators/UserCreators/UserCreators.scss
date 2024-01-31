@@ -63,10 +63,14 @@
   @media only screen and (max-width: 1120px) {
     gap: 25px;
 
+    a {
+      width: 48%;
+    }
+
     &__user {
       height: 100px;
       display: flex;
-      width: 48%;
+      width: 100%;
 
       img {
         width: 60px;
@@ -97,7 +101,10 @@
   }
 
   @media only screen and (max-width: 700px) {
-    &__user {
+    display: grid;
+    justify-content: normal;
+
+    a {
       width: 100%;
     }
   }
