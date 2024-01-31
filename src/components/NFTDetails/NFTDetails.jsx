@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 const nftDetailsClassName = 'nft-details';
 
 const NFTDetails = ({ data }) => {
-  const { image, title, username } = data;
+  const { image, title, username, userName } = data;
 
   return (
     <div className={nftDetailsClassName}>
       <h3 dangerouslySetInnerHTML={{ __html: title }} />
-      <Link to="tmp">
+      <Link to={`/user-profile/${userName}`}>
         <div className={`${nftDetailsClassName}__user`}>
           <div className={`${nftDetailsClassName}__avatar`}>{image && <img alt={image.alt} src={image.src} />}</div>
           <div className={`${nftDetailsClassName}__username`} dangerouslySetInnerHTML={{ __html: username }} />
