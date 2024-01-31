@@ -1,6 +1,7 @@
 import React from 'react';
 import './NFTCollection.scss';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 import { NFTDetails } from '../../../NFTDetails';
 
 const nftCollectionClassName = 'nft-collection';
@@ -19,9 +20,9 @@ const NFTCollection = ({ className, data }) => {
           </div>
         ))}
         <div>
-          <a href="">
+          <Link to="tmp">
             <div className={`${nftCollectionClassName}__counts`}>{counts}+</div>
-          </a>
+          </Link>
         </div>
       </div>
       <div className={`${nftCollectionClassName}__details`}>
