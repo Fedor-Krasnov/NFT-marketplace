@@ -1,5 +1,6 @@
 import React from 'react';
 import './Auction.scss';
+import { Link } from 'react-router-dom';
 import { auctionData } from '../../../mocks';
 import { Button, IconCode } from '../../units';
 import { Countdown } from './Countdown';
@@ -13,12 +14,14 @@ const Auction = () => {
     <section className={auctionClassName}>
       <div className={`${auctionClassName}__container`}>
         <div className={`${auctionClassName}__wrapper`}>
-          <div className={`${auctionClassName}__author`}>
-            <div className={`${auctionClassName}__avatar`}>
-              <img alt={image.alt} src={image.src} />
+          <Link to={`/user-profile/${userName}`}>
+            <div className={`${auctionClassName}__author`}>
+              <div className={`${auctionClassName}__avatar`}>
+                <img alt={image.alt} src={image.src} />
+              </div>
+              <div className={`${auctionClassName}__user-name`} dangerouslySetInnerHTML={{ __html: userName }} />
             </div>
-            <div className={`${auctionClassName}__user-name`} dangerouslySetInnerHTML={{ __html: userName }} />
-          </div>
+          </Link>
           <div className={`${auctionClassName}__content`}>
             <h2 dangerouslySetInnerHTML={{ __html: nameNFT }} />
             <Button button icon={IconCode.eye} secondary title={auctionData.buttonTitle} to={auctionData.buttonLink} />
