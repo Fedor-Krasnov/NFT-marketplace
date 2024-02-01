@@ -5,6 +5,7 @@ import { AuthorizationPage } from './components/Page/AuthorizationPage';
 import { BrowseMarketplacePage } from './components/Page/BrowseMarketplacePage';
 import { ConnectWalletPage } from './components/Page/ConnectWalletPage';
 import { HomePage } from './components/Page/HomePage';
+import { PageAuctionNftPage } from './components/Page/PageAuctionNFTPage';
 import { TopCreatorsPage } from './components/Page/TopCreatorsPage';
 import { UserProfilePage } from './components/Page/UserProfilePage';
 
@@ -17,7 +18,7 @@ const App = () => (
       <Route element={<TopCreatorsPage />} path="/top-creators" />
       <Route element={<BrowseMarketplacePage />} path="/browse-marketplace" />
       <Route element={<UserProfilePage />} path="/user-profile/:userName" />
-      <Route element={<UserProfilePage />} path="/PageAuctionNftPage" />
+      <Route element={<PageAuctionNftPage />} path="/page-Auction-nft-Page" />
     </Routes>
   </Page>
 );
