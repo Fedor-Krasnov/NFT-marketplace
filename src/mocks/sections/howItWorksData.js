@@ -3,6 +3,7 @@ export const howItWorksData = {
   description: 'Find out how to get started',
   offerCards: [
     {
+      link: '/connect-wallet',
       image: {
         alt: 'Setup Your wallet',
         src: 'src/assets/media/images/nft-cards/explanatory-card-1.png',
@@ -13,6 +14,7 @@ export const howItWorksData = {
         'clicking the wallet icon in&nbsp;the top right corner.',
     },
     {
+      link: '/authorization',
       image: {
         alt: 'Create Collection',
         src: 'src/assets/media/images/nft-cards/explanatory-card-2.png',
@@ -22,6 +24,7 @@ export const howItWorksData = {
         'Upload your work and setup your collection. Add a&nbsp;description, social links and floor price.',
     },
     {
+      link: '/browse-marketplace',
       image: {
         alt: 'Start Earning',
         src: 'src/assets/media/images/nft-cards/explanatory-card-3.png',
