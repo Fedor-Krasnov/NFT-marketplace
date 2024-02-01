@@ -41,7 +41,7 @@ export const discoverMoreNfTsData = {
     {
       image: {
         alt: 'NFT Card',
-        src: 'src/assets/media/images/nft-cards/12.jpg',
+        src: 'src/assets/media/images/nft-cards/13.jpg',
       },
       nftDetails: {
         title: 'AstroFiction',
