@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className={classNames(`${heroSectionClassName}__img`, `${heroSectionClassName}__img--mobile`)}>
           <NFTCard data={nftCard} />
         </div>
-        <Button icon={IconCode.rocket} title="Get Started" />
+        <Button icon={IconCode.rocket} title="Get Started" to="/authorization" />
         <Statistics className={`${heroSectionClassName}__statistics`} statistics={statistics} />
       </div>
       <div className={classNames(`${heroSectionClassName}__img`, `${heroSectionClassName}__img--desktop`)}>
