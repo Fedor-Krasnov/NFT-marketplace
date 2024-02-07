@@ -1,8 +1,7 @@
 .nft-section {
-  $selector: &;
-
   padding: 0;
   max-width: 1280px;
+  margin-bottom: 40px;
 
   &__background {
     background: url('/src/assets/media/images/banners/nft-banner-1.jpg') no-repeat center;
