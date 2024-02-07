@@ -1,5 +1,5 @@
 import React from 'react';
-import './DescriptionNFTSection.scss';
+import './DescriptionNFTSectionPage.scss';
 import { Link } from 'react-router-dom';
 import { descriptionNFTSectionData } from '../../../../mocks/Page';
 import { Countdown } from '../../../sections/Auction/Countdown/index.js';
@@ -7,7 +7,7 @@ import { Icon, IconCode, Title } from '../../../units';
 
 const DescriptionNFTSectionClassName = 'description-nft-section';
 
-const DescriptionNFTSection = () => {
+const DescriptionNFTSectionPage = () => {
   const { title, description, userName, image, username } = descriptionNFTSectionData;
 
   return (
@@ -47,4 +47,4 @@ const DescriptionNFTSection = () => {
   );
 };
 
-export { DescriptionNFTSection };
+export { DescriptionNFTSectionPage };

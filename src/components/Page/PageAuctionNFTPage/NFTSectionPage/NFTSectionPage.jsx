@@ -1,12 +1,12 @@
 import React from 'react';
-import './NFTSection.scss';
+import './NFTSectionPage.scss';
 
 const NFTSectionClassName = 'nft-section';
 
-const NFTSection = () => (
+const NFTSectionPage = () => (
   <section className={NFTSectionClassName}>
     <div className={`${NFTSectionClassName}__background`} />
   </section>
 );
 
-export { NFTSection };
+export { NFTSectionPage };
