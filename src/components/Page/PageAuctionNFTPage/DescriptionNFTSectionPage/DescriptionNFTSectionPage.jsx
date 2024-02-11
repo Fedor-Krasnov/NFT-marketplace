@@ -48,15 +48,6 @@ const DescriptionNFTSectionPage = () => {
           <Countdown buttonTitle />
         </div>
       </div>
-      <div className={`${DescriptionNFTSectionClassName}__link`}>
-        <Title
-          buttonIcon={IconCode.arrowToTheRight}
-          buttonTitle={buttonTitle}
-          heading="h2"
-          title={titleLink}
-          to={`/user-profile/${userName}`}
-        />
-      </div>
     </section>
   );
 };

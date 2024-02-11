@@ -1,8 +1,10 @@
+import { IconCode } from '../../components/units/index.js';
+import { nftCardsData } from '../nftCardsData.js';
+
 export const pageAuctionNFTPageData = {
   titleAuction: 'The Orbitians',
   descriptionAuction: 'Minted on Sep 30, 2022',
   titleLink: 'More from this artist',
-  buttonTitle: 'Go To Artist Page',
   image: {
     alt: 'user',
     src: '/src/assets/media/images/users/user-9.png',
@@ -19,4 +21,11 @@ export const pageAuctionNFTPageData = {
     this war if&nbsp;they could only get an&nbsp;eye into Orbitian territory, so&nbsp;they&rsquo;ve taken to&nbsp;make
     human beings their target.</p>
   `,
+  moreNFT: {
+    nftCards: nftCardsData,
+    title: 'More from this artist',
+    buttonLink: '',
+    buttonTitle: 'Go To Artist Page',
+    buttonIcon: IconCode.arrowToTheRight,
+  },
 };

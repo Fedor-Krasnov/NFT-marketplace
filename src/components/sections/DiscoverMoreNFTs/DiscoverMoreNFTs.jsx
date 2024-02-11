@@ -1,18 +1,17 @@
 import React from 'react';
 import './DiscoverMoreNFTs.scss';
-import { discoverMoreNfTsData } from '../../../mocks';
 import { NFTCard } from '../../NFTCard';
 import { Button, IconCode, Title } from '../../units';
 
 const discoverMoreNfTsClassName = 'discover-more-nfts';
 
-const DiscoverMoreNfTs = () => {
-  const { nftCards, buttonLink, buttonTitle, description, title } = discoverMoreNfTsData;
+const DiscoverMoreNfTs = ({ data }) => {
+  const { nftCards, buttonLink, buttonIcon = IconCode.eye, buttonTitle, description, title } = data;
 
   return (
     <section className={discoverMoreNfTsClassName}>
       <Title
-        buttonIcon={IconCode.eye}
+        buttonIcon={buttonIcon}
         buttonTitle={buttonTitle}
         description={description}
         heading="h2"
@@ -26,7 +25,7 @@ const DiscoverMoreNfTs = () => {
       </div>
       <Button
         className={`${discoverMoreNfTsClassName}__button`}
-        icon={IconCode.eye}
+        icon={buttonIcon}
         outline
         title={buttonTitle}
         to={buttonLink}

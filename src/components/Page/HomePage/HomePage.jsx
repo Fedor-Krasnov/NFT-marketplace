@@ -1,4 +1,5 @@
 import React from 'react';
+import { discoverMoreNfTsData } from '../../../mocks';
 import {
   Auction,
   BrowseCategories,
@@ -16,7 +17,7 @@ const HomePage = () => (
     <TrendingCollection />
     <TopCreators />
     <BrowseCategories />
-    <DiscoverMoreNfTs />
+    <DiscoverMoreNfTs data={discoverMoreNfTsData} />
     <Auction />
     <HowItWorks />
     <WeeklyDigest />

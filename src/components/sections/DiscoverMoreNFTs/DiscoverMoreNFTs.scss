@@ -1,22 +1,24 @@
 @use 'src/assets/styles/mixins';
 
-.discover-more-nfts__card {
-  display: flex;
-  gap: 30px;
-  margin-top: 60px;
-
-  img {
-    border-radius: 25px 25px 0 0;
-  }
-}
-
 .discover-more-nfts {
   &__button {
     display: none;
   }
 
+  &__card {
+    display: grid;
+    gap: 30px;
+    margin-top: 60px;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+      border-radius: 25px 25px 0 0;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
-    .discover-more-nfts__card {
+    &__card {
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
