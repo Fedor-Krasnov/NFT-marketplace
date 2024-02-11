@@ -1,10 +1,11 @@
 import React from 'react';
 import './Countdown.scss';
 import { auctionData } from '../../../../mocks';
+import { Button } from '../../../units/index.js';
 
 const countdownClassName = 'countdown';
 
-const Countdown = () => {
+const Countdown = ({ buttonTitle }) => {
   const { title, countdownContent } = auctionData;
 
   return (
@@ -33,6 +34,7 @@ const Countdown = () => {
             <div dangerouslySetInnerHTML={{ __html: countdownContent.seconds }} />
           </div>
         </div>
+        {buttonTitle && <Button className={`${countdownClassName}__button`} title="Place Bid" width="fill" />}
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const DescriptionNFTSectionPage = () => {
             <span>Created By</span>
             <Link to={`/user-profile/${userName}`}>
               <div className={`${DescriptionNFTSectionClassName}__countdown-mobile`}>
-                <Countdown />
+                <Countdown buttonTitle />
               </div>
               <div className={`${DescriptionNFTSectionClassName}__user`}>
                 <div className={`${DescriptionNFTSectionClassName}__avatar`}>
@@ -44,7 +44,7 @@ const DescriptionNFTSectionPage = () => {
           </div>
         </div>
         <div className={`${DescriptionNFTSectionClassName}__countdown-desktop`}>
-          <Countdown />
+          <Countdown buttonTitle />
         </div>
       </div>
       <div className={`${DescriptionNFTSectionClassName}__link`}>
