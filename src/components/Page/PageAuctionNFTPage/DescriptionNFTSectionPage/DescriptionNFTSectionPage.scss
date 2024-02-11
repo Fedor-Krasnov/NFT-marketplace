@@ -15,10 +15,23 @@
     text-transform: capitalize;
   }
 
+  &__description-details {
+    display: grid;
+    max-width: 605px;
+    row-gap: 30px;
+  }
+
+  &__title {
+    p {
+      color: colors.$dark-gray;
+    }
+  }
+
   &__main-information {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    column-gap: 20px;
   }
 
   &__countdown-mobile {
@@ -37,22 +50,9 @@
     max-width: 1050px;
   }
 
-  &__description {
-    margin-bottom: 30px;
-  }
-
-  &__details {
-    margin-bottom: 30px;
-  }
-
-  &__tags {
-    margin-bottom: 40px;
-  }
-
   &__author {
     display: grid;
     row-gap: 10px;
-    margin-bottom: 30px;
 
     h3 {
       font-weight: 600;

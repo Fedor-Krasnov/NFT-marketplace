@@ -3,19 +3,22 @@ import './DescriptionNFTSectionPage.scss';
 import { Link } from 'react-router-dom';
 import { pageAuctionNFTPageData } from '../../../../mocks/Page';
 import { Countdown } from '../../../sections/Auction/Countdown';
-import { IconCode, Text, Title } from '../../../units';
+import { Text, Title } from '../../../units';
 
 const DescriptionNFTSectionClassName = 'description-nft-section';
 
 const DescriptionNFTSectionPage = () => {
-  const { titleAuction, descriptionAuction, userName, image, username, titleLink, buttonTitle, description } =
-    pageAuctionNFTPageData;
+  const { titleAuction, descriptionAuction, userName, image, username, description } = pageAuctionNFTPageData;
 
   return (
     <section className={DescriptionNFTSectionClassName}>
       <div className={`${DescriptionNFTSectionClassName}__main-information`}>
         <div className={`${DescriptionNFTSectionClassName}__description-details`}>
-          <Title description={descriptionAuction} title={titleAuction} />
+          <Title
+            className={`${DescriptionNFTSectionClassName}__title`}
+            description={descriptionAuction}
+            title={titleAuction}
+          />
           <div className={`${DescriptionNFTSectionClassName}__countdown-mobile`}>
             <Countdown buttonTitle />
           </div>

@@ -1,11 +1,12 @@
 import React from 'react';
 import './Title.scss';
+import classNames from 'classnames';
 import { Button } from '../Button';
 
 const titleClassName = 'title';
 
-const Title = ({ buttonIcon, buttonTitle, description, heading, title, to }) => (
-  <div className={titleClassName}>
+const Title = ({ className, buttonIcon, buttonTitle, description, heading, title, to }) => (
+  <div className={classNames(titleClassName, className)}>
     <div>
       <h1 className={heading} dangerouslySetInnerHTML={{ __html: title }} />
       {description && <p dangerouslySetInnerHTML={{ __html: description }} />}
