@@ -21,6 +21,15 @@
     justify-content: space-between;
   }
 
+  &__countdown-mobile {
+    display: none;
+
+    .countdown__container {
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
+  }
+
   &__link {
     gap: 30px;
     grid-template-columns: repeat(3, 3fr);
@@ -69,6 +78,16 @@
       height: 24px;
       overflow: hidden;
       width: 24px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__countdown-desktop {
+      display: none;
+    }
+
+    &__countdown-mobile {
+      display: flex;
     }
   }
 }

@@ -19,6 +19,9 @@ const DescriptionNFTSectionPage = () => {
           <div className={`${DescriptionNFTSectionClassName}__author`}>
             <span>Created By</span>
             <Link to={`/user-profile/${userName}`}>
+              <div className={`${DescriptionNFTSectionClassName}__countdown-mobile`}>
+                <Countdown />
+              </div>
               <div className={`${DescriptionNFTSectionClassName}__user`}>
                 <div className={`${DescriptionNFTSectionClassName}__avatar`}>
                   {image && <img alt={image.alt} src={image.src} />}
@@ -40,7 +43,7 @@ const DescriptionNFTSectionPage = () => {
             <span>Tags</span>
           </div>
         </div>
-        <div className={`${DescriptionNFTSectionClassName}__countdown`}>
+        <div className={`${DescriptionNFTSectionClassName}__countdown-desktop`}>
           <Countdown />
         </div>
       </div>
