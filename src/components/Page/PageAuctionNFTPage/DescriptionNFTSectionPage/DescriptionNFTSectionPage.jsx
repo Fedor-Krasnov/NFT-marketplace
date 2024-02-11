@@ -1,20 +1,21 @@
 import React from 'react';
 import './DescriptionNFTSectionPage.scss';
 import { Link } from 'react-router-dom';
-import { descriptionNFTSectionData } from '../../../../mocks/Page';
-import { Countdown } from '../../../sections/Auction/Countdown/index.js';
-import { Icon, IconCode, Title } from '../../../units';
+import { pageAuctionNFTPageData } from '../../../../mocks/Page';
+import { Countdown } from '../../../sections/Auction/Countdown';
+import { IconCode, Title } from '../../../units';
 
 const DescriptionNFTSectionClassName = 'description-nft-section';
 
 const DescriptionNFTSectionPage = () => {
-  const { title, description, userName, image, username } = descriptionNFTSectionData;
+  const { titleAuction, descriptionAuction, userName, image, username, titleLink, buttonTitle } =
+    pageAuctionNFTPageData;
 
   return (
     <section className={DescriptionNFTSectionClassName}>
       <div className={`${DescriptionNFTSectionClassName}__main-information`}>
         <div className={`${DescriptionNFTSectionClassName}__description-details`}>
-          <Title description={description} title={title} />
+          <Title description={descriptionAuction} title={titleAuction} />
           <div className={`${DescriptionNFTSectionClassName}__author`}>
             <span>Created By</span>
             <Link to={`/user-profile/${userName}`}>
@@ -39,9 +40,18 @@ const DescriptionNFTSectionPage = () => {
             <span>Tags</span>
           </div>
         </div>
+        <div className={`${DescriptionNFTSectionClassName}__countdown`}>
+          <Countdown />
+        </div>
       </div>
-      <div className={`${DescriptionNFTSectionClassName}__countdown`}>
-        <Countdown />
+      <div className={`${DescriptionNFTSectionClassName}__link`}>
+        <Title
+          buttonIcon={IconCode.arrowToTheRight}
+          buttonTitle={buttonTitle}
+          heading="h2"
+          title={titleLink}
+          to={`/user-profile/${userName}`}
+        />
       </div>
     </section>
   );

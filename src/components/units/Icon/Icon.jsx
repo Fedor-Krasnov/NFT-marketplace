@@ -22,6 +22,7 @@ export const IconCode = {
   coinbase: 'coinbase',
   password: 'password',
   walletConnect: 'walletConnect',
+  arrowToTheRight: 'arrowToTheRight',
 };
 
 const iconCodeToSize = {
@@ -43,6 +44,7 @@ const iconCodeToSize = {
   [IconCode.coinbase]: [40, 40],
   [IconCode.password]: [20, 20],
   [IconCode.walletConnect]: [40, 40],
+  [IconCode.arrowToTheRight]: [20, 20],
 };
 
 const iconClassName = 'icon';
