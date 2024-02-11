@@ -3,12 +3,12 @@ import './DescriptionNFTSectionPage.scss';
 import { Link } from 'react-router-dom';
 import { pageAuctionNFTPageData } from '../../../../mocks/Page';
 import { Countdown } from '../../../sections/Auction/Countdown';
-import { IconCode, Title } from '../../../units';
+import { IconCode, Text, Title } from '../../../units';
 
 const DescriptionNFTSectionClassName = 'description-nft-section';
 
 const DescriptionNFTSectionPage = () => {
-  const { titleAuction, descriptionAuction, userName, image, username, titleLink, buttonTitle } =
+  const { titleAuction, descriptionAuction, userName, image, username, titleLink, buttonTitle, description } =
     pageAuctionNFTPageData;
 
   return (
@@ -16,12 +16,12 @@ const DescriptionNFTSectionPage = () => {
       <div className={`${DescriptionNFTSectionClassName}__main-information`}>
         <div className={`${DescriptionNFTSectionClassName}__description-details`}>
           <Title description={descriptionAuction} title={titleAuction} />
+          <div className={`${DescriptionNFTSectionClassName}__countdown-mobile`}>
+            <Countdown buttonTitle />
+          </div>
           <div className={`${DescriptionNFTSectionClassName}__author`}>
             <span>Created By</span>
             <Link to={`/user-profile/${userName}`}>
-              <div className={`${DescriptionNFTSectionClassName}__countdown-mobile`}>
-                <Countdown buttonTitle />
-              </div>
               <div className={`${DescriptionNFTSectionClassName}__user`}>
                 <div className={`${DescriptionNFTSectionClassName}__avatar`}>
                   {image && <img alt={image.alt} src={image.src} />}
@@ -35,6 +35,7 @@ const DescriptionNFTSectionPage = () => {
           </div>
           <div className={`${DescriptionNFTSectionClassName}__description`}>
             <span>Description</span>
+            <Text text={description} />
           </div>
           <div className={`${DescriptionNFTSectionClassName}__details`}>
             <span>Details</span>
