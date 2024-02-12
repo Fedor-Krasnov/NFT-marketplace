@@ -10,6 +10,7 @@
   gap: 10px;
   display: grid;
   width: fit-content;
+  min-width: 296px;
 
   &__container {
     grid-column-start: 2;
@@ -26,6 +27,10 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 13px;
+  }
+
+  &__auction-closed {
+    text-align: center;
   }
 
   &__content {
@@ -46,6 +51,7 @@
 
   @media only screen and (max-width: 375px) {
     padding: 30px 20px;
+    min-width: 236px;
 
     &__content {
       gap: 0;
