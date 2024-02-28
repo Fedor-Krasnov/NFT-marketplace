@@ -2,6 +2,7 @@ export const heroSectionData = {
   title: 'Discover digital art &amp;&nbsp;Collect NFTs',
   description:
     'NFT marketplace&nbsp;UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.',
+  link: '#',
   statistics: [
     {
       title: '240k+',
