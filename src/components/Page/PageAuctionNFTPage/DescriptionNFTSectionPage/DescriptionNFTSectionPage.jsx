@@ -3,12 +3,12 @@ import './DescriptionNFTSectionPage.scss';
 import { Link } from 'react-router-dom';
 import { pageAuctionNFTPageData } from '../../../../mocks/Page';
 import { Countdown } from '../../../sections/Auction/Countdown';
-import { Text, Title } from '../../../units';
+import { Text, Title, Tags } from '../../../units';
 
 const DescriptionNFTSectionClassName = 'description-nft-section';
 
 const DescriptionNFTSectionPage = () => {
-  const { titleAuction, descriptionAuction, userName, image, username, description } = pageAuctionNFTPageData;
+  const { titleAuction, descriptionAuction, userName, image, username, description, tags } = pageAuctionNFTPageData;
 
   return (
     <section className={DescriptionNFTSectionClassName}>
@@ -45,6 +45,7 @@ const DescriptionNFTSectionPage = () => {
           </div>
           <div className={`${DescriptionNFTSectionClassName}__tags`}>
             <span>Tags</span>
+            <Tags data={tags} />
           </div>
         </div>
         <div className={`${DescriptionNFTSectionClassName}__countdown-desktop`}>

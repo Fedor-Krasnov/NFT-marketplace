@@ -1,0 +1,8 @@
+@use 'src/assets/styles/variables/colors';
+
+.tag {
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 20px;
+  background-color: colors.$black-liquorice;
+}

@@ -43,6 +43,11 @@
     }
   }
 
+  &__tags {
+    display: grid;
+    row-gap: 20px;
+  }
+
   &__link {
     gap: 30px;
     grid-template-columns: repeat(3, 3fr);

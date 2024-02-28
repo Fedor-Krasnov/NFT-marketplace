@@ -28,4 +28,5 @@ export const pageAuctionNFTPageData = {
     buttonTitle: 'Go To Artist Page',
     buttonIcon: IconCode.arrowToTheRight,
   },
+  tags: ['Animation', 'illustration', 'Moon', 'Sun'],
 };

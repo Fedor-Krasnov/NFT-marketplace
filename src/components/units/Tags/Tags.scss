@@ -1,0 +1,7 @@
+@use 'src/assets/styles/mixins';
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: mixins.clamp-auto(10px, 20px);
+}
