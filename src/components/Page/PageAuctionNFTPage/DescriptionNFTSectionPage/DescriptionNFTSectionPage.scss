@@ -1,4 +1,4 @@
-@use "src/assets/styles/variables/colors";
+@use 'src/assets/styles/variables/colors';
 
 .description-nft-section {
   $selector: &;
@@ -43,7 +43,8 @@
     }
   }
 
-  &__tags {
+  &__tags,
+  &__details {
     display: grid;
     row-gap: 20px;
   }

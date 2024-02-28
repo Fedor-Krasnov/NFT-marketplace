@@ -29,4 +29,14 @@ export const pageAuctionNFTPageData = {
     buttonIcon: IconCode.arrowToTheRight,
   },
   tags: ['Animation', 'illustration', 'Moon', 'Sun'],
+  details: [
+    {
+      link: '#',
+      title: 'View on Etherscan',
+    },
+    {
+      link: '#',
+      title: 'View Original',
+    },
+  ],
 };

@@ -5,3 +5,4 @@ export { Statistics } from './Statistics';
 export { Text } from './Text';
 export { Title } from './Title';
 export { Tags } from './Tags';
+export { ExternalLinks } from './ExternalLinks';

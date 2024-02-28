@@ -1,0 +1,18 @@
+@use 'src/assets/styles/variables/colors';
+
+.external-links {
+  display: grid;
+  row-gap: 10px;
+
+
+  li {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 32px 1fr;
+
+    svg {
+      fill: colors.$dark-gray;
+    }
+  }
+}
