@@ -20,7 +20,12 @@ const DetailedUserProfileSection = () => {
             />
             <div className={`${detailedUserProfileSectionClassName}__button`}>
               <Button icon={IconCode.copy} title="0xc03...B79C" />
-              <Button icon={IconCode.plus} outline title="Follow" />
+              <Button
+                className={`${detailedUserProfileSectionClassName}__button-purple`}
+                icon={IconCode.plus}
+                outline
+                title="Follow"
+              />
             </div>
           </div>
           <div className={`${detailedUserProfileSectionClassName}__user-description`}>

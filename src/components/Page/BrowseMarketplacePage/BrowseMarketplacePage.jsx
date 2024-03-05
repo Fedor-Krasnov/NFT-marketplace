@@ -23,7 +23,7 @@ const BrowseMarketplacePage = () => {
           />
         </label>
         <div className={`${browseMarketplacePageClassName}__search-icon`}>
-          <Icon code={IconCode.magnifyingGlass} />
+          <Icon code={IconCode.zoom} />
         </div>
       </div>
       <div className={`${browseMarketplacePageClassName}__choice-point`}>
