@@ -1,13 +1,15 @@
 import React, { useLayoutEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { Page } from './components/Page';
-import { AuthorizationPage } from './components/Page/AuthorizationPage';
-import { BrowseMarketplacePage } from './components/Page/BrowseMarketplacePage';
-import { ConnectWalletPage } from './components/Page/ConnectWalletPage';
-import { HomePage } from './components/Page/HomePage';
-import { PageAuctionNftPage } from './components/Page/PageAuctionNFTPage';
-import { TopCreatorsPage } from './components/Page/TopCreatorsPage';
-import { UserProfilePage } from './components/Page/UserProfilePage';
+import {
+  Page,
+  HomePage,
+  AuthorizationPage,
+  ConnectWalletPage,
+  BrowseMarketplacePage,
+  TopCreatorsPage,
+  UserProfilePage,
+  PageAuctionNftPage,
+} from './components/Page';
 
 const App = () => {
   const location = useLocation();
