@@ -16,7 +16,7 @@ const AuthorizationPage = () => {
       </div>
       <div className={`${authorizationPageClassName}__registration`}>
         <div className={`${authorizationPageClassName}__title`}>
-          <Title description={description} title={title} />
+          <Title description={description} heading="h1" title={title} />
         </div>
         <div className={`${authorizationPageClassName}__entry-field`}>
           {entryField.map((data) => (

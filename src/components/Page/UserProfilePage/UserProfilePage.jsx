@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { UserProfileSection, DetailedUserProfileSection } from '../../sections';
-import { WorkLayoutSection } from '../../sections/WorkLayoutSection';
+import { UserProfileSection, DetailedUserProfileSection, WorkLayoutSection } from '../../sections';
 
 const UserProfilePage = () => {
   const { userName } = useParams();

@@ -18,6 +18,7 @@ const DescriptionNFTSectionPage = () => {
           <Title
             className={`${DescriptionNFTSectionClassName}__title`}
             description={descriptionAuction}
+            heading="h1"
             title={titleAuction}
           />
           <div className={`${DescriptionNFTSectionClassName}__countdown-mobile`}>

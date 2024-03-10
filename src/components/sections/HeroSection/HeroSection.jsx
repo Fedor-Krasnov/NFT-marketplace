@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section className={heroSectionClassName}>
       <div className={`${heroSectionClassName}__details`}>
-        <Title description={description} title={title} />
+        <Title description={description} heading="h1" title={title} />
         <div className={classNames(`${heroSectionClassName}__img`, `${heroSectionClassName}__img--mobile`)}>
           <NFTCard data={nftCard} />
         </div>

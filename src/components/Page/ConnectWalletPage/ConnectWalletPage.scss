@@ -11,12 +11,6 @@
     width: 50%;
   }
 
-  h2 {
-    font-size: mixins.clamp-auto(32px, 60px);
-    line-height: mixins.clamp-auto(32px, 56px);
-    margin-bottom: 10px;
-  }
-
   p {
     font-size: mixins.clamp-auto(16px, 22px);
     line-height: mixins.clamp-auto(22px, 35px);

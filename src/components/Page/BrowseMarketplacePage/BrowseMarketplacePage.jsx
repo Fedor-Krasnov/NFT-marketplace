@@ -1,7 +1,7 @@
 import React from 'react';
 import './BrowseMarketplacePage.scss';
 import { browseMarketplacePageData } from '../../../mocks/Page';
-import { WorkLayoutSection } from '../../sections/WorkLayoutSection';
+import { WorkLayoutSection } from '../../sections';
 import { Icon, IconCode, Title } from '../../units';
 
 const browseMarketplacePageClassName = 'browse-marketplace';
@@ -12,7 +12,7 @@ const BrowseMarketplacePage = () => {
   return (
     <div className={browseMarketplacePageClassName}>
       <div className={`${browseMarketplacePageClassName}__title`}>
-        <Title description={description} title={title} />
+        <Title description={description} heading="h1" title={title} />
       </div>
       <div className={`${browseMarketplacePageClassName}__search-string`}>
         <label>

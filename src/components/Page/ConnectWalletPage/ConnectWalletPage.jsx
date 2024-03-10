@@ -16,7 +16,7 @@ const ConnectWalletPage = () => {
       </div>
       <div className={`${connectWalletPageClassName}__wallet-selection`}>
         <div className={`${connectWalletPageClassName}__title`}>
-          <Title description={description} title={title} />
+          <Title description={description} heading="h1" title={title} />
         </div>
         {choice.map((item) => (
           <SelectionOfWalletsPage key={item.id} item={item} />

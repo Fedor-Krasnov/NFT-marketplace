@@ -12,7 +12,7 @@ const TopCreatorsPage = () => {
   return (
     <div className={topCreatorsPageClassName}>
       <div className={`${topCreatorsPageClassName}__title-page`}>
-        <Title description={description} title={title} />
+        <Title description={description} heading="h1" title={title} />
       </div>
       <div className={`${topCreatorsPageClassName}__control-panel-desktop`}>
         <a href="">
