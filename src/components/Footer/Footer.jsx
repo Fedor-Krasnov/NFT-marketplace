@@ -1,10 +1,10 @@
 import React from 'react';
-import './Footer.scss';
 import { footerData } from '../../mocks/components';
 import { Menu } from '../Menu';
 import { Subscription } from '../Subscription';
 import { Logo } from '../units';
 import { Community } from './Community';
+import footerStyles from './Footer.module.scss';
 
 const footerClassName = 'footer';
 
@@ -12,18 +12,18 @@ const Footer = () => {
   const { copyright, descriptions, titles } = footerData;
 
   return (
-    <footer className={footerClassName}>
-      <div className={`${footerClassName}__container`}>
-        <div className={`${footerClassName}__content`}>
-          <div className={`${footerClassName}__logo-and-community`}>
-            <Logo className={`${footerClassName}__logo`} />
+    <footer className={footerStyles[footerClassName]}>
+      <div className={footerStyles[`${footerClassName}__container`]}>
+        <div className={footerStyles[`${footerClassName}__content`]}>
+          <div className={footerStyles[`${footerClassName}__logo-and-community`]}>
+            <Logo className={footerStyles[`${footerClassName}__logo`]} />
             <p dangerouslySetInnerHTML={{ __html: descriptions.text1 }} />
             <p dangerouslySetInnerHTML={{ __html: descriptions.text2 }} />
-            <Community className={`${footerClassName}__community`} />
+            <Community className={footerStyles[`${footerClassName}__community`]} />
           </div>
           <div>
             <h4 dangerouslySetInnerHTML={{ __html: titles.explore }} />
-            <Menu className={`${footerClassName}__menu`} isGridRows />
+            <Menu className={footerStyles[`${footerClassName}__menu`]} isGridRows />
           </div>
           <div>
             <h4 dangerouslySetInnerHTML={{ __html: titles.joinOur }} />
@@ -31,7 +31,7 @@ const Footer = () => {
             <Subscription />
           </div>
         </div>
-        <div className={`${footerClassName}__copyright`}>
+        <div className={footerStyles[`${footerClassName}__copyright`]}>
           <p dangerouslySetInnerHTML={{ __html: copyright }} />
         </div>
       </div>
