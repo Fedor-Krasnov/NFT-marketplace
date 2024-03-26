@@ -8,6 +8,7 @@ export const browseCategoriesData = {
         src: 'src/assets/media/images/categories/art.jpg',
       },
       icon: {
+        alt: 'Nft card icon',
         src: 'src/assets/media/images/categories/icons/art.svg',
       },
       category: 'Art',
@@ -19,6 +20,7 @@ export const browseCategoriesData = {
         src: 'src/assets/media/images/categories/collectibles.jpg',
       },
       icon: {
+        alt: 'Nft card icon',
         src: 'src/assets/media/images/categories/icons/collectibles.svg',
       },
       category: 'Collectibles',
@@ -30,6 +32,7 @@ export const browseCategoriesData = {
         src: 'src/assets/media/images/categories/music.jpg',
       },
       icon: {
+        alt: 'Nft card icon',
         src: 'src/assets/media/images/categories/icons/music.svg',
       },
       category: 'Music',
@@ -41,6 +44,7 @@ export const browseCategoriesData = {
         src: 'src/assets/media/images/categories/photography.jpg',
       },
       icon: {
+        alt: 'Nft card icon',
         src: 'src/assets/media/images/categories/icons/photography.svg',
       },
       category: 'Photography',
@@ -52,6 +56,7 @@ export const browseCategoriesData = {
         src: 'src/assets/media/images/categories/video.jpg',
       },
       icon: {
+        alt: 'Nft card icon',
         src: 'src/assets/media/images/categories/icons/video.svg',
       },
       category: 'Video',
@@ -63,6 +68,7 @@ export const browseCategoriesData = {
         src: 'src/assets/media/images/categories/utility.jpg',
       },
       icon: {
+        alt: 'Nft card icon',
         src: 'src/assets/media/images/categories/icons/utility.svg',
       },
       category: 'Utility',
@@ -74,6 +80,7 @@ export const browseCategoriesData = {
         src: 'src/assets/media/images/categories/sport.jpg',
       },
       icon: {
+        alt: 'Nft card icon',
         src: 'src/assets/media/images/categories/icons/sport.svg',
       },
       category: 'Sport',
@@ -85,6 +92,7 @@ export const browseCategoriesData = {
         src: 'src/assets/media/images/categories/virtual-worlds.jpg',
       },
       icon: {
+        alt: 'Nft card icon',
         src: 'src/assets/media/images/categories/icons/virtual-worlds.svg',
       },
       category: 'Virtual Worlds',
