@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import './Modal.scss';
+import modalStyles from './Modal.module.scss';
 import { Icon, IconCode } from '../units/Icon';
 import { useWindowDimensions } from '../../hooks';
 import { CSSTransition } from 'react-transition-group';
@@ -22,19 +22,19 @@ const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
   return createPortal(
     <CSSTransition
       classNames={{
-        enter: 'modal_enter',
-        enterDone: 'modal_enter',
-        exit: 'modal_exit',
-        exitDone: 'modal_exit',
+        enter: modalStyles[`${modalClassName}_enter`],
+        enterDone: modalStyles[`${modalClassName}_enter`],
+        exit: modalStyles[`${modalClassName}_exit`],
+        exitDone: modalStyles[`${modalClassName}_exit`],
       }}
       in={isModalOpen}
       timeout={1000}
       unmountOnExit
     >
-      <div className={modalClassName}>
-        <div className={`${modalClassName}__header`}>
+      <div className={modalStyles[modalClassName]}>
+        <div className={modalStyles[`${modalClassName}__header`]}>
           {logoDisplayWidth >= windowWidth && <Logo withoutText />}
-          <div className={`${modalClassName}__close`}>
+          <div className={modalStyles[`${modalClassName}__close`]}>
             <span onClick={() => setIsModalOpen(false)}>
               <Icon code={IconCode.close} />
             </span>
