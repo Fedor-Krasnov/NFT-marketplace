@@ -1,15 +1,15 @@
 import React from 'react';
 import { Menu } from '../../Menu';
 import { Button, IconCode } from '../../units';
-import './ModalHeaderMenu.scss';
+import modalHeaderMenuStyles from './ModalHeaderMenu.module.scss';
 
 const modalHeaderMenuClassName = 'modal-header-menu';
 
 const ModalHeaderMenu = () => (
-  <div className={modalHeaderMenuClassName}>
+  <div className={modalHeaderMenuStyles[modalHeaderMenuClassName]}>
     <Menu isModal />
     <Button
-      className={`${modalHeaderMenuClassName}__button`}
+      className={modalHeaderMenuStyles[`${modalHeaderMenuClassName}__button`]}
       icon={IconCode.user}
       title="Sign Up"
       to="/authorization"
