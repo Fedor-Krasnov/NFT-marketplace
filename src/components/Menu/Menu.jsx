@@ -1,8 +1,10 @@
 import React from 'react';
-import './Menu.scss';
+import menuStyles from './Menu.module.scss';
 import classNames from 'classnames';
 import { Link, useLocation } from 'react-router-dom';
 import { menuData } from '../../mocks';
+
+const menuClassName = 'menu';
 
 const Menu = ({ className, isGridRows, isModal }) => {
   const { pathname } = useLocation();
@@ -10,10 +12,10 @@ const Menu = ({ className, isGridRows, isModal }) => {
   return (
     <nav
       className={classNames(
-        'menu',
+        menuStyles[menuClassName],
         {
-          menu_modal: isModal,
-          'menu_grid-rows': isGridRows,
+          [menuStyles[`${menuClassName}_modal`]]: isModal,
+          [menuStyles[`${menuClassName}_grid-rows`]]: isGridRows,
         },
         className,
       )}
