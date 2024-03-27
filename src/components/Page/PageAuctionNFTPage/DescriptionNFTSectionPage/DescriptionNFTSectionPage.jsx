@@ -1,9 +1,9 @@
 import React from 'react';
-import './DescriptionNFTSectionPage.scss';
 import { Link } from 'react-router-dom';
 import { pageAuctionNFTPageData } from '../../../../mocks/Page';
 import { Countdown } from '../../../sections/Auction/Countdown';
 import { Text, Title, Tags, ExternalLinks } from '../../../units';
+import DescriptionNFTSectionStyles from './DescriptionNFTSectionPage.module.scss';
 
 const DescriptionNFTSectionClassName = 'description-nft-section';
 
@@ -12,46 +12,46 @@ const DescriptionNFTSectionPage = () => {
     pageAuctionNFTPageData;
 
   return (
-    <section className={DescriptionNFTSectionClassName}>
-      <div className={`${DescriptionNFTSectionClassName}__main-information`}>
-        <div className={`${DescriptionNFTSectionClassName}__description-details`}>
+    <section className={DescriptionNFTSectionStyles[DescriptionNFTSectionClassName]}>
+      <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__main-information`]}>
+        <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__description-details`]}>
           <Title
             className={`${DescriptionNFTSectionClassName}__title`}
             description={descriptionAuction}
             heading="h1"
             title={titleAuction}
           />
-          <div className={`${DescriptionNFTSectionClassName}__countdown-mobile`}>
+          <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__countdown-mobile`]}>
             <Countdown buttonTitle />
           </div>
-          <div className={`${DescriptionNFTSectionClassName}__author`}>
+          <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__author`]}>
             <span>Created By</span>
             <Link to={`/user-profile/${userName}`}>
-              <div className={`${DescriptionNFTSectionClassName}__user`}>
-                <div className={`${DescriptionNFTSectionClassName}__avatar`}>
+              <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__user`]}>
+                <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__avatar`]}>
                   {image && <img alt={image.alt} src={image.src} />}
                 </div>
                 <div
-                  className={`${DescriptionNFTSectionClassName}__username`}
+                  className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__username`]}
                   dangerouslySetInnerHTML={{ __html: username }}
                 />
               </div>
             </Link>
           </div>
-          <div className={`${DescriptionNFTSectionClassName}__description`}>
+          <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__description`]}>
             <span>Description</span>
             <Text text={description} />
           </div>
-          <div className={`${DescriptionNFTSectionClassName}__details`}>
+          <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__details`]}>
             <span>Details</span>
             <ExternalLinks data={details} />
           </div>
-          <div className={`${DescriptionNFTSectionClassName}__tags`}>
+          <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__tags`]}>
             <span>Tags</span>
             <Tags data={tags} />
           </div>
         </div>
-        <div className={`${DescriptionNFTSectionClassName}__countdown-desktop`}>
+        <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__countdown-desktop`]}>
           <Countdown buttonTitle />
         </div>
       </div>
