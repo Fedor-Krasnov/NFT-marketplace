@@ -1,11 +1,11 @@
 import React from 'react';
-import './NFTSectionPage.scss';
+import nftSectionStyles from './NFTSectionPage.module.scss';
 
-const NFTSectionClassName = 'nft-section';
+const nftSectionClassName = 'nft-section';
 
 const NFTSectionPage = () => (
-  <section className={NFTSectionClassName}>
-    <div className={`${NFTSectionClassName}__background`} />
+  <section className={nftSectionStyles[nftSectionClassName]}>
+    <div className={nftSectionStyles[`${nftSectionClassName}__background`]} />
   </section>
 );
 
