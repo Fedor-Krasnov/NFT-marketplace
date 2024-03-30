@@ -9,7 +9,7 @@ const CategorySelection = ({ data }) => {
   const { image, icon, category } = data;
 
   return (
-    <Link to="tmp">
+    <Link to="#">
       <li>
         <div className={categorySelectionStyles[categorySelectionClassName]}>
           <div className={categorySelectionStyles[`${categorySelectionClassName}__img`]}>
