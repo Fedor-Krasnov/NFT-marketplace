@@ -1,8 +1,8 @@
 import React from 'react';
-import './DiscoverMoreNFTs.scss';
 import { pageCheck } from '../../../helpers';
 import { NFTCard } from '../../NFTCard';
 import { Button, IconCode, Title } from '../../units';
+import discoverMoreNfTsStyles from './DiscoverMoreNFTs.module.scss';
 
 const discoverMoreNfTsClassName = 'discover-more-nfts';
 
@@ -11,7 +11,7 @@ const DiscoverMoreNfTs = ({ data }) => {
   const { isMainPage } = pageCheck();
 
   return (
-    <section className={discoverMoreNfTsClassName}>
+    <section className={discoverMoreNfTsStyles[discoverMoreNfTsClassName]}>
       <Title
         buttonIcon={buttonIcon}
         buttonTitle={buttonTitle}
@@ -20,13 +20,13 @@ const DiscoverMoreNfTs = ({ data }) => {
         title={title}
         to={isMainPage ? '/browse-marketplace' : `/user-profile/${userName}`}
       />
-      <div className={`${discoverMoreNfTsClassName}__card`}>
+      <div className={discoverMoreNfTsStyles[`${discoverMoreNfTsClassName}__card`]}>
         {nftCards.map((data, dataId) => (
           <NFTCard key={dataId} data={data} />
         ))}
       </div>
       <Button
-        className={`${discoverMoreNfTsClassName}__button`}
+        className={discoverMoreNfTsStyles[`${discoverMoreNfTsClassName}__button`]}
         icon={buttonIcon}
         outline
         title={buttonTitle}
