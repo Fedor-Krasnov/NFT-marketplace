@@ -9,14 +9,14 @@
     width: 50%;
     text-transform: capitalize;
 
-    .button {
+    #{$selector}__button {
       margin-top: 30px;
     }
 
     #{$selector}__description {
       line-height: 160%;
       padding-top: 20px;
-      font-size: clamp(16px, 1vw, 22px);
+      font-size: clamp(12px, 1vw, 18px);
     }
   }
 

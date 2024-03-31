@@ -14,7 +14,12 @@ const HeroSection = () => {
   return (
     <section className={heroSectionStyles[heroSectionClassName]}>
       <div className={heroSectionStyles[`${heroSectionClassName}__details`]}>
-        <Title description={description} heading="h1" title={title} />
+        <Title
+          className={heroSectionStyles[`${heroSectionClassName}__description`]}
+          description={description}
+          heading="h1"
+          title={title}
+        />
         <div
           className={classNames(
             heroSectionStyles[`${heroSectionClassName}__img`],
@@ -23,7 +28,12 @@ const HeroSection = () => {
         >
           <NFTCard data={nftCard} />
         </div>
-        <Button icon={IconCode.rocket} title="Get Started" to="/authorization" />
+        <Button
+          className={heroSectionStyles[`${heroSectionClassName}__button`]}
+          icon={IconCode.rocket}
+          title="Get Started"
+          to="/authorization"
+        />
         <Statistics className={heroSectionStyles[`${heroSectionClassName}__statistics`]} statistics={statistics} />
       </div>
       <div
