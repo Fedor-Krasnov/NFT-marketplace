@@ -1,13 +1,13 @@
 import React from 'react';
-import './TopCreators.scss';
 import { topCreatorsData } from '../../../mocks';
 import { Button, IconCode, Title } from '../../units';
+import topCreatorsStyles from './TopCreators.module.scss';
 import { UserCreators } from './UserCreators';
 
 const topCreatorsClassName = 'top-creators';
 
 const TopCreators = () => (
-  <section className={topCreatorsClassName}>
+  <section className={topCreatorsStyles[topCreatorsClassName]}>
     <Title
       buttonIcon={IconCode.rocket}
       buttonTitle={topCreatorsData.buttonTitle}
@@ -18,7 +18,7 @@ const TopCreators = () => (
     />
     <UserCreators />
     <Button
-      className={`${topCreatorsClassName}__button`}
+      className={topCreatorsStyles[`${topCreatorsClassName}__button`]}
       icon={IconCode.rocket}
       outline
       title={topCreatorsData.buttonTitle}
