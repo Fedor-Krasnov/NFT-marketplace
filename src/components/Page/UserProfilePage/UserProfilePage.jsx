@@ -1,13 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { UserProfileSection, DetailedUserProfileSection, WorkLayoutSection } from '../../sections';
+import { UserProfileSectionPage, DetailedUserProfileSection, WorkLayoutSection } from '../../sections';
 
 const UserProfilePage = () => {
   const { userName } = useParams();
 
   return (
     <>
-      <UserProfileSection />
+      <UserProfileSectionPage />
       <DetailedUserProfileSection />
       <WorkLayoutSection userName={userName} />
     </>

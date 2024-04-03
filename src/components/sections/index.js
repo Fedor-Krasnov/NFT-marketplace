@@ -6,7 +6,7 @@ export { TrendingCollection } from './TrendingCollection';
 export { BrowseCategories } from './BrowseCategories';
 export { DiscoverMoreNfTs } from './DiscoverMoreNFTs';
 export { WeeklyDigest } from './WeeklyDigest';
-export { UserProfileSection } from './UserProfileSection';
+export { UserProfileSectionPage } from '../Page/UserProfilePage/UserProfileSectionPage';
 export { DetailedUserProfileSection } from './DetailedUserProfileSection';
 export { TopCreatorsSectionPage } from '../Page/TopCreatorsPage/TopCreatorsSectionPage';
 export { WorkLayoutSection } from './WorkLayoutSection';
