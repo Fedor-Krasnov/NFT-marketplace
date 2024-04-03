@@ -1,6 +1,6 @@
 import React from 'react';
 import { topCreatorsPageData } from '../../../mocks/Page';
-import { TopCreatorsSection } from '../../sections';
+import { TopCreatorsSectionPage } from '../../sections';
 import { Title } from '../../units';
 import topCreatorsPageStyles from './TopCreatorsPage.module.scss';
 
@@ -42,7 +42,7 @@ const TopCreatorsPage = () => {
           <p>All Time</p>
         </a>
       </div>
-      <TopCreatorsSection />
+      <TopCreatorsSectionPage />
     </div>
   );
 };
