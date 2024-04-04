@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import iconsSvgPath from '../../../assets/media/icons/icons.svg';
-import './Icon.scss';
+import iconStyles from './Icon.module.scss';
 
 export const IconCode = {
   close: 'close',
@@ -54,7 +54,7 @@ const Icon = ({ className, code }) => {
 
   return (
     <svg
-      className={classNames(iconClassName, `${iconClassName}_${code}`, className)}
+      className={classNames(iconStyles[iconClassName], iconStyles[`${iconClassName}_${code}`], className)}
       height={height}
       viewBox={`0 0 ${width} ${height}`}
       width={width}
