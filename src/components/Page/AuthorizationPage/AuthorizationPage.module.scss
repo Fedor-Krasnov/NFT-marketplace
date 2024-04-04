@@ -43,51 +43,6 @@
     width: 330px;
   }
 
-  .registration {
-    margin-bottom: 15px;
-
-    &__container {
-      display: grid;
-      gap: 15px;
-      max-width: 330px;
-
-      .button {
-        height: 46px;
-        margin-top: 15px;
-        width: 100%;
-      }
-
-      .registration__data-filling-input {
-        border-radius: 20px;
-        width: 100%;
-        height: 46px;
-        outline: none;
-        flex-direction: row;
-        align-items: center;
-        background: #FFFFFF;
-        border: 1px solid #858584;
-      }
-
-      .registration__data-filling {
-        display: flex;
-        position: relative;
-
-        input {
-          padding: 16px 20px 16px 40px;
-        }
-
-        .registration__img {
-          transform: translateX(15px);
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          margin: auto;
-        }
-      }
-    }
-  }
-
   @media only screen and (max-width: 768px) {
     flex-direction: column;
 

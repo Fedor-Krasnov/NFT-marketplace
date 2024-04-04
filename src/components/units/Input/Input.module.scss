@@ -1,0 +1,32 @@
+.input {
+  display: grid;
+  gap: 15px;
+  max-width: 330px;
+
+  label {
+    display: flex;
+    position: relative;
+
+    input {
+      padding: 16px 20px 16px 40px;
+      border-radius: 20px;
+      width: 100%;
+      height: 46px;
+      outline: none;
+      flex-direction: row;
+      align-items: center;
+      background: #FFFFFF;
+      border: 1px solid #858584;
+    }
+  }
+
+  svg {
+    fill: #BDBDBD;
+    transform: translateX(15px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
