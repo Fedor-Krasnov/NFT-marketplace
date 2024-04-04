@@ -9,10 +9,12 @@ const buttonClassName = 'button';
 const Button = ({ className, icon, outline, secondary, title, to, width }) => {
   const buttonClassNames = classNames(
     buttonStyles[buttonClassName],
-    { [buttonStyles[`${buttonClassName}_icon`]]: icon },
-    { [buttonStyles[`${buttonClassName}_outline`]]: outline },
-    { [buttonStyles[`${buttonClassName}_secondary`]]: secondary },
-    { [buttonStyles[`${buttonClassName}_width-${width}`]]: width },
+    {
+      [buttonStyles[`${buttonClassName}_icon`]]: icon,
+      [buttonStyles[`${buttonClassName}_outline`]]: outline,
+      [buttonStyles[`${buttonClassName}_secondary`]]: secondary,
+      [buttonStyles[`${buttonClassName}_width-${width}`]]: width,
+    },
     className,
   );
 
@@ -24,11 +26,11 @@ const Button = ({ className, icon, outline, secondary, title, to, width }) => {
   );
 
   return to ? (
-    <Link to={to} className={buttonStyles[buttonClassNames]}>
+    <Link to={to} className={buttonClassNames}>
       {buttonTitle}
     </Link>
   ) : (
-    <button className={buttonStyles[buttonClassNames]}>{buttonTitle}</button>
+    <button className={buttonClassNames}>{buttonTitle}</button>
   );
 };
 
