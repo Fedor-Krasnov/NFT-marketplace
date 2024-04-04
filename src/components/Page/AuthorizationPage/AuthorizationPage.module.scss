@@ -1,6 +1,6 @@
 @use 'src/assets/styles/mixins';
 
-.create-account-main {
+.authorization-page {
   $selector: &;
 
   margin: 0 auto;
@@ -39,6 +39,8 @@
   }
 
   &__entry-field {
+    display: grid;
+    row-gap: 15px;
     margin-top: 40px;
     width: 330px;
   }
@@ -76,12 +78,6 @@
     &__title {
       display: grid;
       justify-content: center;
-    }
-
-    .registration {
-      &__container {
-        max-width: none;
-      }
     }
   }
 }

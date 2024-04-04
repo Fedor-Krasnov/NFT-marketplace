@@ -4,7 +4,7 @@ import { Button, Title } from '../../units';
 import { Input } from '../../units/Input';
 import authorizationPageStyles from './AuthorizationPage.module.scss';
 
-const authorizationPageClassName = 'create-account-main';
+const authorizationPageClassName = 'authorization-page';
 
 const AuthorizationPage = () => {
   const { description, title, entryField, titleButton } = authorizationPageData;
@@ -12,7 +12,7 @@ const AuthorizationPage = () => {
   return (
     <div className={authorizationPageStyles[authorizationPageClassName]}>
       <div className={authorizationPageStyles[`${authorizationPageClassName}__img-container`]}>
-        <div className={authorizationPageStyles[`${authorizationPageClassName}__img`]}></div>
+        <div className={authorizationPageStyles[`${authorizationPageClassName}__img`]} />
       </div>
       <div className={authorizationPageStyles[`${authorizationPageClassName}__registration`]}>
         <div className={authorizationPageStyles[`${authorizationPageClassName}__title`]}>
