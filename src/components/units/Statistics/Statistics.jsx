@@ -1,14 +1,16 @@
 import React from 'react';
-import './Statistics.scss';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { heroSectionData } from '../../../mocks';
+import statisticsStyles from './Statistics.module.scss';
+
+const statisticsClassName = 'statistics';
 
 const Statistics = ({ className, statistics }) => {
   const { link } = heroSectionData;
 
   return (
-    <div className={classNames('statistics', className)}>
+    <div className={classNames(statisticsStyles[statisticsClassName], className)}>
       <ul>
         {statistics.map(({ title, description }, index) => (
           <li key={index}>
