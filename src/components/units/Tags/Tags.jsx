@@ -1,11 +1,11 @@
 import React from 'react';
-import './Tags.scss';
 import { Tag } from './Tag';
+import tagsStyles from './Tags.module.scss';
 
 const tagsClassName = 'tags';
 
 const Tags = ({ data }) => (
-  <ul className={tagsClassName}>
+  <ul className={tagsStyles[tagsClassName]}>
     {data.map((tag, indexTag) => (
       <Tag key={indexTag} data={tag} />
     ))}
