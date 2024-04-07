@@ -1,8 +1,8 @@
 import React from 'react';
-import './Text.scss';
+import textStyles from './Text.module.scss';
 
 const textClassName = 'text';
 
-const Text = ({ text }) => <div className={textClassName} dangerouslySetInnerHTML={{ __html: text }} />;
+const Text = ({ text }) => <div className={textStyles[textClassName]} dangerouslySetInnerHTML={{ __html: text }} />;
 
 export { Text };
