@@ -2,12 +2,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-1.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-1.jpg',
     },
     nftDetails: {
       title: 'Magic Mushroom 0325',
       image: {
-        src: '/src/assets/media/images/users/user-7.png',
+        src: '/src/mocks/media/users/user-7.png',
       },
       username: 'Shroomie',
     },
@@ -19,12 +19,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-2.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-2.jpg',
     },
     nftDetails: {
       title: 'Happy Robot 032',
       image: {
-        src: '/src/assets/media/images/users/user-12.png',
+        src: '/src/mocks/media/users/user-12.png',
       },
       username: 'BeKind2Robots',
     },
@@ -36,12 +36,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-3.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-3.jpg',
     },
     nftDetails: {
       title: 'Happy Robot 024',
       image: {
-        src: '/src/assets/media/images/users/user-12.png',
+        src: '/src/mocks/media/users/user-12.png',
       },
       username: 'BeKind2Robots',
     },
@@ -53,12 +53,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-4.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-4.jpg',
     },
     nftDetails: {
       title: 'Designer Bear',
       image: {
-        src: '/src/assets/media/images/users/user-6.png',
+        src: '/src/mocks/media/users/user-6.png',
       },
       username: 'Mr Fox',
     },
@@ -70,12 +70,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-5.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-5.jpg',
     },
     nftDetails: {
       title: 'Colorful Dog 0356',
       image: {
-        src: '/src/assets/media/images/users/user-15.png',
+        src: '/src/mocks/media/users/user-15.png',
       },
       username: 'Keepitreal',
     },
@@ -87,12 +87,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-6.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-6.jpg',
     },
     nftDetails: {
       title: 'Dancing Robot 0312',
       image: {
-        src: '/src/assets/media/images/users/user-8.png',
+        src: '/src/mocks/media/users/user-8.png',
       },
       username: 'Robotica',
     },
@@ -104,12 +104,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-7.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-7.jpg',
     },
     nftDetails: {
       title: 'Cherry Blossom Girl 035',
       image: {
-        src: '/src/assets/media/images/users/user-14.png',
+        src: '/src/mocks/media/users/user-14.png',
       },
       username: 'MoonDancer',
     },
@@ -121,12 +121,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-8.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-8.jpg',
     },
     nftDetails: {
       title: 'Space Travel',
       image: {
-        src: '/src/assets/media/images/users/user-15.png',
+        src: '/src/mocks/media/users/user-15.png',
       },
       username: 'NebulaKid',
     },
@@ -138,12 +138,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-9.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-9.jpg',
     },
     nftDetails: {
       title: 'Sunset Dimension',
       image: {
-        src: '/src/assets/media/images/users/user-10.png',
+        src: '/src/mocks/media/users/user-10.png',
       },
       username: 'Animakid',
     },
@@ -155,12 +155,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-10.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-10.jpg',
     },
     nftDetails: {
       title: 'Desert Walk',
       image: {
-        src: '/src/assets/media/images/users/user-7.png',
+        src: '/src/mocks/media/users/user-7.png',
       },
       username: 'Catch 22',
     },
@@ -172,12 +172,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-11.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-11.jpg',
     },
     nftDetails: {
       title: 'IceCream Ape 0324',
       image: {
-        src: '/src/assets/media/images/users/user-4.png',
+        src: '/src/mocks/media/users/user-4.png',
       },
       username: 'Ice Ape Club',
     },
@@ -189,12 +189,12 @@ export const nftCardsData = [
   {
     image: {
       alt: 'nft-card',
-      src: '/src/assets/media/images/nft-cards/nft-card-page-12.jpg',
+      src: '/src/mocks/media/nft-cards/nft-card-page-12.jpg',
     },
     nftDetails: {
       title: 'Colorful Dog 0344',
       image: {
-        src: '/src/assets/media/images/users/user-13.png',
+        src: '/src/mocks/media/users/user-13.png',
       },
       username: 'PuppyPower',
     },

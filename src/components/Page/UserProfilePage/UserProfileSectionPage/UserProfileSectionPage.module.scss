@@ -7,7 +7,8 @@
   max-width: 1280px;
 
   &__background {
-    background: url('/src/mocks/media/banners/user-banner-1.jpg') no-repeat center;
+    // исправить
+    background: url('/src/mocks/media/banners/user-banner.jpg') no-repeat center;
     height: 320px;
     background-size: cover;
     margin: 0 -18px;

@@ -3,6 +3,6 @@ export const weeklyDigestData = {
   description: 'Get exclusive promotions & updates straight to your inbox.',
   image: {
     alt: 'NFT astronaut',
-    src: 'src/assets/media/images/nft-cards/nft-astronaut.png',
+    src: 'src/mocks/media/nft-cards/nft-astronaut.png',
   },
 };

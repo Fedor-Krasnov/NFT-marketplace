@@ -1,5 +1,5 @@
-import { IconCode } from '../../components/units/index.js';
-import { nftCardsData } from '../nftCardsData.js';
+import { IconCode } from '../../components/units';
+import { nftCardsData } from '../nftCardsData';
 
 export const pageAuctionNFTPageData = {
   titleAuction: 'The Orbitians',
@@ -7,7 +7,7 @@ export const pageAuctionNFTPageData = {
   titleLink: 'More from this artist',
   image: {
     alt: 'user',
-    src: '/src/assets/media/images/users/user-9.png',
+    src: 'src/mocks/media/users/user-9.png',
   },
   username: 'Orbitian',
   description: `

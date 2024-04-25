@@ -7,12 +7,12 @@ export const discoverMoreNfTsData = {
     {
       image: {
         alt: 'NFT Card',
-        src: 'src/assets/media/images/nft-cards/11.jpg',
+        src: 'src/mocks/media/nft-cards/11.jpg',
       },
       nftDetails: {
         title: 'Distant Galaxy',
         image: {
-          src: 'src/assets/media/images/users/user-14.png',
+          src: 'src/mocks/media/users/user-14.png',
         },
         username: 'MoonDancer',
       },
@@ -24,12 +24,12 @@ export const discoverMoreNfTsData = {
     {
       image: {
         alt: 'NFT Card',
-        src: 'src/assets/media/images/nft-cards/12.jpg',
+        src: 'src/mocks/media/nft-cards/12.jpg',
       },
       nftDetails: {
         title: 'Life On Edena',
         image: {
-          src: 'src/assets/media/images/users/user-15.png',
+          src: 'src/mocks/media/users/user-15.png',
         },
         username: 'NebulaKid',
       },
@@ -41,12 +41,12 @@ export const discoverMoreNfTsData = {
     {
       image: {
         alt: 'NFT Card',
-        src: 'src/assets/media/images/nft-cards/13.jpg',
+        src: 'src/mocks/media/nft-cards/13.jpg',
       },
       nftDetails: {
         title: 'AstroFiction',
         image: {
-          src: 'src/assets/media/images/users/user-11.png',
+          src: 'src/mocks/media/users/user-11.png',
         },
         username: 'Spaceone',
       },

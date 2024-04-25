@@ -20,12 +20,12 @@ export const heroSectionData = {
   nftCard: {
     image: {
       alt: 'NFT Card',
-      src: 'src/assets/media/images/nft-cards/1.jpg',
+      src: 'src/mocks/media/nft-cards/1.jpg',
     },
     nftDetails: {
       title: 'Space Walking',
       image: {
-        src: 'src/assets/media/images/users/user-10.png',
+        src: 'src/mocks/media/users/user-10.png',
       },
       username: 'Animakid',
     },

@@ -6,19 +6,19 @@ export const trendingCollectionData = {
       nftCollections: {
         mainImage: {
           alt: '',
-          src: 'src/assets/media/images/nft-cards/2.jpg',
+          src: 'src/mocks/media/nft-cards/2.jpg',
         },
         images: [
           {
             image: {
               alt: '',
-              src: 'src/assets/media/images/nft-cards/5.jpg',
+              src: 'src/mocks/media/nft-cards/5.jpg',
             },
           },
           {
             image: {
               alt: '',
-              src: 'src/assets/media/images/nft-cards/6.jpg',
+              src: 'src/mocks/media/nft-cards/6.jpg',
             },
           },
         ],
@@ -28,7 +28,7 @@ export const trendingCollectionData = {
         title: 'DSGN Animals',
         image: {
           alt: 'MrFox',
-          src: 'src/assets/media/images/users/user-6.png',
+          src: 'src/mocks/media/users/user-6.png',
         },
         username: 'MrFox',
       },
@@ -37,19 +37,19 @@ export const trendingCollectionData = {
       nftCollections: {
         mainImage: {
           alt: '',
-          src: 'src/assets/media/images/nft-cards/3.jpg',
+          src: 'src/mocks/media/nft-cards/3.jpg',
         },
         images: [
           {
             image: {
               alt: '',
-              src: 'src/assets/media/images/nft-cards/7.jpg',
+              src: 'src/mocks/media/nft-cards/7.jpg',
             },
           },
           {
             image: {
               alt: '',
-              src: 'src/assets/media/images/nft-cards/8.jpg',
+              src: 'src/mocks/media/nft-cards/8.jpg',
             },
           },
         ],
@@ -59,7 +59,7 @@ export const trendingCollectionData = {
         title: 'Magic Mushrooms',
         image: {
           alt: 'Shroomie',
-          src: 'src/assets/media/images/users/user-7.png',
+          src: 'src/mocks/media/users/user-7.png',
         },
         username: 'Shroomie',
       },
@@ -68,19 +68,19 @@ export const trendingCollectionData = {
       nftCollections: {
         mainImage: {
           alt: '',
-          src: 'src/assets/media/images/nft-cards/4.jpg',
+          src: 'src/mocks/media/nft-cards/4.jpg',
         },
         images: [
           {
             image: {
               alt: '',
-              src: 'src/assets/media/images/nft-cards/9.jpg',
+              src: 'src/mocks/media/nft-cards/9.jpg',
             },
           },
           {
             image: {
               alt: '',
-              src: 'src/assets/media/images/nft-cards/10.jpg',
+              src: 'src/mocks/media/nft-cards/10.jpg',
             },
           },
         ],
@@ -90,7 +90,7 @@ export const trendingCollectionData = {
         title: 'Disco Machines',
         image: {
           alt: 'BeKind2Robots',
-          src: 'src/assets/media/images/users/user-13.png',
+          src: 'src/mocks/media/users/user-13.png',
         },
         username: 'BeKind2Robots',
       },
