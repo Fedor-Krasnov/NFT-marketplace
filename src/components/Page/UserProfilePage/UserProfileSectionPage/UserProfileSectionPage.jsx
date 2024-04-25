@@ -8,7 +8,7 @@ const UserProfileSectionPage = () => (
     <div className={userProfileSectionPageStyles[`${userProfileSectionClassName}__background`]} />
     <div className={userProfileSectionPageStyles[`${userProfileSectionClassName}__avatar-container`]}>
       <div className={userProfileSectionPageStyles[`${userProfileSectionClassName}__avatar`]}>
-        <img alt="" src="/src/assets/media/images/users/square/user-10.png" />
+        <img alt="" src="/src/mocks/media/users/square/user-10.png" />
       </div>
     </div>
   </section>
