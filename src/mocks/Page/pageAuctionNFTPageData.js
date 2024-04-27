@@ -1,7 +1,12 @@
 import { IconCode } from '../../components/units';
+import backgroundImg from '../media/background/nft-background.jpg';
 import { nftCardsData } from '../nftCardsData';
 
 export const pageAuctionNFTPageData = {
+  background: {
+    alt: 'nft-background',
+    src: backgroundImg,
+  },
   titleAuction: 'The Orbitians',
   descriptionAuction: 'Minted on Sep 30, 2022',
   titleLink: 'More from this artist',

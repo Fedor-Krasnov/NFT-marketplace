@@ -1,4 +1,4 @@
-@use '../../../../assets/styles/variables/colors';
+@use 'src/assets/styles/variables/colors';
 
 .user-profile-section {
   $selector: &;
@@ -7,8 +7,8 @@
   max-width: 1280px;
 
   &__background {
-    // исправить
-    background: url('/src/mocks/media/banners/user-banner.jpg') no-repeat center;
+    // TODO исправить
+    background: url('/src/mocks/media/background/user-background.jpg') no-repeat center;
     height: 320px;
     background-size: cover;
     margin: 0 -18px;

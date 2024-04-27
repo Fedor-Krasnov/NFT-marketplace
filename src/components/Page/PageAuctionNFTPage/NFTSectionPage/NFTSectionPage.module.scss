@@ -4,8 +4,9 @@
   margin-bottom: 40px;
 
   &__background {
-    // исправить
-    background: url('/src/mocks/media/banners/nft-banner.jpg') no-repeat center;
+    // TODO исправить
+    // background: url('/src/mocks/media/banners/nft-background.jpg') no-repeat center;
+    background: var(--background);
     height: 560px;
     background-size: cover;
     margin: 0 -18px;
