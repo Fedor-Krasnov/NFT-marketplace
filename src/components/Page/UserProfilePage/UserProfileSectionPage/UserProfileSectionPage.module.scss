@@ -7,8 +7,7 @@
   max-width: 1280px;
 
   &__background {
-    // TODO исправить
-    background: url('/src/mocks/media/background/user-background.jpg') no-repeat center;
+    background: var(--background);
     height: 320px;
     background-size: cover;
     margin: 0 -18px;

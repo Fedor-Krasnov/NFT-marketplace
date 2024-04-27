@@ -1,6 +1,9 @@
+import backgroundImg from '../media/background/user-background.jpg';
+
 export const userProfilePageData = {
-  banner: {
-    src: '',
+  background: {
+    alt: 'background',
+    src: backgroundImg,
   },
   userAvatar: '',
   userName: 'Animakid',
