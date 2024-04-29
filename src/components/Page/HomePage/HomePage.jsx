@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { discoverMoreNfTsData } from '../../../mocks';
 import {
   Auction,
@@ -13,6 +14,9 @@ import {
 
 const HomePage = () => (
   <>
+    <Helmet>
+      <title>NFT Marketplace</title>
+    </Helmet>
     <HeroSection />
     <TrendingCollection />
     <TopCreators />
