@@ -1,16 +1,15 @@
 import React from 'react';
-import { trendingCollectionData } from '../../../mocks';
 import { Title } from '../../units/Title';
 import { NFTCollection } from './NFTCollection';
 import trendingCollectionStyles from './TrendingCollection.module.scss';
 
 const trendingCollectionClassName = 'trending-collection';
 
-const TrendingCollection = () => {
-  const { description, nftCollection, title } = trendingCollectionData;
+const TrendingCollection = ({ content }) => {
+  const { description, nftCollection, title } = content;
 
   return (
-    <section className={trendingCollectionStyles[trendingCollectionClassName]}>
+    <div className={trendingCollectionStyles[trendingCollectionClassName]}>
       <Title description={description} heading="h2" title={title} />
       <div className={trendingCollectionStyles[`${trendingCollectionClassName}__content`]}>
         {nftCollection.map((data) => (
@@ -21,7 +20,7 @@ const TrendingCollection = () => {
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

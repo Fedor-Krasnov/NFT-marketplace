@@ -6,12 +6,12 @@ import discoverMoreNfTsStyles from './DiscoverMoreNFTs.module.scss';
 
 const discoverMoreNfTsClassName = 'discover-more-nfts';
 
-const DiscoverMoreNfTs = ({ data }) => {
-  const { nftCards, buttonLink, buttonIcon = IconCode.eye, buttonTitle, description, title, userName } = data;
+const DiscoverMoreNfTs = ({ content }) => {
+  const { nftCards, buttonLink, buttonIcon = IconCode.eye, buttonTitle, description, title, userName } = content;
   const { isMainPage } = pageCheck();
 
   return (
-    <section className={discoverMoreNfTsStyles[discoverMoreNfTsClassName]}>
+    <div className={discoverMoreNfTsStyles[discoverMoreNfTsClassName]}>
       <Title
         buttonIcon={buttonIcon}
         buttonTitle={buttonTitle}
@@ -33,7 +33,7 @@ const DiscoverMoreNfTs = ({ data }) => {
         to={buttonLink}
         width="fill"
       />
-    </section>
+    </div>
   );
 };
 

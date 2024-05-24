@@ -1,16 +1,15 @@
 import React from 'react';
-import { browseCategoriesData } from '../../../mocks';
 import { Title } from '../../units/Title';
 import browseCategoriesStyles from './BrowseCategories.module.scss';
 import { CategorySelection } from './CategorySelection';
 
 const browseCategoriesClassName = 'browse-categories';
 
-const BrowseCategories = () => {
-  const { title, categorySelection } = browseCategoriesData;
+const BrowseCategories = ({ content }) => {
+  const { title, categorySelection } = content;
 
   return (
-    <section className={browseCategoriesStyles[browseCategoriesClassName]}>
+    <div className={browseCategoriesStyles[browseCategoriesClassName]}>
       <Title heading="h2" title={title} />
       <div className={browseCategoriesStyles[`${browseCategoriesClassName}__content`]}>
         <ul className={browseCategoriesStyles[`${browseCategoriesClassName}__container`]}>
@@ -23,7 +22,7 @@ const BrowseCategories = () => {
           ))}
         </ul>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,23 +1,22 @@
 import React from 'react';
-import { howItWorksData } from '../../../mocks';
 import { Title } from '../../units';
 import { ExplanatoryCard } from './ExplanatoryCard';
 import howItWorksStyles from './HowItWorks.module.scss';
 
 const howItWorksClassName = 'how-it-works';
 
-const HowItWorks = () => {
-  const { offerCards } = howItWorksData;
+const HowItWorks = ({ content }) => {
+  const { offerCards, description, title } = content;
 
   return (
-    <section className={howItWorksStyles[howItWorksClassName]}>
-      <Title description={howItWorksData.description} heading="h2" title={howItWorksData.title} />
+    <div className={howItWorksStyles[howItWorksClassName]}>
+      <Title description={description} heading="h2" title={title} />
       <div className={howItWorksStyles[`${howItWorksClassName}__container`]}>
         {offerCards.map((data, dataId) => (
           <ExplanatoryCard key={dataId} data={data} />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

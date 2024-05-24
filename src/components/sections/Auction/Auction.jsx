@@ -7,11 +7,11 @@ import { Countdown } from './Countdown';
 
 const auctionClassName = 'auction';
 
-const Auction = () => {
-  const { image, userName, nameNFT } = auctionData;
+const Auction = ({ content }) => {
+  const { image, userName, nameNFT } = content;
 
   return (
-    <section className={auctionStyles[auctionClassName]}>
+    <div className={auctionStyles[auctionClassName]}>
       <div className={auctionStyles[`${auctionClassName}__container`]}>
         <div className={auctionStyles[`${auctionClassName}__wrapper`]}>
           <Link to={`/user-profile/${userName}`}>
@@ -32,7 +32,7 @@ const Auction = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

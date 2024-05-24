@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import { heroSectionData } from '../../../mocks';
 import { NFTCard } from '../../NFTCard';
 import { Button, IconCode, Statistics } from '../../units';
 import { Title } from '../../units/Title';
@@ -8,11 +7,11 @@ import heroSectionStyles from './HeroSection.module.scss';
 
 const heroSectionClassName = 'hero-section';
 
-const HeroSection = () => {
-  const { description, nftCard, statistics, title } = heroSectionData;
+const HeroSection = ({ content }) => {
+  const { description, nftCard, statistics, title } = content;
 
   return (
-    <section className={heroSectionStyles[heroSectionClassName]}>
+    <div className={heroSectionStyles[heroSectionClassName]}>
       <div className={heroSectionStyles[`${heroSectionClassName}__details`]}>
         <Title
           className={heroSectionStyles[`${heroSectionClassName}__description`]}
@@ -44,7 +43,7 @@ const HeroSection = () => {
       >
         <NFTCard data={nftCard} />
       </div>
-    </section>
+    </div>
   );
 };
 

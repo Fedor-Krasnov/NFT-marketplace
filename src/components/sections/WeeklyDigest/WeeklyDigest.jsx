@@ -1,16 +1,15 @@
 import React from 'react';
-import { weeklyDigestData } from '../../../mocks';
 import { Subscription } from '../../Subscription';
 import { Title } from '../../units';
 import weeklyDigestStyles from './WeeklyDigest.module.scss';
 
 const weeklyDigestClassName = 'weekly-digest';
 
-const WeeklyDigest = () => {
-  const { title, description, image } = weeklyDigestData;
+const WeeklyDigest = ({ content }) => {
+  const { title, description, image } = content;
 
   return (
-    <section className={weeklyDigestStyles[weeklyDigestClassName]}>
+    <div className={weeklyDigestStyles[weeklyDigestClassName]}>
       <div className={weeklyDigestStyles[`${weeklyDigestClassName}__container`]}>
         <div className={weeklyDigestStyles[`${weeklyDigestClassName}__img`]}>
           <img alt={image.alt} src={image.src} />
@@ -20,7 +19,7 @@ const WeeklyDigest = () => {
           <Subscription />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

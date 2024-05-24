@@ -6,8 +6,8 @@ import { UserCreators } from './UserCreators';
 
 const topCreatorsClassName = 'top-creators';
 
-const TopCreators = () => (
-  <section className={topCreatorsStyles[topCreatorsClassName]}>
+const TopCreators = ({ content }) => (
+  <div className={topCreatorsStyles[topCreatorsClassName]}>
     <Title
       buttonIcon={IconCode.rocket}
       buttonTitle={topCreatorsData.buttonTitle}
@@ -16,7 +16,7 @@ const TopCreators = () => (
       title={topCreatorsData.title}
       to={topCreatorsData.buttonLink}
     />
-    <UserCreators />
+    <UserCreators content={content} />
     <Button
       className={topCreatorsStyles[`${topCreatorsClassName}__button`]}
       icon={IconCode.rocket}
@@ -25,7 +25,7 @@ const TopCreators = () => (
       to={topCreatorsData.buttonLink}
       width="fill"
     />
-  </section>
+  </div>
 );
 
 export { TopCreators };

@@ -6,3 +6,5 @@ export { BrowseMarketplacePage } from './BrowseMarketplacePage';
 export { TopCreatorsPage } from './TopCreatorsPage';
 export { UserProfilePage } from './UserProfilePage';
 export { PageAuctionNftPage } from './PageAuctionNFTPage';
+export { PageContent } from './PageContent';
+export { PageLayout } from './PageLayout';
