@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { topCreatorsPageData } from '../../../../mocks/Page/index.js';
+import { topCreatorsPageData } from '../../../../mocks/Page';
 import topCreatorsSectionPageStyles from './TopCreatorsSectionPage.module.scss';
 
 const topCreatorsSectionClassName = 'top-creators-section';

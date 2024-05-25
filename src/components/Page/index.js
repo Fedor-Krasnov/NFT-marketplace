@@ -1,5 +1,4 @@
 export { Page } from './Page';
-export { HomePage } from './HomePage';
 export { AuthorizationPage } from './AuthorizationPage';
 export { ConnectWalletPage } from './ConnectWalletPage';
 export { BrowseMarketplacePage } from './BrowseMarketplacePage';

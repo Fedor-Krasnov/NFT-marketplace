@@ -1,6 +1,6 @@
 import React from 'react';
 import { pageCheck } from '../../../helpers';
-import { NFTCard } from '../../NFTCard';
+import { NFTCard } from '../../innerComponents';
 import { Button, IconCode, Title } from '../../units';
 import discoverMoreNfTsStyles from './DiscoverMoreNFTs.module.scss';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Subscription } from '../../Subscription';
+import { Subscription } from '../../innerComponents';
 import { Title } from '../../units';
 import weeklyDigestStyles from './WeeklyDigest.module.scss';
 

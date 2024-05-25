@@ -1,5 +1,5 @@
 import React from 'react';
-import { userProfilePageData } from '../../../../mocks/Page/index.js';
+import { userProfilePageData } from '../../../../mocks/Page';
 import userProfileSectionPageStyles from './UserProfileSectionPage.module.scss';
 
 const userProfileSectionClassName = 'user-profile-section';

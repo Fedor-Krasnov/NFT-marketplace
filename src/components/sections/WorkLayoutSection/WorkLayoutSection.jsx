@@ -1,6 +1,6 @@
 import React from 'react';
 import { browseMarketplacePageData } from '../../../mocks/Page';
-import { NFTCard } from '../../NFTCard';
+import { NFTCard } from '../../innerComponents';
 import workLayoutSectionStyles from './WorkLayoutSection.module.scss';
 
 const workLayoutSectionClassName = 'work-layout-section';

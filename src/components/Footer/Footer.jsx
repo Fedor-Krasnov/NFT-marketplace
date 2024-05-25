@@ -1,7 +1,7 @@
 import React from 'react';
 import { footerData } from '../../mocks/components';
+import { Subscription } from '../innerComponents';
 import { Menu } from '../Menu';
-import { Subscription } from '../Subscription';
 import { Logo } from '../units';
 import { Community } from './Community';
 import footerStyles from './Footer.module.scss';

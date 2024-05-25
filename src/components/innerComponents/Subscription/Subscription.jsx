@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../units';
+import { Button } from '../../units';
 import subscriptionStyles from './Subscription.module.scss';
 
 const subscriptionClassName = 'subscription';

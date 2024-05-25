@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { NFTDetails } from '../../../NFTDetails';
+import { NFTDetails } from '../../../innerComponents';
 import nftCollectionStyles from './NFTCollection.module.scss';
 
 const nftCollectionClassName = 'nft-collection';

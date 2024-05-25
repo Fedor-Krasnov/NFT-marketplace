@@ -1,4 +1,3 @@
-import { HowItWorks } from '../../components/sections/index.js';
 import {
   auctionData,
   browseCategoriesData,

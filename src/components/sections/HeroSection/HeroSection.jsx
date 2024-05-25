@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { NFTCard } from '../../NFTCard';
+import { NFTCard } from '../../innerComponents';
 import { Button, IconCode, Statistics } from '../../units';
 import { Title } from '../../units/Title';
 import heroSectionStyles from './HeroSection.module.scss';
