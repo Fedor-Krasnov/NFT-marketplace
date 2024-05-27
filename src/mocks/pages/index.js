@@ -1,3 +1,4 @@
+import { authorizationPageData } from '../Page/index.js';
 import {
   auctionData,
   browseCategoriesData,
@@ -49,6 +50,20 @@ export const pages = [
       {
         content: weeklyDigestData,
         type: 'weekly-digest',
+      },
+    ],
+  },
+  {
+    pathname: '/authorization',
+    seo: {
+      title: 'Authorization – NFT Marketplace',
+      description: '',
+      keywords: '',
+    },
+    sections: [
+      {
+        content: authorizationPageData,
+        type: 'authorization',
       },
     ],
   },

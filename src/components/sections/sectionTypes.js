@@ -1,3 +1,4 @@
+import { AuthorizationPage } from '../Page';
 import {
   Auction,
   BrowseCategories,
@@ -18,6 +19,7 @@ export const SectionType = {
   auction: 'auction',
   howItWorks: 'how-it-works',
   weeklyDigest: 'weekly-digest',
+  authorization: 'authorization',
 };
 
 export const sectionTypeToComponentMap = {
@@ -29,4 +31,5 @@ export const sectionTypeToComponentMap = {
   [SectionType.auction]: Auction,
   [SectionType.howItWorks]: HowItWorks,
   [SectionType.weeklyDigest]: WeeklyDigest,
+  [SectionType.authorization]: AuthorizationPage,
 };
