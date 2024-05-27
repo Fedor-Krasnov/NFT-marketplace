@@ -1,20 +1,15 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { connectWalletPageData } from '../../../mocks/Page';
 import { Title } from '../../units';
 import connectWalletPageStyles from './ConnectWalletPage.module.scss';
 import { SelectionOfWalletsPage } from './SelectionOfWalletsPage';
 
 const connectWalletPageClassName = 'connect-wallet';
 
-const ConnectWalletPage = () => {
-  const { title, description, choice } = connectWalletPageData;
+const ConnectWalletPage = ({ content }) => {
+  const { title, description, choice } = content;
 
   return (
     <>
-      <Helmet>
-        <title>Connect Wallet – NFT Marketplace</title>
-      </Helmet>
       <div className={connectWalletPageStyles[connectWalletPageClassName]}>
         <div className={connectWalletPageStyles[`${connectWalletPageClassName}__img-container`]}>
           <div className={connectWalletPageStyles[`${connectWalletPageClassName}__img`]}></div>

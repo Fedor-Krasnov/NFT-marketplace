@@ -12,9 +12,6 @@ const App = () => (
   </Router>
   // <Page>
   //   <Routes>
-  //     <Route element={<HomePage />} path="/" />
-  //     <Route element={<AuthorizationPage />} path="/authorization" />
-  //     <Route element={<ConnectWalletPage />} path="/connect-wallet" />
   //     <Route element={<TopCreatorsPage />} path="/top-creators" />
   //     <Route element={<BrowseMarketplacePage />} path="/browse-marketplace" />
   //     <Route element={<UserProfilePage />} path="/user-profile/:userName" />

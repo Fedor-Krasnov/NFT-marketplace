@@ -1,4 +1,4 @@
-import { authorizationPageData } from '../Page/index.js';
+import { authorizationPageData, connectWalletPageData } from '../Page';
 import {
   auctionData,
   browseCategoriesData,
@@ -64,6 +64,20 @@ export const pages = [
       {
         content: authorizationPageData,
         type: 'authorization',
+      },
+    ],
+  },
+  {
+    pathname: '/connect-wallet',
+    seo: {
+      title: 'Connect Wallet – NFT Marketplace',
+      description: '',
+      keywords: '',
+    },
+    sections: [
+      {
+        content: connectWalletPageData,
+        type: 'connect-wallet',
       },
     ],
   },

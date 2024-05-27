@@ -1,4 +1,4 @@
-import { AuthorizationPage } from '../Page';
+import { AuthorizationPage, ConnectWalletPage } from '../Page';
 import {
   Auction,
   BrowseCategories,
@@ -20,6 +20,7 @@ export const SectionType = {
   howItWorks: 'how-it-works',
   weeklyDigest: 'weekly-digest',
   authorization: 'authorization',
+  connectWallet: 'connect-wallet',
 };
 
 export const sectionTypeToComponentMap = {
@@ -32,4 +33,5 @@ export const sectionTypeToComponentMap = {
   [SectionType.howItWorks]: HowItWorks,
   [SectionType.weeklyDigest]: WeeklyDigest,
   [SectionType.authorization]: AuthorizationPage,
+  [SectionType.connectWallet]: ConnectWalletPage,
 };
