@@ -12,9 +12,6 @@ const AuthorizationPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Create account – NFT Marketplace</title>
-      </Helmet>
       <div className={authorizationPageStyles[authorizationPageClassName]}>
         <div className={authorizationPageStyles[`${authorizationPageClassName}__img-container`]}>
           <div className={authorizationPageStyles[`${authorizationPageClassName}__img`]} />
