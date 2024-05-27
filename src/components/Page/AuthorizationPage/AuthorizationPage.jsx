@@ -1,14 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { authorizationPageData } from '../../../mocks/Page';
 import { Button, Title } from '../../units';
 import { Input } from '../../units/Input';
 import authorizationPageStyles from './AuthorizationPage.module.scss';
 
 const authorizationPageClassName = 'authorization-page';
 
-const AuthorizationPage = () => {
-  const { description, title, entryField, titleButton } = authorizationPageData;
+const AuthorizationPage = ({ content }) => {
+  const { description, title, entryField, titleButton } = content;
 
   return (
     <>
