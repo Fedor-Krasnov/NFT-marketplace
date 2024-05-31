@@ -1,4 +1,4 @@
-import { authorizationPageData, connectWalletPageData, rankingsPageData } from '../Page';
+import { authorizationPageData, browseMarketplacePageData, connectWalletPageData, rankingsPageData } from '../Page';
 import {
   auctionData,
   browseCategoriesData,
@@ -92,6 +92,20 @@ export const pages = [
       {
         content: rankingsPageData,
         type: 'rankings-page',
+      },
+    ],
+  },
+  {
+    pathname: '/browse-marketplace',
+    seo: {
+      title: 'Browse Marketplace – NFT Marketplace',
+      description: '',
+      keywords: '',
+    },
+    sections: [
+      {
+        content: browseMarketplacePageData,
+        type: 'browse-marketplace-page',
       },
     ],
   },

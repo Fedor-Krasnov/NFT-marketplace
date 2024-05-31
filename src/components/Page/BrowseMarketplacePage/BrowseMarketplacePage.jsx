@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { browseMarketplacePageData } from '../../../mocks/Page';
 import { WorkLayoutSection } from '../../sections';
 import { Icon, IconCode, Title } from '../../units';
@@ -9,12 +8,10 @@ const browseMarketplacePageClassName = 'browse-marketplace';
 
 const BrowseMarketplacePage = () => {
   const { title, description, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } = browseMarketplacePageData;
+  // TODO: исправить отображение задгнего фона
 
   return (
     <>
-      <Helmet>
-        <title>Browse Marketplace – NFT Marketplace</title>
-      </Helmet>
       <div className={browseMarketplacePageStyles[browseMarketplacePageClassName]}>
         <div className={browseMarketplacePageStyles[`${browseMarketplacePageClassName}__title`]}>
           <Title description={description} heading="h1" title={title} />

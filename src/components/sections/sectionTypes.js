@@ -1,4 +1,4 @@
-import { AuthorizationPage, ConnectWalletPage, RankingsPage } from '../Page';
+import { AuthorizationPage, BrowseMarketplacePage, ConnectWalletPage, RankingsPage } from '../Page';
 import {
   Auction,
   BrowseCategories,
@@ -22,6 +22,7 @@ export const SectionType = {
   authorization: 'authorization',
   connectWallet: 'connect-wallet',
   rankingsPage: 'rankings-page',
+  browseMarketplacePage: 'browse-marketplace-page',
 };
 
 export const sectionTypeToComponentMap = {
@@ -36,4 +37,5 @@ export const sectionTypeToComponentMap = {
   [SectionType.authorization]: AuthorizationPage,
   [SectionType.connectWallet]: ConnectWalletPage,
   [SectionType.rankingsPage]: RankingsPage,
+  [SectionType.browseMarketplacePage]: BrowseMarketplacePage,
 };

@@ -10,13 +10,8 @@ const App = () => (
       </Route>
     </Routes>
   </Router>
-  // <Page>
-  //   <Routes>
-  //     <Route element={<BrowseMarketplacePage />} path="/browse-marketplace" />
-  //     <Route element={<UserProfilePage />} path="/user-profile/:userName" />
-  //     <Route element={<PageAuctionNftPage />} path="/page-Auction-nft-Page" />
-  //   </Routes>
-  // </Page>
+  // <Route element={<UserProfilePage />} path="/user-profile/:userName" />
+  // <Route element={<PageAuctionNftPage />} path="/page-Auction-nft-Page" />
 );
 
 export { App };
