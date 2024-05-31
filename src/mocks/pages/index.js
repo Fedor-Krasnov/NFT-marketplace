@@ -1,4 +1,4 @@
-import { authorizationPageData, connectWalletPageData, topCreatorsPageData } from '../Page';
+import { authorizationPageData, connectWalletPageData, rankingsPageData } from '../Page';
 import {
   auctionData,
   browseCategoriesData,
@@ -82,7 +82,7 @@ export const pages = [
     ],
   },
   {
-    pathname: '/top-creators',
+    pathname: '/rankings',
     seo: {
       title: 'Rankings – NFT Marketplace',
       description: '',
@@ -90,8 +90,8 @@ export const pages = [
     },
     sections: [
       {
-        content: topCreatorsPageData,
-        type: 'top-creators-page',
+        content: rankingsPageData,
+        type: 'rankings-page',
       },
     ],
   },

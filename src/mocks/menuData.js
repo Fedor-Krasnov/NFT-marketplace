@@ -4,7 +4,7 @@ export const menuData = [
     title: 'Marketplace',
   },
   {
-    path: '/top-creators',
+    path: '/rankings',
     title: 'Rankings',
   },
   {

@@ -8,5 +8,5 @@ export { DiscoverMoreNfTs } from './DiscoverMoreNFTs';
 export { WeeklyDigest } from './WeeklyDigest';
 export { UserProfileSectionPage } from '../Page/UserProfilePage/UserProfileSectionPage';
 export { DetailedUserProfileSection } from './DetailedUserProfileSection';
-export { TopCreatorsSectionPage } from '../Page/TopCreatorsPage/TopCreatorsSectionPage';
+export { RankingsSection } from '../Page/RankingsPage/RankingsSection';
 export { WorkLayoutSection } from './WorkLayoutSection';

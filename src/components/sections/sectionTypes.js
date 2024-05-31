@@ -1,4 +1,4 @@
-import { AuthorizationPage, ConnectWalletPage, TopCreatorsPage } from '../Page';
+import { AuthorizationPage, ConnectWalletPage, RankingsPage } from '../Page';
 import {
   Auction,
   BrowseCategories,
@@ -21,7 +21,7 @@ export const SectionType = {
   weeklyDigest: 'weekly-digest',
   authorization: 'authorization',
   connectWallet: 'connect-wallet',
-  topCreatorsPage: 'top-creators-page',
+  rankingsPage: 'rankings-page',
 };
 
 export const sectionTypeToComponentMap = {
@@ -35,5 +35,5 @@ export const sectionTypeToComponentMap = {
   [SectionType.weeklyDigest]: WeeklyDigest,
   [SectionType.authorization]: AuthorizationPage,
   [SectionType.connectWallet]: ConnectWalletPage,
-  [SectionType.topCreatorsPage]: TopCreatorsPage,
+  [SectionType.rankingsPage]: RankingsPage,
 };

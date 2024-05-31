@@ -2,7 +2,7 @@ export { Page } from './Page';
 export { AuthorizationPage } from './AuthorizationPage';
 export { ConnectWalletPage } from './ConnectWalletPage';
 export { BrowseMarketplacePage } from './BrowseMarketplacePage';
-export { TopCreatorsPage } from './TopCreatorsPage';
+export { RankingsPage } from './RankingsPage';
 export { UserProfilePage } from './UserProfilePage';
 export { PageAuctionNftPage } from './PageAuctionNFTPage';
 export { PageContent } from './PageContent';

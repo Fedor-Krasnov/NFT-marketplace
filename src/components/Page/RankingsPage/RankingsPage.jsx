@@ -1,20 +1,16 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { topCreatorsPageData } from '../../../mocks/Page';
-import { TopCreatorsSectionPage } from '../../sections';
+import { rankingsPageData } from '../../../mocks/Page';
+import { RankingsSection } from '../../sections';
 import { Title } from '../../units';
-import topCreatorsPageStyles from './TopCreatorsPage.module.scss';
+import topCreatorsPageStyles from './RankingsPage.module.scss';
 
 const topCreatorsPageClassName = 'top-creators';
 
-const TopCreatorsPage = () => {
-  const { title, description } = topCreatorsPageData;
+const RankingsPage = () => {
+  const { title, description } = rankingsPageData;
 
   return (
     <>
-      <Helmet>
-        <title>Rankings – NFT Marketplace</title>
-      </Helmet>
       <div className={topCreatorsPageStyles[topCreatorsPageClassName]}>
         <div className={topCreatorsPageStyles[`${topCreatorsPageClassName}__title-page`]}>
           <Title description={description} heading="h1" title={title} />
@@ -47,10 +43,10 @@ const TopCreatorsPage = () => {
             <p>All Time</p>
           </a>
         </div>
-        <TopCreatorsSectionPage />
+        <RankingsSection />
       </div>
     </>
   );
 };
 
-export { TopCreatorsPage };
+export { RankingsPage };

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { topCreatorsPageData } from '../../../../mocks/Page';
-import topCreatorsSectionPageStyles from './TopCreatorsSectionPage.module.scss';
+import { rankingsPageData } from '../../../../mocks/Page';
+import topCreatorsSectionPageStyles from './RankingsSection.module.scss';
 
 const topCreatorsSectionClassName = 'top-creators-section';
 
-const TopCreatorsSectionPage = () => (
+const RankingsSection = () => (
   <section className={topCreatorsSectionPageStyles[topCreatorsSectionClassName]}>
     <div className={topCreatorsSectionPageStyles[`${topCreatorsSectionClassName}__list-header`]}>
       <p className={topCreatorsSectionPageStyles[`${topCreatorsSectionClassName}__example-1`]}>#</p>
@@ -14,7 +14,7 @@ const TopCreatorsSectionPage = () => (
       <p className={topCreatorsSectionPageStyles[`${topCreatorsSectionClassName}__example-4`]}>NFTs Sold</p>
       <p className={topCreatorsSectionPageStyles[`${topCreatorsSectionClassName}__example-5`]}>Volume</p>
     </div>
-    {topCreatorsPageData.userTop.map(({ image, userName, change, nftSold, volume }, userTopIndex) => (
+    {rankingsPageData.userTop.map(({ image, userName, change, nftSold, volume }, userTopIndex) => (
       <div key={userName} className={topCreatorsSectionPageStyles[`${topCreatorsSectionClassName}__creator`]}>
         <div className={topCreatorsSectionPageStyles[`${topCreatorsSectionClassName}__creator-container`]}>
           <div className={topCreatorsSectionPageStyles[`${topCreatorsSectionClassName}__serial-number`]}>
@@ -48,4 +48,4 @@ const TopCreatorsSectionPage = () => (
   </section>
 );
 
-export { TopCreatorsSectionPage };
+export { RankingsSection };

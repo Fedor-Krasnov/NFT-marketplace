@@ -12,7 +12,6 @@ const App = () => (
   </Router>
   // <Page>
   //   <Routes>
-  //     <Route element={<TopCreatorsPage />} path="/top-creators" />
   //     <Route element={<BrowseMarketplacePage />} path="/browse-marketplace" />
   //     <Route element={<UserProfilePage />} path="/user-profile/:userName" />
   //     <Route element={<PageAuctionNftPage />} path="/page-Auction-nft-Page" />
