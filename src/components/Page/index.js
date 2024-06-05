@@ -4,6 +4,6 @@ export { ConnectWalletPage } from './ConnectWalletPage';
 export { BrowseMarketplacePage } from './BrowseMarketplacePage';
 export { RankingsPage } from './RankingsPage';
 export { UserProfilePage } from './UserProfilePage';
-export { PageAuctionNftPage } from './PageAuctionNFTPage';
+export { NFTAuctionPage } from './NFTAuctionPage';
 export { PageContent } from './PageContent';
 export { PageLayout } from './PageLayout';

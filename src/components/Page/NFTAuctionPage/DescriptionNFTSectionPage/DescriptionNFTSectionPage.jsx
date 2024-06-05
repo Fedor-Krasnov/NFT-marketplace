@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { pageAuctionNFTPageData } from '../../../../mocks/Page';
+import { NFTAuctionPageData } from '../../../../mocks/Page';
 import { Countdown } from '../../../sections/Auction/Countdown';
 import { Text, Title, Tags, ExternalLinks } from '../../../units';
 import DescriptionNFTSectionStyles from './DescriptionNFTSectionPage.module.scss';
@@ -9,7 +9,7 @@ const DescriptionNFTSectionClassName = 'description-nft-section';
 
 const DescriptionNFTSectionPage = () => {
   const { titleAuction, descriptionAuction, userName, image, username, description, tags, details } =
-    pageAuctionNFTPageData;
+    NFTAuctionPageData;
 
   return (
     <section className={DescriptionNFTSectionStyles[DescriptionNFTSectionClassName]}>

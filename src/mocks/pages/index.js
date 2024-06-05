@@ -2,7 +2,7 @@ import {
   authorizationPageData,
   browseMarketplacePageData,
   connectWalletPageData,
-  pageAuctionNFTPageData,
+  NFTAuctionPageData,
   rankingsPageData,
 } from '../Page';
 import {
@@ -116,7 +116,7 @@ export const pages = [
     ],
   },
   {
-    pathname: '/page-Auction-nft-Page',
+    pathname: '/nft-auction',
     seo: {
       title: 'NFT Auction – NFT Marketplace',
       description: '',
@@ -124,8 +124,8 @@ export const pages = [
     },
     sections: [
       {
-        content: pageAuctionNFTPageData,
-        type: 'page-Auction-nft-Page',
+        content: NFTAuctionPageData,
+        type: 'nftAuction-Page',
       },
     ],
   },

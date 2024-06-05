@@ -3,7 +3,7 @@ import { DiscoverMoreNfTs } from '../../sections';
 import { DescriptionNFTSectionPage } from './DescriptionNFTSectionPage';
 import { NFTSectionPage } from './NFTSectionPage';
 
-const PageAuctionNftPage = ({ content }) => {
+const NFTAuctionPage = ({ content }) => {
   const { moreNFT } = content;
 
   return (
@@ -15,4 +15,4 @@ const PageAuctionNftPage = ({ content }) => {
   );
 };
 
-export { PageAuctionNftPage };
+export { NFTAuctionPage };

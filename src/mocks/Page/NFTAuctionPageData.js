@@ -2,7 +2,7 @@ import { IconCode } from '../../components/units';
 import backgroundImg from '../media/background/nft-background.jpg';
 import { nftCardsData } from '../nftCardsData';
 
-export const pageAuctionNFTPageData = {
+export const NFTAuctionPageData = {
   background: {
     alt: 'nft-background',
     src: backgroundImg,

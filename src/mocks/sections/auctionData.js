@@ -1,6 +1,6 @@
 export const auctionData = {
   buttonTitle: 'See NFT',
-  buttonLink: '/page-Auction-nft-Page',
+  buttonLink: '/nft-auction',
   title: 'Auction ends&nbsp;in:',
   image: {
     alt: 'avatar',

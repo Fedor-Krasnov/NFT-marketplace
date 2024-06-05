@@ -1,11 +1,11 @@
 import React from 'react';
-import { pageAuctionNFTPageData } from '../../../../mocks/Page';
+import { NFTAuctionPageData } from '../../../../mocks/Page';
 import nftSectionStyles from './NFTSectionPage.module.scss';
 
 const nftSectionClassName = 'nft-section';
 
 const NFTSectionPage = () => {
-  const { background } = pageAuctionNFTPageData;
+  const { background } = NFTAuctionPageData;
 
   return (
     <section className={nftSectionStyles[nftSectionClassName]}>
