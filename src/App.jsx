@@ -11,7 +11,6 @@ const App = () => (
     </Routes>
   </Router>
   // <Route element={<UserProfilePage />} path="/user-profile/:userName" />
-  // <Route element={<PageAuctionNftPage />} path="/page-Auction-nft-Page" />
 );
 
 export { App };

@@ -1,4 +1,10 @@
-import { authorizationPageData, browseMarketplacePageData, connectWalletPageData, rankingsPageData } from '../Page';
+import {
+  authorizationPageData,
+  browseMarketplacePageData,
+  connectWalletPageData,
+  pageAuctionNFTPageData,
+  rankingsPageData,
+} from '../Page';
 import {
   auctionData,
   browseCategoriesData,
@@ -106,6 +112,20 @@ export const pages = [
       {
         content: browseMarketplacePageData,
         type: 'browse-marketplace-page',
+      },
+    ],
+  },
+  {
+    pathname: '/page-Auction-nft-Page',
+    seo: {
+      title: 'NFT Auction – NFT Marketplace',
+      description: '',
+      keywords: '',
+    },
+    sections: [
+      {
+        content: pageAuctionNFTPageData,
+        type: 'page-Auction-nft-Page',
       },
     ],
   },

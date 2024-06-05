@@ -6,7 +6,7 @@ import discoverMoreNfTsStyles from './DiscoverMoreNFTs.module.scss';
 
 const discoverMoreNfTsClassName = 'discover-more-nfts';
 
-const DiscoverMoreNfTs = ({ content }) => {
+const DiscoverMoreNfTs = ({ content, data }) => {
   const { nftCards, buttonLink, buttonIcon = IconCode.eye, buttonTitle, description, title, userName } = content;
   const { isMainPage } = pageCheck();
 
