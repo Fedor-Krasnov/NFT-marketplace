@@ -12,6 +12,7 @@ export const browseCategoriesData = {
         src: 'src/mocks/media/categories/icons/art.svg',
       },
       category: 'Art',
+      categoryQueryString: '',
     },
     {
       id: 2,

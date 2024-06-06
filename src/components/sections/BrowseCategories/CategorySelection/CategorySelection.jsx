@@ -9,7 +9,7 @@ const CategorySelection = ({ data }) => {
   const { image, icon, category } = data;
 
   return (
-    <Link to="#">
+    <Link to={`/browse-marketplace?category=${category}`}>
       <li>
         <div className={categorySelectionStyles[categorySelectionClassName]}>
           <div className={categorySelectionStyles[`${categorySelectionClassName}__img`]}>
