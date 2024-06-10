@@ -1,12 +1,18 @@
 import React from 'react';
 import { usePageContext } from '../../../contexts';
+import { PageSeo } from '../PageSeo';
 import { sectionsCollection } from './helpers/sectionsCollection';
 
 const PageContent = () => {
   const { pageData } = usePageContext();
-  const { sections } = pageData;
+  const { sections, seo } = pageData;
 
-  return <>{sections.length ? sectionsCollection(sections) : null}</>;
+  return (
+    <>
+      <PageSeo seo={seo} />
+      {sections.length ? sectionsCollection(sections) : null}
+    </>
+  );
 };
 
 export { PageContent };
