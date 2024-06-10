@@ -1,47 +1,47 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { browseMarketplacePageData } from '../../../mocks/Page';
-import { WorkLayout } from '../../sections';
+import { browseMarketplaceData } from '../../../mocks/sections';
+import { WorkLayout } from '../../innerComponents';
 import { Icon, IconCode, Title } from '../../units';
 import { DescriptionSize, TitleSize } from '../../units/Title/types';
-import browseMarketplacePageStyles from './BrowseMarketplacePage.module.scss';
+import browseMarketplaceStyles from './BrowseMarketplace.module.scss';
 
-const browseMarketplacePageClassName = 'browse-marketplace';
+const browseMarketplaceClassName = 'browse-marketplace';
 
-const BrowseMarketplacePage = () => {
-  const { title, description, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } = browseMarketplacePageData;
+const BrowseMarketplace = () => {
+  const { title, description, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } = browseMarketplaceData;
   const { search } = useLocation();
   const paramCategory = new URLSearchParams(search).get('category');
   const [categoryValue, setCategoryValue] = useState('');
   // TODO: исправить отображение задгнего фона
 
   return (
-    <div className={browseMarketplacePageStyles[browseMarketplacePageClassName]}>
+    <div className={browseMarketplaceStyles[browseMarketplaceClassName]}>
       <Title description={description} descriptionSize={DescriptionSize.large} heading={TitleSize.h1} title={title} />
-      <div className={browseMarketplacePageStyles[`${browseMarketplacePageClassName}__search-string`]}>
+      <div className={browseMarketplaceStyles[`${browseMarketplaceClassName}__search-string`]}>
         <label>
           <input
-            className={browseMarketplacePageStyles[`${browseMarketplacePageClassName}__search`]}
+            className={browseMarketplaceStyles[`${browseMarketplaceClassName}__search`]}
             defaultValue={paramCategory}
             onChange={(event) => setCategoryValue(event.target.value)}
             placeholder="Search your favourite NFTs"
             type="text"
           />
         </label>
-        <div className={browseMarketplacePageStyles[`${browseMarketplacePageClassName}__search-icon`]}>
+        <div className={browseMarketplaceStyles[`${browseMarketplaceClassName}__search-icon`]}>
           <Link to={`?category=${categoryValue}`}>
             <Icon code={IconCode.zoom} />
           </Link>
         </div>
       </div>
-      <div className={browseMarketplacePageStyles[`${browseMarketplacePageClassName}__choice-point`]}>
-        <div className={browseMarketplacePageStyles[`${browseMarketplacePageClassName}__trait`]}></div>
-        <div className={browseMarketplacePageStyles[`${browseMarketplacePageClassName}__buttons`]}>
-          <a href="">
+      <div className={browseMarketplaceStyles[`${browseMarketplaceClassName}__choice-point`]}>
+        <div className={browseMarketplaceStyles[`${browseMarketplaceClassName}__trait`]}></div>
+        <div className={browseMarketplaceStyles[`${browseMarketplaceClassName}__buttons`]}>
+          <a href="src/components/sections/BrowseMarketplace">
             {categoryOne}
             <span>{categoryOneSpan}</span>
           </a>
-          <a href="">
+          <a href="src/components/sections/BrowseMarketplace">
             {categoryTwo}
             <span>{categoryTwoSpan}</span>
           </a>
@@ -52,4 +52,4 @@ const BrowseMarketplacePage = () => {
   );
 };
 
-export { BrowseMarketplacePage };
+export { BrowseMarketplace };

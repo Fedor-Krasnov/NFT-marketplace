@@ -1,4 +1,4 @@
-import { AuthorizationPage, BrowseMarketplacePage, ConnectWalletPage, NFTAuctionPage, RankingsPage } from '../Page';
+import { AuthorizationPage, BrowseMarketplace, ConnectWalletPage, NFTAuctionPage, RankingsPage } from '../Page';
 import {
   Auction,
   BrowseCategories,
@@ -22,7 +22,7 @@ export const SectionType = {
   authorization: 'authorization',
   connectWallet: 'connect-wallet',
   rankingsPage: 'rankings-page',
-  browseMarketplacePage: 'browse-marketplace-page',
+  browseMarketplace: 'browse-marketplace',
   NFTAuctionPage: 'nftAuction-Page',
 };
 
@@ -38,6 +38,6 @@ export const sectionTypeToComponentMap = {
   [SectionType.authorization]: AuthorizationPage,
   [SectionType.connectWallet]: ConnectWalletPage,
   [SectionType.rankingsPage]: RankingsPage,
-  [SectionType.browseMarketplacePage]: BrowseMarketplacePage,
+  [SectionType.browseMarketplace]: BrowseMarketplace,
   [SectionType.NFTAuctionPage]: NFTAuctionPage,
 };

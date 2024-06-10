@@ -1,13 +1,8 @@
-import {
-  authorizationPageData,
-  browseMarketplacePageData,
-  connectWalletPageData,
-  NFTAuctionPageData,
-  rankingsPageData,
-} from '../Page';
+import { authorizationPageData, connectWalletPageData, NFTAuctionPageData, rankingsPageData } from '../Page';
 import {
   auctionData,
   browseCategoriesData,
+  browseMarketplaceData,
   discoverMoreNfTsData,
   heroSectionData,
   howItWorksData,
@@ -110,8 +105,8 @@ export const pages = [
     },
     sections: [
       {
-        content: browseMarketplacePageData,
-        type: 'browse-marketplace-page',
+        content: browseMarketplaceData,
+        type: 'browse-marketplace',
       },
     ],
   },

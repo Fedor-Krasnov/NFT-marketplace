@@ -1,12 +1,12 @@
 import React from 'react';
-import { browseMarketplacePageData } from '../../../mocks/Page';
+import { browseMarketplaceData } from '../../../mocks/sections';
 import { NFTCard } from '../NFTCard';
 import workLayoutStyles from './WorkLayout.module.scss';
 
 const workLayoutClassName = 'work-layout';
 
 const WorkLayout = ({ userName }) => {
-  const { nftCards } = browseMarketplacePageData;
+  const { nftCards } = browseMarketplaceData;
   let nftCardsResult = nftCards;
   if (userName) {
     nftCardsResult = nftCards.filter((card) => card.nftDetails.username === userName);

@@ -1,7 +1,7 @@
 export { Page } from './Page';
 export { AuthorizationPage } from './AuthorizationPage';
 export { ConnectWalletPage } from './ConnectWalletPage';
-export { BrowseMarketplacePage } from './BrowseMarketplacePage';
+export { BrowseMarketplace } from '../sections/BrowseMarketplace';
 export { RankingsPage } from './RankingsPage';
 export { UserProfilePage } from './UserProfilePage';
 export { NFTAuctionPage } from './NFTAuctionPage';
