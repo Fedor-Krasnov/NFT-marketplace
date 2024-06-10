@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Title } from '../../units';
 import { Input } from '../../units/Input';
+import { TitleSize } from '../../units/Title/types';
 import authorizationPageStyles from './AuthorizationPage.module.scss';
 
 const authorizationPageClassName = 'authorization-page';
@@ -16,7 +17,7 @@ const AuthorizationPage = ({ content }) => {
         </div>
         <div className={authorizationPageStyles[`${authorizationPageClassName}__registration`]}>
           <div className={authorizationPageStyles[`${authorizationPageClassName}__title`]}>
-            <Title description={description} heading="h1" title={title} />
+            <Title description={description} heading={TitleSize.h1} title={title} />
           </div>
           <div className={authorizationPageStyles[`${authorizationPageClassName}__entry-field`]}>
             {entryField.map((data) => (

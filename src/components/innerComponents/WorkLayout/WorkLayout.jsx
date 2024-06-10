@@ -1,11 +1,11 @@
 import React from 'react';
 import { browseMarketplacePageData } from '../../../mocks/Page';
-import { NFTCard } from '../../innerComponents';
-import workLayoutSectionStyles from './WorkLayoutSection.module.scss';
+import { NFTCard } from '../NFTCard';
+import workLayoutStyles from './WorkLayout.module.scss';
 
-const workLayoutSectionClassName = 'work-layout-section';
+const workLayoutClassName = 'work-layout';
 
-const WorkLayoutSection = ({ userName }) => {
+const WorkLayout = ({ userName }) => {
   const { nftCards } = browseMarketplacePageData;
   let nftCardsResult = nftCards;
   if (userName) {
@@ -13,14 +13,14 @@ const WorkLayoutSection = ({ userName }) => {
   }
 
   return (
-    <section className={workLayoutSectionStyles[workLayoutSectionClassName]}>
-      <div className={workLayoutSectionStyles[`${workLayoutSectionClassName}__container`]}>
+    <div className={workLayoutStyles[workLayoutClassName]}>
+      <div className={workLayoutStyles[`${workLayoutClassName}__container`]}>
         {nftCardsResult.map((data, indexNFTCard) => (
           <NFTCard key={indexNFTCard} data={data} isDarkBackground />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
-export { WorkLayoutSection };
+export { WorkLayout };

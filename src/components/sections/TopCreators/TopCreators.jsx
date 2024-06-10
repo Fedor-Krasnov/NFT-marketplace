@@ -1,6 +1,7 @@
 import React from 'react';
 import { topCreatorsData } from '../../../mocks';
 import { Button, IconCode, Title } from '../../units';
+import { TitleSize } from '../../units/Title/types';
 import topCreatorsStyles from './TopCreators.module.scss';
 import { UserCreators } from './UserCreators';
 
@@ -12,7 +13,7 @@ const TopCreators = ({ content }) => (
       buttonIcon={IconCode.rocket}
       buttonTitle={topCreatorsData.buttonTitle}
       description={topCreatorsData.description}
-      heading="h2"
+      heading={TitleSize.h2}
       title={topCreatorsData.title}
       to={topCreatorsData.buttonLink}
     />

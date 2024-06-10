@@ -1,5 +1,6 @@
 import React from 'react';
 import { Title } from '../../units';
+import { TitleSize } from '../../units/Title/types';
 import connectWalletPageStyles from './ConnectWalletPage.module.scss';
 import { SelectionOfWalletsPage } from './SelectionOfWalletsPage';
 
@@ -16,7 +17,7 @@ const ConnectWalletPage = ({ content }) => {
         </div>
         <div className={connectWalletPageStyles[`${connectWalletPageClassName}__wallet-selection`]}>
           <div className={connectWalletPageStyles[`${connectWalletPageClassName}__title`]}>
-            <Title description={description} heading="h1" title={title} />
+            <Title description={description} heading={TitleSize.h1} title={title} />
           </div>
           {choice.map((item) => (
             <SelectionOfWalletsPage key={item.id} item={item} />

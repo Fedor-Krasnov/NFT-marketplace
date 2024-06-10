@@ -1,5 +1,6 @@
 import React from 'react';
 import { Title } from '../../units';
+import { TitleSize } from '../../units/Title/types';
 import { ExplanatoryCard } from './ExplanatoryCard';
 import howItWorksStyles from './HowItWorks.module.scss';
 
@@ -10,7 +11,7 @@ const HowItWorks = ({ content }) => {
 
   return (
     <div className={howItWorksStyles[howItWorksClassName]}>
-      <Title description={description} heading="h2" title={title} />
+      <Title description={description} heading={TitleSize.h2} title={title} />
       <div className={howItWorksStyles[`${howItWorksClassName}__container`]}>
         {offerCards.map((data, dataId) => (
           <ExplanatoryCard key={dataId} data={data} />

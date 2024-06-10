@@ -1,5 +1,6 @@
 import React from 'react';
 import { Title } from '../../units/Title';
+import { TitleSize } from '../../units/Title/types';
 import { NFTCollection } from './NFTCollection';
 import trendingCollectionStyles from './TrendingCollection.module.scss';
 
@@ -10,7 +11,7 @@ const TrendingCollection = ({ content }) => {
 
   return (
     <div className={trendingCollectionStyles[trendingCollectionClassName]}>
-      <Title description={description} heading="h2" title={title} />
+      <Title description={description} heading={TitleSize.h2} title={title} />
       <div className={trendingCollectionStyles[`${trendingCollectionClassName}__content`]}>
         {nftCollection.map((data) => (
           <NFTCollection

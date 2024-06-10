@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
-import { UserProfileSectionPage, DetailedUserProfileSection, WorkLayoutSection } from '../../sections';
+import { UserProfileSectionPage, DetailedUserProfileSection, WorkLayout } from '../../sections';
 
 const UserProfilePage = () => {
   const { userName } = useParams();
@@ -13,7 +13,7 @@ const UserProfilePage = () => {
       </Helmet>
       <UserProfileSectionPage />
       <DetailedUserProfileSection />
-      <WorkLayoutSection userName={userName} />
+      <WorkLayout userName={userName} />
     </>
   );
 };

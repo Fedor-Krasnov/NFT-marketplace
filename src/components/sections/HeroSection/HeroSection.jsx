@@ -4,6 +4,7 @@ import { NFTCard } from '../../innerComponents';
 import { Button, IconCode, Statistics } from '../../units';
 import { Title } from '../../units/Title';
 import heroSectionStyles from './HeroSection.module.scss';
+import { TitleSize } from '../../units/Title/types';
 
 const heroSectionClassName = 'hero-section';
 
@@ -16,7 +17,7 @@ const HeroSection = ({ content }) => {
         <Title
           className={heroSectionStyles[`${heroSectionClassName}__description`]}
           description={description}
-          heading="h1"
+          heading={TitleSize.h1}
           title={title}
         />
         <div

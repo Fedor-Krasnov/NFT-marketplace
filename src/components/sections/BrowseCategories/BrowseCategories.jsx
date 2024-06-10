@@ -1,5 +1,6 @@
 import React from 'react';
 import { Title } from '../../units/Title';
+import { TitleSize } from '../../units/Title/types';
 import browseCategoriesStyles from './BrowseCategories.module.scss';
 import { CategorySelection } from './CategorySelection';
 
@@ -10,7 +11,7 @@ const BrowseCategories = ({ content }) => {
 
   return (
     <div className={browseCategoriesStyles[browseCategoriesClassName]}>
-      <Title heading="h2" title={title} />
+      <Title heading={TitleSize.h2} title={title} />
       <div className={browseCategoriesStyles[`${browseCategoriesClassName}__content`]}>
         <ul className={browseCategoriesStyles[`${browseCategoriesClassName}__container`]}>
           {categorySelection.map((data) => (

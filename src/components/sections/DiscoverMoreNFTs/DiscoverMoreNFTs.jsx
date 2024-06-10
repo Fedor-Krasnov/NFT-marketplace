@@ -2,11 +2,12 @@ import React from 'react';
 import { pageCheck } from '../../../helpers';
 import { NFTCard } from '../../innerComponents';
 import { Button, IconCode, Title } from '../../units';
+import { TitleSize } from '../../units/Title/types';
 import discoverMoreNfTsStyles from './DiscoverMoreNFTs.module.scss';
 
 const discoverMoreNfTsClassName = 'discover-more-nfts';
 
-const DiscoverMoreNfTs = ({ content, data }) => {
+const DiscoverMoreNfTs = ({ content }) => {
   const { nftCards, buttonLink, buttonIcon = IconCode.eye, buttonTitle, description, title, userName } = content;
   const { isMainPage } = pageCheck();
 
@@ -16,7 +17,7 @@ const DiscoverMoreNfTs = ({ content, data }) => {
         buttonIcon={buttonIcon}
         buttonTitle={buttonTitle}
         description={description}
-        heading="h2"
+        heading={TitleSize.h2}
         title={title}
         to={isMainPage ? '/browse-marketplace' : `/user-profile/${userName}`}
       />

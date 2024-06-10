@@ -9,4 +9,4 @@ export { WeeklyDigest } from './WeeklyDigest';
 export { UserProfileSectionPage } from '../Page/UserProfilePage/UserProfileSectionPage';
 export { DetailedUserProfileSection } from './DetailedUserProfileSection';
 export { RankingsSection } from '../Page/RankingsPage/RankingsSection';
-export { WorkLayoutSection } from './WorkLayoutSection';
+export { WorkLayout } from '../innerComponents/WorkLayout';

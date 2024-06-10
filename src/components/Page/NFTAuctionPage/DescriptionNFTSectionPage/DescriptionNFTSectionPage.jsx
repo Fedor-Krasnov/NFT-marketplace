@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { NFTAuctionPageData } from '../../../../mocks/Page';
 import { Countdown } from '../../../sections/Auction/Countdown';
 import { Text, Title, Tags, ExternalLinks } from '../../../units';
+import { TitleSize } from '../../../units/Title/types';
 import DescriptionNFTSectionStyles from './DescriptionNFTSectionPage.module.scss';
 
 const DescriptionNFTSectionClassName = 'description-nft-section';
@@ -18,7 +19,7 @@ const DescriptionNFTSectionPage = () => {
           <Title
             className={`${DescriptionNFTSectionClassName}__title`}
             description={descriptionAuction}
-            heading="h1"
+            heading={TitleSize.h1}
             title={titleAuction}
           />
           <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__countdown-mobile`]}>

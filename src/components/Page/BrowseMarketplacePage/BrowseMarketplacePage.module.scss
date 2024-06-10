@@ -3,21 +3,7 @@
 .browse-marketplace {
   $selector: &;
 
-  &__title {
-    margin: 80px auto 0;
-    max-width: 1050px;
-
-    h1 {
-      font-weight: 600;
-      font-size: mixins.clamp-auto(35px, 51px);
-      line-height: mixins.clamp-auto(34px, 56px);
-    }
-
-    p {
-      font-size: mixins.clamp-auto(15px, 22px);
-      line-height: mixins.clamp-auto(25px, 35px);
-    }
-  }
+  /* ... */
 
   &__search-string {
     margin: 30px auto 80px;
