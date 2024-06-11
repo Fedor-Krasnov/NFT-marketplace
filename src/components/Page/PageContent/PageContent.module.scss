@@ -3,4 +3,12 @@
     margin: 0 -16px;
     overflow: hidden;
   }
+
+  &_margin-bottom-0 {
+    padding-bottom: 0;
+  }
+
+  &_width-full {
+    max-width: none;
+  }
 }

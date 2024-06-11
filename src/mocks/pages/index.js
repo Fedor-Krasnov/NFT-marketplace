@@ -106,7 +106,9 @@ export const pages = [
     sections: [
       {
         content: browseMarketplaceData,
+        marginBottom: 0,
         type: 'browse-marketplace',
+        width: 'full',
       },
     ],
   },

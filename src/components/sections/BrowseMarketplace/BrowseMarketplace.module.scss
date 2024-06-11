@@ -1,14 +1,19 @@
-@use '../../../assets/styles/mixins';
+@use '/src/assets/styles/mixins';
 
 .browse-marketplace {
   $selector: &;
 
   /* ... */
 
+  &__title {
+    @include mixins.container1046;
+  }
+
   &__search-string {
+    @include mixins.container1046;
+
     margin: 30px auto 80px;
     display: flex;
-    max-width: 1050px;
     width: 100%;
     position: relative;
 

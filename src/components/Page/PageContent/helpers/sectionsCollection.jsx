@@ -1,11 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
 import { sectionTypeToComponentMap } from '../../../sections/sectionTypes';
-import { pageContentSectionClassName } from '../../constants.js';
+import { pageContentSectionClassName } from '../../constants';
 import pageContentStyles from '../PageContent.module.scss';
 
-export const sectionsCollection = (sections) =>
-  sections.map(({ content, type }) => {
+export const sectionsCollection = (sections) => {
+  return sections.map(({ content, marginBottom, type, width }) => {
     const PageSection = sectionTypeToComponentMap[type];
 
     if (!PageSection) {
@@ -19,6 +19,8 @@ export const sectionsCollection = (sections) =>
         className={classNames(
           pageContentStyles[pageContentSectionClassName],
           pageContentStyles[`${pageContentSectionClassName}_${type}`],
+          pageContentStyles[`${pageContentSectionClassName}_margin-bottom-${marginBottom}`],
+          pageContentStyles[`${pageContentSectionClassName}_width-${width}`],
         )}
         key={type}
       >
@@ -26,3 +28,4 @@ export const sectionsCollection = (sections) =>
       </section>
     );
   });
+};

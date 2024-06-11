@@ -13,11 +13,16 @@ const BrowseMarketplace = () => {
   const { search } = useLocation();
   const paramCategory = new URLSearchParams(search).get('category');
   const [categoryValue, setCategoryValue] = useState('');
-  // TODO: исправить отображение задгнего фона
 
   return (
     <div className={browseMarketplaceStyles[browseMarketplaceClassName]}>
-      <Title description={description} descriptionSize={DescriptionSize.large} heading={TitleSize.h1} title={title} />
+      <Title
+        className={browseMarketplaceStyles[`${browseMarketplaceClassName}__title`]}
+        description={description}
+        descriptionSize={DescriptionSize.large}
+        heading={TitleSize.h1}
+        title={title}
+      />
       <div className={browseMarketplaceStyles[`${browseMarketplaceClassName}__search-string`]}>
         <label>
           <input
