@@ -10,7 +10,7 @@ const browseMarketplaceClassName = 'browse-marketplace';
 
 const BrowseMarketplace = () => {
   const { title, description, categoryOne, categoryOneSpan, categoryTwo, categoryTwoSpan } = browseMarketplaceData;
-  const { search } = useLocation();
+  const { pathname, search } = useLocation();
   const paramCategory = new URLSearchParams(search).get('category');
   const [categoryValue, setCategoryValue] = useState('');
 
@@ -34,7 +34,7 @@ const BrowseMarketplace = () => {
           />
         </label>
         <div className={browseMarketplaceStyles[`${browseMarketplaceClassName}__search-icon`]}>
-          <Link to={`?category=${categoryValue}`}>
+          <Link to={categoryValue ? `?category=${categoryValue}` : pathname}>
             <Icon code={IconCode.zoom} />
           </Link>
         </div>
