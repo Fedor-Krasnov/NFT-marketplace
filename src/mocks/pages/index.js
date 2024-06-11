@@ -43,6 +43,7 @@ export const pages = [
       {
         content: auctionData,
         type: 'auction',
+        width: 'full',
       },
       {
         content: howItWorksData,
