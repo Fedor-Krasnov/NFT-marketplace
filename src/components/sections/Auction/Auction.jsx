@@ -14,7 +14,7 @@ const Auction = ({ content }) => {
     <div className={auctionStyles[auctionClassName]}>
       <div className={auctionStyles[`${auctionClassName}__container`]}>
         <div className={auctionStyles[`${auctionClassName}__wrapper`]}>
-          <Link to={`/user-profile/${userName}`}>
+          <Link className={auctionStyles[`${auctionClassName}__user-profile-link`]} to={`/user-profile/${userName}`}>
             <div className={auctionStyles[`${auctionClassName}__author`]}>
               <div className={auctionStyles[`${auctionClassName}__avatar`]}>
                 <img alt={image.alt} src={image.src} />

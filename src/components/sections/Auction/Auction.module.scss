@@ -1,6 +1,8 @@
 @use "src/assets/styles/mixins";
 
 .auction {
+  $selector: &;
+
   @include mixins.container1280;
 
   padding-top: 0;
@@ -32,6 +34,10 @@
     margin: 0 auto;
     max-width: 1050px;
     width: 100%;
+
+    #{$selector}__user-profile-link {
+      display: inline-block;
+    }
   }
 
   &__content {
