@@ -6,8 +6,14 @@ import { menuData } from '../../mocks';
 
 const menuClassName = 'menu';
 
-const Menu = ({ className, isGridRows, isModal }) => {
+const Menu = ({ className, isGridRows, isModal, setIsModalMenuOpen }) => {
   const { pathname } = useLocation();
+
+  const closeModalMenu = () => {
+    if (setIsModalMenuOpen) {
+      setIsModalMenuOpen(false);
+    }
+  };
 
   return (
     <nav
@@ -28,7 +34,7 @@ const Menu = ({ className, isGridRows, isModal }) => {
 
           return (
             <li key={path}>
-              <Link dangerouslySetInnerHTML={{ __html: title }} to={path} />
+              <Link onClick={closeModalMenu} dangerouslySetInnerHTML={{ __html: title }} to={path} />
             </li>
           );
         })}

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ModalMenuContext } from '../../contexts';
 import { pageCheck } from '../../helpers';
 import { headerData } from '../../mocks/components';
 import { Menu } from '../Menu';
@@ -13,16 +14,19 @@ const headerClassName = 'header';
 const Header = () => {
   const { isAuthorizationPage } = pageCheck();
   const { title, to } = headerData;
+  const [isModalMenuOpen, setIsModalMenuOpen] = useState(false);
 
   return (
-    <header className={headerStyles[headerClassName]}>
-      <Logo />
-      <div className={headerStyles[`${headerClassName}__navbar`]}>
-        <Menu />
-        {!isAuthorizationPage && <Button icon={IconCode.user} title={title} to={to} />}
-      </div>
-      <Burger />
-    </header>
+    <ModalMenuContext.Provider value={{ isModalMenuOpen, setIsModalMenuOpen }}>
+      <header className={headerStyles[headerClassName]}>
+        <Logo />
+        <div className={headerStyles[`${headerClassName}__navbar`]}>
+          <Menu />
+          {!isAuthorizationPage && <Button icon={IconCode.user} title={title} to={to} />}
+        </div>
+        <Burger />
+      </header>
+    </ModalMenuContext.Provider>
   );
 };
 

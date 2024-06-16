@@ -5,9 +5,9 @@ import modalHeaderMenuStyles from './ModalHeaderMenu.module.scss';
 
 const modalHeaderMenuClassName = 'modal-header-menu';
 
-const ModalHeaderMenu = () => (
+const ModalHeaderMenu = ({ setIsModalMenuOpen }) => (
   <div className={modalHeaderMenuStyles[modalHeaderMenuClassName]}>
-    <Menu isModal />
+    <Menu isModal setIsModalMenuOpen={setIsModalMenuOpen} />
     <Button
       className={modalHeaderMenuStyles[`${modalHeaderMenuClassName}__button`]}
       icon={IconCode.user}
