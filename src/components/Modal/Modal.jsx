@@ -11,7 +11,7 @@ const modalClassName = 'modal';
 const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
   const { windowWidth } = useWindowDimensions();
   const maxModalWidth = 945;
-  const logoDisplayWidth = 425;
+  const logoDisplayWidth = 525;
 
   useEffect(() => {
     if (windowWidth > maxModalWidth) {
