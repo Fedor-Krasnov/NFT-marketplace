@@ -33,7 +33,7 @@ const Modal = ({ children, isModalOpen, setIsModalOpen }) => {
     >
       <div className={modalStyles[modalClassName]}>
         <div className={modalStyles[`${modalClassName}__header`]}>
-          {logoDisplayWidth >= windowWidth && <Logo withoutText />}
+          {logoDisplayWidth >= windowWidth && <Logo setIsModalMenuOpen={setIsModalOpen} />}
           <div className={modalStyles[`${modalClassName}__close`]}>
             <span onClick={() => setIsModalOpen(false)}>
               <Icon code={IconCode.close} />

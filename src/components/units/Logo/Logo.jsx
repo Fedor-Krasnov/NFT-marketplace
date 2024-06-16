@@ -7,9 +7,15 @@ import logoStyles from './Logo.module.scss';
 
 const logoClassName = 'logo';
 
-const Logo = ({ className, withoutText }) => {
+const Logo = ({ className, setIsModalMenuOpen, withoutText }) => {
   const { isMainPage } = pageCheck();
   const logoClassNames = classNames(logoStyles[logoClassName], className);
+
+  const closeModalMenu = () => {
+    if (setIsModalMenuOpen) {
+      setIsModalMenuOpen(false);
+    }
+  };
 
   const logo = (
     <>
@@ -21,7 +27,7 @@ const Logo = ({ className, withoutText }) => {
   return isMainPage ? (
     <div className={logoClassNames}>{logo}</div>
   ) : (
-    <Link className={logoClassNames} to="/">
+    <Link className={logoClassNames} onClick={closeModalMenu} to="/">
       {logo}
     </Link>
   );
