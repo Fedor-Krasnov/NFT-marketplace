@@ -5,15 +5,15 @@
   max-width: 1280px;
   display: flex;
   justify-content: space-between;
-  gap: mixins.clamp-auto(20px, 60px);
+  gap: mixins.clamps(20px, 60px);
 
   & > div {
     width: 50%;
   }
 
   p {
-    font-size: mixins.clamp-auto(16px, 22px);
-    line-height: mixins.clamp-auto(22px, 35px);
+    font-size: mixins.clamps(16px, 22px);
+    line-height: mixins.clamps(22px, 35px);
     max-width: 410px;
   }
 
@@ -32,7 +32,7 @@
   }
 
   &__wallet-selection {
-    padding: mixins.clamp-auto(0px, 140px) 0;
+    padding: mixins.clamps(0px, 140px) 0;
   }
 
   @media only screen and (max-width: 768px) {
@@ -53,7 +53,7 @@
     }
 
     &__img {
-      height: mixins.clamp-auto(232px, 1000px);
+      height: mixins.clamps(232px, 1000px);
       margin: 0 -30px;
       width: calc(100% + 30px * 2);
     }

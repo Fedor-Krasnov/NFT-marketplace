@@ -2,7 +2,7 @@
 
 .top-creators {
   display: grid;
-  row-gap: mixins.clamp-auto(40px, 60px);
+  row-gap: mixins.clamps(40px, 60px);
 
   img {
     border-radius: 100%;

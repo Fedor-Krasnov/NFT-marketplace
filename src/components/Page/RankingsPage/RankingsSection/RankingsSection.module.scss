@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     padding: 25px 20px;
-    gap: mixins.clamp-auto(8px, 20px);
+    gap: mixins.clamps(8px, 20px);
     height: 42px;
     border-radius: 20px;
     border: 2px solid #3B3B3B;
@@ -19,7 +19,7 @@
     p {
       color: #858584;
       font-family: 'Space Mono', sans-serif;
-      font-size: mixins.clamp-auto(14px, 22px);
+      font-size: mixins.clamps(14px, 22px);
       line-height: 12px;
     }
 
@@ -60,9 +60,9 @@
 
     #{$selector}__creator-container {
       align-items: center;
-      padding: mixins.clamp-auto(12px, 20px);
+      padding: mixins.clamps(12px, 20px);
       display: flex;
-      gap: mixins.clamp-auto(8px, 20px);
+      gap: mixins.clamps(8px, 20px);
       width: 100%;
       background: #3B3B3B;
       border-radius: 20px;
@@ -86,13 +86,13 @@
       width: 55%;
       display: flex;
       align-items: center;
-      gap: mixins.clamp-auto(8px, 20px);
+      gap: mixins.clamps(8px, 20px);
       white-space: nowrap;
       overflow: hidden;
 
       img {
-        width: mixins.clamp-auto(24px, 60px);
-        min-width: mixins.clamp-auto(24px, 60px);
+        width: mixins.clamps(24px, 60px);
+        min-width: mixins.clamps(24px, 60px);
       }
     }
 
@@ -104,7 +104,7 @@
     #{$selector}__change {
       font-family: 'Space Mono', sans-serif;
       font-weight: 400;
-      font-size: mixins.clamp-auto(12px, 16px);
+      font-size: mixins.clamps(12px, 16px);
       line-height: 22px;
       color: #00AC4F;
       width: 15%;
@@ -117,7 +117,7 @@
 
     #{$selector}__volume {
       width: 15%;
-      font-size: mixins.clamp-auto(12px, 16px);
+      font-size: mixins.clamps(12px, 16px);
       line-height: 15px;
     }
   }

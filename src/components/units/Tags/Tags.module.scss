@@ -3,5 +3,5 @@
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: mixins.clamp-auto(10px, 20px);
+  gap: mixins.clamps(10px, 20px);
 }

@@ -27,7 +27,7 @@
 }
 
 @mixin section {
-  padding: clamp-auto(40px, 80px) 0;
+  padding: clamps(40px, 80px) 0;
 }
 
 @mixin font($font-typography, $font-weight: 400) {
@@ -39,32 +39,20 @@
     font-weight: $font-weight;
     line-height: list.nth($max, 2);
   } @else {
-    font-size: clamp-auto(list.nth($min, 1), list.nth($max, 1));
+    font-size: clamps(list.nth($min, 1), list.nth($max, 1));
     font-weight: $font-weight;
-    line-height: clamp-auto(list.nth($min, 2), list.nth($max, 2));
+    line-height: clamps(list.nth($min, 2), list.nth($max, 2));
   }
 }
 
-@function strip-unit($value) {
-  @return math.div($value, ($value * 0 + 1));
-}
-
-// TODO: Заменить clamp-auto на clamps по всему сайту
-
-@function clamp-auto($min-value, $max-value, $divider: 14.36) {
-  $medium-value: #{math.div(strip-unit($max-value), $divider)}vw;
-
-  @return clamp(#{$min-value}, #{$medium-value}, #{$max-value});
-}
-
-@function clamp-medium-value($min-value, $max-value, $min-width: 320px, $max-width: 1440px) {
+@function clamp-medium-value($min-value, $max-value, $min-width, $max-width) {
   $slope: calc(($max-value - $min-value) / ($max-width - $min-width));
   $y-axis-intersection: calc($min-width * -1 * $slope + $min-value);
 
   @return $y-axis-intersection + ' + ' + $slope * 100 + 'vw';
 }
 
-@function clamps($min-value, $max-value, $min-width, $max-width) {
+@function clamps($min-value, $max-value, $min-width: 320px, $max-width: 1440px) {
   $medium-value: clamp-medium-value($min-value, $max-value, $min-width, $max-width);
 
   @return clamp(#{$min-value}, #{$medium-value}, #{$max-value});

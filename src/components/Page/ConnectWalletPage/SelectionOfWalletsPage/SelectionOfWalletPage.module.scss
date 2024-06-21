@@ -6,7 +6,7 @@
 
   &__choice {
     background-color: #3B3B3B;
-    width: mixins.clamp-auto(290px, 320px);
+    width: mixins.clamps(290px, 320px);
     height: 72px;
     display: flex;
     border: 1px solid #A259FF;
@@ -24,7 +24,7 @@
     }
 
     &__img {
-      width: mixins.clamp-auto(35px, 40px);
+      width: mixins.clamps(35px, 40px);
     }
   }
 }

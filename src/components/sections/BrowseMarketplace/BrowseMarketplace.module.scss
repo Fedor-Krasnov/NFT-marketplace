@@ -35,8 +35,8 @@
     }
 
     #{$selector}__search::placeholder {
-      font-size: mixins.clamp-auto(12px, 16px);
-      line-height: mixins.clamp-auto(14px, 22px);
+      font-size: mixins.clamps(12px, 16px);
+      line-height: mixins.clamps(14px, 22px);
     }
   }
 
@@ -65,13 +65,13 @@
 
       a {
         font-weight: 600;
-        font-size: mixins.clamp-auto(17px, 22px);
-        line-height: mixins.clamp-auto(20px, 31px);
+        font-size: mixins.clamps(17px, 22px);
+        line-height: mixins.clamps(20px, 31px);
 
         span {
           font-family: "Space Mono", sans-serif;
-          font-size: mixins.clamp-auto(13px, 16px);
-          line-height: mixins.clamp-auto(15px, 22px);
+          font-size: mixins.clamps(13px, 16px);
+          line-height: mixins.clamps(15px, 22px);
           background: #858584;
           border-radius: 20px;
           padding: 5px;

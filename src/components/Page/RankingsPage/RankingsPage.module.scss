@@ -11,13 +11,13 @@
 
     h1 {
       margin: 0 0 20px 0;
-      font-size: mixins.clamp-auto(45px, 51px);
+      font-size: mixins.clamps(45px, 51px);
       line-height: 37px;
     }
 
     p {
-      font-size: mixins.clamp-auto(14px, 22px);
-      line-height: mixins.clamp-auto(20px, 35px);
+      font-size: mixins.clamps(14px, 22px);
+      line-height: mixins.clamps(20px, 35px);
     }
   }
 
@@ -30,7 +30,7 @@
 
     p {
       font-weight: 600;
-      font-size: mixins.clamp-auto(13px, 22px);
+      font-size: mixins.clamps(13px, 22px);
     }
   }
 
@@ -48,7 +48,7 @@
 
       p {
         font-weight: 600;
-        font-size: mixins.clamp-auto(13px, 22px);
+        font-size: mixins.clamps(13px, 22px);
         line-height: 12px;
       }
     }
