@@ -153,7 +153,7 @@
 
     &__list-header {
       #{$selector}__example-2 {
-        width: 80%;
+        width: mixins.clamps(150px, 395px, 320px, 576px);
       }
 
       #{$selector}__example-5 {
@@ -163,7 +163,7 @@
 
     &__creator {
       #{$selector}__artist-details {
-        width: 80%;
+        width: mixins.clamps(150px, 395px, 320px, 576px);
       }
 
       #{$selector}__volume {
