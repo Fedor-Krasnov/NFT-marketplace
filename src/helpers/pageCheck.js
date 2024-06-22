@@ -5,9 +5,11 @@ export const pageCheck = () => {
 
   const isMainPage = !pathname.slice(1).length;
   const isAuthorizationPage = pathname === '/authorization';
+  const isUserProfilePage = pathname.includes('/user-profile/');
 
   return {
     isAuthorizationPage,
     isMainPage,
+    isUserProfilePage,
   };
 };

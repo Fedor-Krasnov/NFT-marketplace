@@ -127,4 +127,18 @@ export const pages = [
       },
     ],
   },
+  {
+    pathname: '/user-profile',
+    seo: {
+      title: 'user-profile – NFT Marketplace',
+      description: '',
+      keywords: '',
+    },
+    sections: [
+      {
+        content: '',
+        type: 'user-profile',
+      },
+    ],
+  },
 ];

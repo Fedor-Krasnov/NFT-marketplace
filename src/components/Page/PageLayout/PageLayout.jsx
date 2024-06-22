@@ -1,12 +1,18 @@
 import React, { useLayoutEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { PageContext } from '../../../contexts';
+import { pageCheck } from '../../../helpers';
 import { pages } from '../../../mocks/pages';
 import { Page } from '../../Page';
 
 const PageLayout = () => {
   const { pathname } = useLocation();
-  const pageData = pages.find((data) => data.pathname === pathname);
+  const { isUserProfilePage } = pageCheck();
+  let pathnameModified = pathname;
+  if (isUserProfilePage) {
+    pathnameModified = '/user-profile';
+  }
+  const pageData = pages.find((data) => data.pathname === pathnameModified);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
