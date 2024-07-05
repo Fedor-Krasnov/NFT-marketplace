@@ -1,6 +1,6 @@
-@use 'src/assets/styles/mixins';
+@use '../../../assets/styles/mixins';
 
-.top-creators {
+.rankings {
   $selector: &;
 
   margin: 0 auto;

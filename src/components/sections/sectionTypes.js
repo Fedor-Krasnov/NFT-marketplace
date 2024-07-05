@@ -1,10 +1,11 @@
-import { AuthorizationPage, BrowseMarketplace, ConnectWalletPage, NFTAuctionPage, RankingsPage } from '../Page';
+import { AuthorizationPage, BrowseMarketplace, ConnectWalletPage, NFTAuctionPage } from '../Page';
 import {
   Auction,
   BrowseCategories,
   DiscoverMoreNfTs,
   HeroSection,
   HowItWorks,
+  Rankings,
   TopCreators,
   TrendingCollection,
   WeeklyDigest,
@@ -21,7 +22,7 @@ export const SectionType = {
   weeklyDigest: 'weekly-digest',
   authorization: 'authorization',
   connectWallet: 'connect-wallet',
-  rankingsPage: 'rankings-page',
+  rankings: 'rankings',
   browseMarketplace: 'browse-marketplace',
   NFTAuctionPage: 'nftAuction-Page',
 };
@@ -37,7 +38,7 @@ export const sectionTypeToComponentMap = {
   [SectionType.weeklyDigest]: WeeklyDigest,
   [SectionType.authorization]: AuthorizationPage,
   [SectionType.connectWallet]: ConnectWalletPage,
-  [SectionType.rankingsPage]: RankingsPage,
+  [SectionType.rankings]: Rankings,
   [SectionType.browseMarketplace]: BrowseMarketplace,
   [SectionType.NFTAuctionPage]: NFTAuctionPage,
 };

@@ -93,7 +93,7 @@ export const pages = [
     sections: [
       {
         content: rankingsPageData,
-        type: 'rankings-page',
+        type: 'rankings',
       },
     ],
   },
