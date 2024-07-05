@@ -14,7 +14,8 @@ export const usersData = [
       alt: 'Jaydon Ekstrom Bothman',
       src: '../src/mocks/media/users/user-1.png',
     },
-    userName: 'Jaydon Ekstrom Bothman',
+    userName: 'Jaydon-Ekstrom-Bothman',
+    name: 'Jaydon Ekstrom Bothman',
   },
   {
     ...randomData(),
@@ -31,7 +32,8 @@ export const usersData = [
       alt: 'Alfredo Septimus',
       src: './src/mocks/media/users/user-3.png',
     },
-    userName: 'Alfredo Septimus',
+    userName: 'Alfredo-Septimus',
+    user: 'Alfredo Septimus',
   },
   {
     ...randomData(),
@@ -39,7 +41,8 @@ export const usersData = [
       alt: 'Davis Franci',
       src: './src/mocks/media/users/user-4.png',
     },
-    userName: 'Davis Franci',
+    userName: 'Davis-Franci',
+    user: 'Davis Franci',
   },
   {
     ...randomData(),
@@ -47,7 +50,8 @@ export const usersData = [
       alt: 'Livia Rosser',
       src: './src/mocks/media/users/user-5.png',
     },
-    userName: 'Livia Rosser',
+    userName: 'Livia-Rosser',
+    user: 'Livia Rosser',
   },
   {
     ...randomData(),
@@ -55,7 +59,8 @@ export const usersData = [
       alt: 'Kianna Donin',
       src: './src/mocks/media/users/user-6.png',
     },
-    userName: 'Kianna Donin',
+    userName: 'Kianna-Donin',
+    user: 'Kianna Donin',
   },
   {
     ...randomData(),
@@ -63,7 +68,8 @@ export const usersData = [
       alt: 'Phillip Lipshutz',
       src: './src/mocks/media/users/user-7.png',
     },
-    userName: 'Phillip Lipshutz',
+    userName: 'Phillip-Lipshutz',
+    user: 'Phillip Lipshutz',
   },
   {
     ...randomData(),
@@ -71,7 +77,8 @@ export const usersData = [
       alt: 'Maria Rosser',
       src: './src/mocks/media/users/user-8.png',
     },
-    userName: 'Maria Rosser',
+    userName: 'Maria-Rosser',
+    user: 'Maria Rosser',
   },
   {
     ...randomData(),
@@ -79,7 +86,8 @@ export const usersData = [
       alt: 'Kianna Stanton',
       src: './src/mocks/media/users/user-9.png',
     },
-    userName: 'Kianna Stanton',
+    userName: 'Kianna-Stanton',
+    user: 'Kianna Stanton',
   },
   {
     ...randomData(),
@@ -87,7 +95,8 @@ export const usersData = [
       alt: 'Angel Lubin',
       src: './src/mocks/media/users/user-10.png',
     },
-    userName: 'Angel Lubin',
+    userName: 'Angel-Lubin',
+    user: 'Angel Lubin',
   },
   {
     ...randomData(),
@@ -95,7 +104,8 @@ export const usersData = [
       alt: 'Allison Torff',
       src: './src/mocks/media/users/user-11.png',
     },
-    userName: 'Allison Torff',
+    userName: 'Allison-Torff',
+    user: 'Allison Torff',
   },
   {
     ...randomData(),
@@ -103,7 +113,8 @@ export const usersData = [
       alt: 'Davis Workman',
       src: './src/mocks/media/users/user-12.png',
     },
-    userName: 'Davis Workman',
+    userName: 'Davis-Workman',
+    user: 'Davis Workman',
   },
   {
     ...randomData(),
@@ -111,7 +122,8 @@ export const usersData = [
       alt: 'Randy Carder',
       src: './src/mocks/media/users/user-13.png',
     },
-    userName: 'Randy Carder',
+    userName: 'Randy-Carder',
+    user: 'Randy Carder',
   },
   {
     ...randomData(),
@@ -119,7 +131,8 @@ export const usersData = [
       alt: 'Lydia Culhane',
       src: './src/mocks/media/users/user-14.png',
     },
-    userName: 'Lydia Culhane',
+    userName: 'Lydia-Culhane',
+    user: 'Lydia Culhane',
   },
   {
     ...randomData(),
@@ -127,7 +140,8 @@ export const usersData = [
       alt: 'Rayna Bator',
       src: './src/mocks/media/users/user-15.png',
     },
-    userName: 'Rayna Bator',
+    userName: 'Rayna-Bator',
+    user: 'Rayna Bator',
   },
   {
     ...randomData(),
@@ -135,6 +149,7 @@ export const usersData = [
       alt: 'Jocelyn Westervelt',
       src: './src/mocks/media/users/user-9.png',
     },
-    userName: 'Jocelyn Westervelt',
+    userName: 'Jocelyn-Westervelt',
+    user: 'Jocelyn Westervelt',
   },
 ];
