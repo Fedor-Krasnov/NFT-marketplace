@@ -11,7 +11,7 @@ const UserList = () => (
       <p className={userListStyles[`${userListClassName}__example-1`]}>#</p>
       <p className={userListStyles[`${userListClassName}__example-2`]}>Artist</p>
       <p className={userListStyles[`${userListClassName}__example-3`]}>Change</p>
-      <p className={userListStyles[`${userListClassName}__example-4`]}>NFTs Sold</p>
+      <p className={userListStyles[`${userListClassName}__example-4`]}>NFTs&nbsp;Sold</p>
       <p className={userListStyles[`${userListClassName}__example-5`]}>Volume</p>
     </div>
     {usersData.slice(0, 15).map(({ image, userName, change, nftSold, volume }, userTopIndex) => (
