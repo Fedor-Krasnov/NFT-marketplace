@@ -6,7 +6,7 @@ import userListStyles from './UserList.module.scss';
 const userListClassName = 'user-list';
 
 const UserList = () => (
-  <section className={userListStyles[userListClassName]}>
+  <div className={userListStyles[userListClassName]}>
     <div className={userListStyles[`${userListClassName}__list-header`]}>
       <p className={userListStyles[`${userListClassName}__example-1`]}>#</p>
       <p className={userListStyles[`${userListClassName}__example-2`]}>Artist</p>
@@ -43,7 +43,7 @@ const UserList = () => (
         <Link to={`/user-profile/${userName}`} />
       </div>
     ))}
-  </section>
+  </div>
 );
 
 export { UserList };
