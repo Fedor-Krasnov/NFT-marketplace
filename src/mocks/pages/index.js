@@ -123,7 +123,7 @@ export const pages = [
     sections: [
       {
         content: NFTAuctionPageData,
-        type: 'nftAuction-Page',
+        type: 'nftAuction',
       },
     ],
   },

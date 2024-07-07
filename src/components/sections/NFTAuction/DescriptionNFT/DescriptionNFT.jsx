@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { NFTAuctionPageData } from '../../../../mocks/Page';
-import { Countdown } from '../../../sections/Auction/Countdown';
 import { Text, Title, Tags, ExternalLinks } from '../../../units';
 import { TitleSize } from '../../../units/Title/types';
-import DescriptionNFTSectionStyles from './DescriptionNFTSectionPage.module.scss';
+import { Countdown } from '../../Auction/Countdown';
+import DescriptionNFTSectionStyles from './DescriptionNFT.module.scss';
 
 const DescriptionNFTSectionClassName = 'description-nft-section';
 
-const DescriptionNFTSectionPage = () => {
+const DescriptionNFT = () => {
   const { titleAuction, descriptionAuction, userName, image, username, description, tags, details } =
     NFTAuctionPageData;
 
   return (
-    <section className={DescriptionNFTSectionStyles[DescriptionNFTSectionClassName]}>
+    <div className={DescriptionNFTSectionStyles[DescriptionNFTSectionClassName]}>
       <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__main-information`]}>
         <div className={DescriptionNFTSectionStyles[`${DescriptionNFTSectionClassName}__description-details`]}>
           <Title
@@ -56,8 +56,8 @@ const DescriptionNFTSectionPage = () => {
           <Countdown buttonTitle />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export { DescriptionNFTSectionPage };
+export { DescriptionNFT };

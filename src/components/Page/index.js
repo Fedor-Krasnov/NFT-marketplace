@@ -3,6 +3,6 @@ export { AuthorizationPage } from './AuthorizationPage';
 export { ConnectWalletPage } from './ConnectWalletPage';
 export { BrowseMarketplace } from '../sections/BrowseMarketplace';
 export { UserProfilePage } from './UserProfilePage';
-export { NFTAuctionPage } from './NFTAuctionPage';
+export { NFTAuction } from '../sections/NFTAuction';
 export { PageContent } from './PageContent';
 export { PageLayout } from './PageLayout';
