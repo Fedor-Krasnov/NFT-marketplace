@@ -7,7 +7,7 @@
   max-width: 1050px;
 
   &__title-page {
-    margin: 80px 0;
+    margin-bottom: mixins.clamps(50px, 80px);
 
     h1 {
       margin: 0 0 20px 0;
