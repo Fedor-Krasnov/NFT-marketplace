@@ -18,7 +18,7 @@ const UserList = () => {
         <p className={userListStyles[`${userListClassName}__example-4`]}>NFTs&nbsp;Sold</p>
         <p className={userListStyles[`${userListClassName}__example-5`]}>Volume</p>
       </div>
-      {sortUsers.map(({ image, userName, change, nftSold, volume }, userTopIndex) => (
+      {sortUsers.map(({ image, userName, name, change, nftSold, volume }, userTopIndex) => (
         <div key={userName} className={userListStyles[`${userListClassName}__creator`]}>
           <div className={userListStyles[`${userListClassName}__creator-container`]}>
             <div className={userListStyles[`${userListClassName}__serial-number`]}>{userTopIndex + 1}</div>
@@ -26,10 +26,7 @@ const UserList = () => {
               <div className={userListStyles[`${userListClassName}__avatar`]}>
                 <img alt={image.alt} src={image.src} />
               </div>
-              <p
-                className={userListStyles[`${userListClassName}__name`]}
-                dangerouslySetInnerHTML={{ __html: userName }}
-              />
+              <p className={userListStyles[`${userListClassName}__name`]} dangerouslySetInnerHTML={{ __html: name }} />
             </div>
             <div
               className={userListStyles[`${userListClassName}__change`]}
