@@ -18,7 +18,7 @@ const UserList = () => {
         <p className={userListStyles[`${userListClassName}__example-4`]}>NFTs&nbsp;Sold</p>
         <p className={userListStyles[`${userListClassName}__example-5`]}>Volume</p>
       </div>
-      {sortUsers.map(({ image, userName, name, change, nftSold, volume }, userTopIndex) => (
+      {sortUsers.map(({ image, userName, name, change, nftSold, volumeWithUnit }, userTopIndex) => (
         <div key={userName} className={userListStyles[`${userListClassName}__creator`]}>
           <div className={userListStyles[`${userListClassName}__creator-container`]}>
             <div className={userListStyles[`${userListClassName}__serial-number`]}>{userTopIndex + 1}</div>
@@ -38,7 +38,7 @@ const UserList = () => {
             />
             <div
               className={userListStyles[`${userListClassName}__volume`]}
-              dangerouslySetInnerHTML={{ __html: volume }}
+              dangerouslySetInnerHTML={{ __html: volumeWithUnit }}
             />
           </div>
           <Link to={`/user-profile/${userName}`} />

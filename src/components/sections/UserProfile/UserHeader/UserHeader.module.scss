@@ -1,6 +1,6 @@
 @use 'src/assets/styles/variables/colors';
 
-.user-profile-section {
+.user-header {
   $selector: &;
 
   padding: 0;
@@ -20,7 +20,7 @@
     #{$selector}__avatar {
       border: 4px solid colors.$shoe-wax;
       width: fit-content;
-      border-radius: 25px;
+      border-radius: 100%;
     }
   }
 

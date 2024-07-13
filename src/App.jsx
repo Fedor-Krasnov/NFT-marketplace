@@ -10,7 +10,7 @@ const App = () => (
       </Route>
     </Routes>
   </Router>
-  // <Route element={<UserProfilePage />} path="/user-profile/:userName" />
+  // <Route element={<UserProfile />} path="/user-profile/:userName" />
 );
 
 export { App };

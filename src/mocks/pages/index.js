@@ -10,6 +10,7 @@ import {
   trendingCollectionData,
   weeklyDigestData,
 } from '../sections';
+import { usersData } from '../usersData';
 
 export const pages = [
   {
@@ -136,7 +137,7 @@ export const pages = [
     },
     sections: [
       {
-        content: '',
+        content: usersData,
         type: 'user-profile',
       },
     ],
