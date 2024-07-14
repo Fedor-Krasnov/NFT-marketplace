@@ -1,0 +1,47 @@
+@use '/src/assets/styles/mixins';
+
+.tabs {
+  $selector: &;
+
+  &__choice-point {
+    #{$selector}__trait {
+      border: 1px solid #3B3B3B;
+      margin: 0 -18px;
+    }
+
+    #{$selector}__buttons {
+      padding: 25px 0 15px 0;
+      margin: 0 auto;
+      max-width: 830px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+
+      a {
+        font-weight: 600;
+        font-size: mixins.clamps(17px, 22px);
+        line-height: mixins.clamps(20px, 31px);
+
+        span {
+          font-family: "Space Mono", sans-serif;
+          font-size: mixins.clamps(13px, 16px);
+          line-height: mixins.clamps(15px, 22px);
+          background: #858584;
+          border-radius: 20px;
+          padding: 5px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    &__choice-point {
+      #{$selector}__buttons {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}

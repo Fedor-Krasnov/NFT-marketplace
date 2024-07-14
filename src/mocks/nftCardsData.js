@@ -15,6 +15,7 @@ export const nftCardsData = [
       price: '1.63 ETH',
       highestBid: '0.33 wETH',
     },
+    userId: 1,
   },
   {
     image: {
@@ -32,6 +33,7 @@ export const nftCardsData = [
       price: '9.43 ETH',
       highestBid: '2.74 wETH',
     },
+    userId: 1,
   },
   {
     image: {
@@ -49,6 +51,7 @@ export const nftCardsData = [
       price: '1.63 ETH',
       highestBid: '0.33 wETH',
     },
+    userId: 1,
   },
   {
     image: {
@@ -66,6 +69,7 @@ export const nftCardsData = [
       price: '6.51 ETH',
       highestBid: '4.85 wETH',
     },
+    userId: 2,
   },
   {
     image: {
@@ -83,6 +87,7 @@ export const nftCardsData = [
       price: '7.45 ETH',
       highestBid: '2.67 wETH',
     },
+    userId: 3,
   },
   {
     image: {
@@ -100,6 +105,7 @@ export const nftCardsData = [
       price: '2.56 ETH',
       highestBid: '7.27 wETH',
     },
+    userId: 1,
   },
   {
     image: {
@@ -117,6 +123,7 @@ export const nftCardsData = [
       price: '3.62 ETH',
       highestBid: '1.35 wETH',
     },
+    userId: 3,
   },
   {
     image: {
@@ -134,6 +141,7 @@ export const nftCardsData = [
       price: '5.23 ETH',
       highestBid: '4.12 wETH',
     },
+    userId: 4,
   },
   {
     image: {
@@ -151,6 +159,7 @@ export const nftCardsData = [
       price: '8.45 ETH',
       highestBid: '45.23 wETH',
     },
+    userId: 5,
   },
   {
     image: {
@@ -168,6 +177,7 @@ export const nftCardsData = [
       price: '4.37 ETH',
       highestBid: '23.56 wETH',
     },
+    userId: 1,
   },
   {
     image: {
@@ -185,6 +195,7 @@ export const nftCardsData = [
       price: '45.3 ETH',
       highestBid: '2.34 wETH',
     },
+    userId: 5,
   },
   {
     image: {
@@ -202,5 +213,6 @@ export const nftCardsData = [
       price: '5.37 ETH',
       highestBid: '7.98 wETH',
     },
+    userId: 2,
   },
 ];

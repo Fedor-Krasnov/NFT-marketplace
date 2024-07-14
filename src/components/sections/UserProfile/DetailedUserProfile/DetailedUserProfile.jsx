@@ -62,22 +62,6 @@ const DetailedUserProfile = ({ content }) => {
           </div>
         </div>
       </div>
-      <div>
-        <div className={detailedUserProfileStyles[`${detailedUserProfileClassName}__choice-point`]}>
-          <div className={detailedUserProfileStyles[`${detailedUserProfileClassName}__trait`]}></div>
-          <div className={detailedUserProfileStyles[`${detailedUserProfileClassName}__buttons`]}>
-            <a href="src/components/sections/UserProfile/DetailedUserProfile">
-              Created<span>302</span>
-            </a>
-            <a href="src/components/sections/UserProfile/DetailedUserProfile">
-              owned<span>67</span>
-            </a>
-            <a href="src/components/sections/UserProfile/DetailedUserProfile">
-              Collection<span>4</span>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
+import { TabsType } from '../../innerComponents/WorkLayout/types';
 import { UserHeader, DetailedUserProfile, WorkLayout } from '../../sections';
 
 const UserProfile = ({ content }) => {
@@ -12,7 +13,7 @@ const UserProfile = ({ content }) => {
     return <div>Такого пользователя не существует</div>;
   }
 
-  const { name } = userData;
+  const { name, userId } = userData;
 
   return (
     <>
@@ -21,7 +22,7 @@ const UserProfile = ({ content }) => {
       </Helmet>
       <UserHeader content={userData} />
       <DetailedUserProfile content={userData} />
-      <WorkLayout userName={userName} />
+      <WorkLayout tabsType={TabsType.userProfile} userId={userId} />
     </>
   );
 };
