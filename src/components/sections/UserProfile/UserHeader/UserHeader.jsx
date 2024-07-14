@@ -9,8 +9,6 @@ const UserHeader = ({ content }) => {
     image: { alt, src },
   } = content;
 
-  console.log(content);
-
   return (
     <div className={userHeaderStyles[userHeaderClassName]}>
       <div

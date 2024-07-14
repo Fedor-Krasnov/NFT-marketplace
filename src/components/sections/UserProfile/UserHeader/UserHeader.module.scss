@@ -1,10 +1,12 @@
 @use 'src/assets/styles/variables/colors';
+@use 'src/assets/styles/mixins';
 
 .user-header {
   $selector: &;
 
   padding: 0;
   max-width: 1280px;
+  margin: calc(#{mixins.clamps(40px, 80px)} * -1) auto 0;
 
   &__background {
     background: var(--background);

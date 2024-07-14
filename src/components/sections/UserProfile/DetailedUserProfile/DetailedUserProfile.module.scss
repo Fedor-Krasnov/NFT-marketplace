@@ -26,6 +26,7 @@
       #{$selector}__user-main-information {
         display: flex;
         justify-content: space-between;
+        column-gap: 20px;
 
         #{$selector}__button {
           display: flex;

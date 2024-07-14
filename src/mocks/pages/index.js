@@ -139,6 +139,7 @@ export const pages = [
       {
         content: usersData,
         type: 'user-profile',
+        width: 'full',
       },
     ],
   },
