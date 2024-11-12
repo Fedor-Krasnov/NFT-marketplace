@@ -20,7 +20,7 @@ const Logo = ({ className, setIsModalMenuOpen, withoutText }) => {
   const logo = (
     <>
       <Icon className={logoStyles[`${logoClassName}__icon`]} code={IconCode.logo} />
-      {!withoutText && <span>NFT Marketplace</span>}
+      {!withoutText && <span>Nexus</span>}
     </>
   );
 

@@ -16,7 +16,7 @@ export const pages = [
   {
     pathname: '/',
     seo: {
-      title: 'NFT Marketplace',
+      title: 'Nexus',
       description: '',
       keywords: '',
     },
@@ -59,7 +59,7 @@ export const pages = [
   {
     pathname: '/authorization',
     seo: {
-      title: 'Authorization – NFT Marketplace',
+      title: 'Authorization – Nexus',
       description: '',
       keywords: '',
     },
@@ -73,7 +73,7 @@ export const pages = [
   {
     pathname: '/connect-wallet',
     seo: {
-      title: 'Connect Wallet – NFT Marketplace',
+      title: 'Connect Wallet – Nexus',
       description: '',
       keywords: '',
     },
@@ -87,7 +87,7 @@ export const pages = [
   {
     pathname: '/rankings',
     seo: {
-      title: 'Rankings – NFT Marketplace',
+      title: 'Rankings – Nexus',
       description: '',
       keywords: '',
     },
@@ -101,7 +101,7 @@ export const pages = [
   {
     pathname: '/browse-marketplace',
     seo: {
-      title: 'Browse Marketplace – NFT Marketplace',
+      title: 'Browse Marketplace – Nexus',
       description: '',
       keywords: '',
     },
@@ -117,7 +117,7 @@ export const pages = [
   {
     pathname: '/nft-auction',
     seo: {
-      title: 'NFT Auction – NFT Marketplace',
+      title: 'NFT Auction – Nexus',
       description: '',
       keywords: '',
     },
@@ -131,7 +131,7 @@ export const pages = [
   {
     pathname: '/user-profile',
     seo: {
-      title: 'user-profile – NFT Marketplace',
+      title: 'user-profile – Nexus',
       description: '',
       keywords: '',
     },
