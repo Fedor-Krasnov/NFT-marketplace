@@ -1,8 +1,8 @@
 export const footerData = {
-  copyright: 'Ⓒ NFT Market. Use this template freely.',
+  copyright: 'Ⓒ Nexus. All rights reserved.',
   descriptions: {
-    text1: 'NFT marketplace&nbsp;UI created with Anima for Figma.',
-    text2: 'Join our community',
+    text1: 'Designed by College of Communications №54',
+    text2: 'Join our community:',
     text3: 'Get exclusive promotions &&nbsp;updates straight to&nbsp;your inbox.',
   },
   titles: {
